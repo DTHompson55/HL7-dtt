@@ -1,0 +1,8 @@
+variables {
+  questhl7records.ORU ORU;
+  qdp.Client client;
+  java.lang.String decisionType;
+  questhl7records.ORM ORM;
+  boolean reportAll;
+  boolean reportParials;
+}

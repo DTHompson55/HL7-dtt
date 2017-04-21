@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Check for Nilables</name>
+  <uuid>e279ae28-7f4d-4a04-a216-0865f60b2f26</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[definitions
+    set 'Result' to the ORU PATIENT RESULT of 'the ORU' ;
+    set 'an Order Observation' to an ORU ORDER OBSERVATION in the ORU ORDER OBSERVATIONs of Result ;
+    set 'an OBR' to the OBR of 'an Order Observation' ;
+then
+    remove the nil values of 'an OBR' ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

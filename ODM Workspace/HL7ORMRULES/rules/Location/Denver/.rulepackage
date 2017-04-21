@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:RulePackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>Denver</name>
+  <uuid>1efdad9f-2b9f-4966-8af6-0caf63ad801c</uuid>
+</ilog.rules.studio.model.base:RulePackage>

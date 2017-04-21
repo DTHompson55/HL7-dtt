@@ -1,0 +1,11 @@
+rule OBX_Test {
+   property ilog.rules.business_name = "OBX Test";
+   property ilog.rules.package_name = "";
+   property status = "new";
+   when {
+      IlrContext() from ?context;
+   } then {
+      ilog.rules.brl.System.printMessage("This was the old OBX Test");
+   }
+}
+

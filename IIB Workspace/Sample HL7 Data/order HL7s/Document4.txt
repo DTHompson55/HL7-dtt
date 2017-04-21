@@ -1,0 +1,14 @@
+  <xsd:complexType name="ZS2.CONTENT">
+    <xsd:sequence dfdl:ref="ibmhl7:HL7Segment" dfdl:separatorPosition="infix">
+      <xsd:element maxOccurs="1" minOccurs="1" ref="ZSI.1.SampleID"/>
+      <xsd:element maxOccurs="1" minOccurs="0" ref="ZSI.2.UnitCodes"/>
+      <xsd:element maxOccurs="1" minOccurs="0" ref="ZSI.3.LableDevice"/>
+      <xsd:element maxOccurs="1" minOccurs="0" ref="ZSI.4.LabelFormat"/>
+      <xsd:element maxOccurs="1" minOccurs="0" ref="ZSI.5.ContainerType"/>
+      <xsd:element maxOccurs="1" minOccurs="0" ref="ZSI.6.DepartmentIDs"/>
+      <xsd:element maxOccurs="1" minOccurs="0" ref="ZSI.7.SentoutIDs"/>
+      <xsd:element maxOccurs="1" minOccurs="0" ref="ZSI.8.SerialLabel"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element dfdl:initiator="ZS2" dfdl:ref="ibmhl7:HL7SegmentTerminator" name="ZS2" type="ZS2.CONTENT"/>
+

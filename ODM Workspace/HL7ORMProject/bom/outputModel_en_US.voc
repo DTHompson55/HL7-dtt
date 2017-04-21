@@ -1,0 +1,8 @@
+# Vocabulary Properties
+uuid = 2a373044-43ae-4a06-8659-c94c9ef0db71
+
+# questpocanswers.Answers
+questpocanswers.Answers#concept.label = answers
+questpocanswers.Answers.AnswerList#phrase.action = set the answers of {this} to {answer}
+questpocanswers.Answers.AnswerList#phrase.navigation = {answer} of {this}
+questpocanswers.Answers.add(java.lang.String)#phrase.action = add {0} to {this}

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:RulePackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>hold</name>
+  <uuid>0d30a82a-265c-430d-9522-81895306f05d</uuid>
+</ilog.rules.studio.model.base:RulePackage>

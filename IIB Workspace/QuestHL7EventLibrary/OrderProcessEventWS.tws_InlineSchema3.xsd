@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://QuestHL7Records" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://QDP/OrderProcessEventWS.tws" xmlns:impl1="http://QuestHL7Segments" xmlns:impl2="http://QuestHL7Records" xmlns:intf="http://QDP/OrderProcessEventWS.tws" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                  <import namespace="http://QDP/OrderProcessEventWS.tws" schemaLocation="OrderProcessEventWS.tws_InlineSchema1.xsd">
+    <!--Add URI of the schema document for the imported namespace using 'schemaLocation' attribute.-->
+  </import>
+            <import namespace="http://QuestHL7Segments" schemaLocation="OrderProcessEventWS.tws_InlineSchema2.xsd">
+    <!--Add URI of the schema document for the imported namespace using 'schemaLocation' attribute.-->
+  </import>
+            <complexType name="ORU">
+    <sequence>
+      <element form="unqualified" maxOccurs="1" minOccurs="1" name="MSH" nillable="false" type="impl1:MSH"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="ORU_PATIENT_RESULT" nillable="false" type="impl1:ORU_PATIENT_RESULT"/>
+    </sequence>
+  </complexType>
+        </schema>

@@ -1,0 +1,31 @@
+        <xsd:sequence dfdl:ref="ibmhl7:HL7Segment">
+            <xsd:element maxOccurs="1" minOccurs="1" ref="FHS.1.FileFieldSeparator"/>
+            <xsd:element maxOccurs="1" minOccurs="1" ref="FHS.2.FileEncodingCharacters"/>
+            <xsd:element maxOccurs="1" minOccurs="0" ref="FHS.3.FileSendingApplication"/>
+            <xsd:element maxOccurs="1" minOccurs="0" ref="FHS.4.FileSendingFacility"/>
+            <xsd:element maxOccurs="1" minOccurs="0" ref="FHS.5.FileReceivingApplication"/>
+            <xsd:element maxOccurs="1" minOccurs="0" ref="FHS.6.FileReceivingFacility"/>
+            <xsd:element maxOccurs="1" minOccurs="0" ref="FHS.7.FileCreationDateTime"/>
+            <xsd:element maxOccurs="1" minOccurs="0" ref="FHS.8.FileSecurity"/>
+            <xsd:element maxOccurs="1" minOccurs="0" ref="FHS.9.FileNameID"/>
+            <xsd:element maxOccurs="1" minOccurs="0" ref="FHS.10.FileHeaderComment"/>
+            <xsd:element maxOccurs="1" minOccurs="0" ref="FHS.11.FileControlID"/>
+            <xsd:element maxOccurs="1" minOccurs="0" ref="FHS.12.ReferenceFileControlID"/>
+            <xsd:element dfdl:ref="ibmhl7:ElementNilWhenEmpty" maxOccurs="unbounded" minOccurs="0" name="Remainder" nillable="true" type="xsd:string"/>
+
+
+
+  			<xsd:sequence dfdl:ref="ibmhl7:HL7Segment">
+         	<xsd:element maxOccurs="1" minOccurs="0" ref="MSH.3.SendingApplication"/>
+					<xsd:element maxOccurs="1" minOccurs="0" ref="MSH.4.SendingFacility"/>
+					<xsd:element maxOccurs="1" minOccurs="0" ref="MSH.5.ReceivingApplication"/>
+					<xsd:element maxOccurs="1" minOccurs="0" ref="MSH.6.ReceivingFacility"/>
+					<xsd:element maxOccurs="1" minOccurs="1" ref="MSH.7.DateTimeOfMessage"/>
+					<xsd:element maxOccurs="1" minOccurs="0" ref="MSH.8.Security"/>
+					<xsd:element maxOccurs="1" minOccurs="1" ref="MSH.9.MessageType"/>
+					<xsd:element maxOccurs="1" minOccurs="0" ref="MSH.10.MessageControlID"/>
+					<xsd:element maxOccurs="1" minOccurs="0" ref="MSH.11.ProcessingID"/>
+					<xsd:element maxOccurs="1" minOccurs="0" ref="MSH.12.VersionID"/>					
+					<xsd:element maxOccurs="1" minOccurs="0" ref="MSH.13.SequenceNumber"/>
+					<xsd:element maxOccurs="1" minOccurs="0" ref="MSH.14.ContinuationPointer"/>
+					

@@ -1,0 +1,42 @@
+# Vocabulary Properties
+uuid = f216cab9-359e-49f5-b8a9-5de877c90234
+
+# qdp.Client
+qdp.Client#concept.label = client
+qdp.Client.alphaName#phrase.navigation = {alpha name} of {this}
+qdp.Client.areaRouteStop#phrase.navigation = {area route stop} of {this}
+qdp.Client.autodialGroup#phrase.navigation = {autodial group} of {this}
+qdp.Client.clientNmemonic#phrase.navigation = {client nmemonic} of {this}
+qdp.Client.clientNumber#phrase.navigation = {client number} of {this}
+qdp.Client.defaultChargeTo#phrase.navigation = {default charge to} of {this}
+qdp.Client.flag18#phrase.navigation = {flag18} of {this}
+qdp.Client.flag19#phrase.navigation = {flag19} of {this}
+qdp.Client.flag20#phrase.navigation = {flag20} of {this}
+qdp.Client.flagAbnormals#phrase.navigation = {flag abnormals} of {this}
+qdp.Client.flagAddFaxCoverPage#phrase.navigation = {flag add fax cover page} of {this}
+qdp.Client.flagAddTestReports#phrase.navigation = {flag add test reports} of {this}
+qdp.Client.flagAlert#phrase.navigation = {flag alert} of {this}
+qdp.Client.flagCallPriority3#phrase.navigation = {flag call priority3} of {this}
+qdp.Client.flagCallTiqToClient#phrase.navigation = {flag call tiq to client} of {this}
+qdp.Client.flagCallTnpsToClient#phrase.navigation = {flag call tnps to client} of {this}
+qdp.Client.flagCopyToFinalOnly#phrase.navigation = {flag copy to final only} of {this}
+qdp.Client.flagCumulative#phrase.navigation = {flag cumulative} of {this}
+qdp.Client.flagFaxMiTrailers#phrase.navigation = {flag fax mi trailers} of {this}
+qdp.Client.flagImageReq#phrase.navigation = {flag image req} of {this}
+qdp.Client.flagNumberOfCopies#phrase.navigation = {flag number of copies} of {this}
+qdp.Client.flagPapReminders#phrase.navigation = {flag pap reminders} of {this}
+qdp.Client.flagPapSummary#phrase.navigation = {flag pap summary} of {this}
+qdp.Client.flagPartialAccepted#phrase.navigation = {flag partial accepted} of {this}
+qdp.Client.flagPatientAddressOnReport#phrase.navigation = {flag patient address on report} of {this}
+qdp.Client.flagPatientLetterOnReport#phrase.navigation = {flag patient letter on report} of {this}
+qdp.Client.flagReportDid#phrase.navigation = {flag report did} of {this}
+qdp.Client.flagReportOnlyClient#phrase.navigation = {flag report only client} of {this}
+qdp.Client.flagRereportPartials#phrase.navigation = {flag rereport partials} of {this}
+qdp.Client.flagRestrictClientAccess#phrase.navigation = {flag restrict client access} of {this}
+qdp.Client.flagSendCustomPanelId#phrase.navigation = {flag send custom panel id} of {this}
+qdp.Client.flagStandardResultCodes#phrase.navigation = {flag standard result codes} of {this}
+qdp.Client.flagStatus#phrase.navigation = {flag status} of {this}
+qdp.Client.flagTissueSummary#phrase.navigation = {flag tissue summary} of {this}
+qdp.Client.masterClientNumber#phrase.navigation = {master client number} of {this}
+qdp.Client.name#phrase.navigation = {name} of {this}
+qdp.Client.reportRoutine#phrase.navigation = {report routine} of {this}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><impactTables>
+    <ruleTable>
+        <vocElt id="demo.odm.ibm.com.ICDLookup/get()/NAVIGATION#0">
+            <rule id="946b2653-8d80-48d7-ac2c-fc2cc447f022"/>
+        </vocElt>
+    </ruleTable>
+    <vocTable>
+        <rule id="946b2653-8d80-48d7-ac2c-fc2cc447f022">
+            <vocElt id="demo.odm.ibm.com.ICDLookup/get()/NAVIGATION#0"/>
+        </rule>
+    </vocTable>
+    <ruleParamTable>
+        <param id="Comorbidity">
+            <rule id="946b2653-8d80-48d7-ac2c-fc2cc447f022"/>
+        </param>
+    </ruleParamTable>
+    <paramTable>
+        <rule id="946b2653-8d80-48d7-ac2c-fc2cc447f022">
+            <param id="Comorbidity"/>
+        </rule>
+    </paramTable>
+    <projectTable/>
+    <variableTable>
+        <param id="81183632-3eb4-4b41-a6ea-c6043ee9bbe9">
+            <rule id="946b2653-8d80-48d7-ac2c-fc2cc447f022"/>
+        </param>
+    </variableTable>
+    <ruleVocFileTable>
+        <vocFile file="/SDA_Usecase2/bom/regexModel_en_US.voc" id="b1ae8af3-bfdc-4f50-92de-ad8c5ac35d16">
+            <rule id="946b2653-8d80-48d7-ac2c-fc2cc447f022"/>
+        </vocFile>
+    </ruleVocFileTable>
+    <resourceTable>
+        <resource file="/SDA_Usecase2/rules/diagnosisVbls.var" id="81183632-3eb4-4b41-a6ea-c6043ee9bbe9"/>
+        <resource file="/SDA_Usecase2/rules/flow.rfl" id="946b2653-8d80-48d7-ac2c-fc2cc447f022"/>
+    </resourceTable>
+</impactTables>

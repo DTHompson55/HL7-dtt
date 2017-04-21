@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>OBX Long Form</name>
+  <uuid>1af8fa24-08fd-429c-b18e-57dfb1f7495c</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[definitions
+    set 'a' to the ORU PATIENT RESULT of 'the ORU' ;
+    
+    set 'c' to the ORU ORDER OBSERVATIONs of a ;
+    set 'd' to an ORU ORDER OBSERVATION in c ;
+    set 'e' to the ORU OBSERVATIONs of d ;
+    set 'f' to an ORU OBSERVATION in e ;
+    set 'g' to the OBX of f ;
+    set 'h' to the observation name of g ;
+
+then
+    print "xxx We Got TO H" + h;
+    ]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

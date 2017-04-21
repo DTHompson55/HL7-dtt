@@ -1,0 +1,21 @@
+package DevTest {
+   use ORU;
+   rule OBX_Long_Form {
+      property ilog.rules.business_name = "OBX Long Form";
+      property ilog.rules.package_name = "DevTest";
+      property status = "new";
+      when {
+         questhl7records.ORU() from ORU;
+         a: questhl7segments.ORU_PATIENT_RESULT() from ORU.ORU_PATIENT_RESULT;
+         c: collect questhl7segments.ORU_ORDER_OBSERVATION() in a.ORU_ORDER_OBSERVATIONList;
+         d: questhl7segments.ORU_ORDER_OBSERVATION() in c;
+         e: collect questhl7segments.ORU_OBSERVATION() in d.ORU_OBSERVATIONList;
+         f: questhl7segments.ORU_OBSERVATION() in e;
+         g: questhl7segments.OBX() from f.OBX;
+         evaluate (h : (g.ObservationName));
+      } then {
+         ilog.rules.brl.System.printMessage(("xxx We Got TO H" + h));
+      }
+   }
+}
+

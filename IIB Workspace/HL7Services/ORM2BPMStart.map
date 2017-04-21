@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?><mappingRoot xmlns="http://www.ibm.com/2008/ccl/Mapping" domainID="com.ibm.msl.mapping.xml" domainIDExtension="mb" mainMap="true" targetNamespace="default" version="8.0.5.0" xmlns:map="default">
+    <input path="/chapter4.xsd" var="var1"/>
+    <input path="mbsharedlib://QuestHL7OrderLibrary/OrderProcessStartWS.tws_InlineSchema1.xsd" var="var"/>
+    <output path="mbsharedlib://QuestHL7OrderLibrary/IBMdefined/org/xmlsoap/schemas/soap/envelope/soapenv11.xsd"/>
+    <namespaces>
+        <namespace kind="supplement" prefix="in" uri="urn:hl7-org:v2xml"/>
+        <namespace kind="supplement" prefix="out" uri="http://schemas.xmlsoap.org/soap/envelope/"/>
+        <namespace kind="supplement" prefix="io3" uri="http://QDP/OrderProcessStartWS.tws"/>
+        <namespace kind="supplement" prefix="io2" uri="http://QuestHL7Records"/>
+        <namespace kind="supplement" prefix="io" uri="http://QuestHL7Segments"/>
+    </namespaces>
+    <generation engine="xquery"/>
+    <mappingDeclaration name="ORM2BPMStart">
+        <input namespace="urn:hl7-org:v2xml" path="$var1/mb:msg(ORM_O01,assembly,DFDL,Properties)" var="ComIbmMessageAssembly_ORM_O01"/>
+        <output namespace="http://schemas.xmlsoap.org/soap/envelope/" path="mb:msg(Envelope,assembly,XMLNSC,Properties)" var="ComIbmMessageAssembly_Envelope">
+            <cast path="$ComIbmMessageAssembly_Envelope/Envelope/Body/any" qualifier="{http://QDP/OrderProcessStartWS.tws}startOrder" ref="var"/>
+        </output>
+        <move>
+            <input path="$ComIbmMessageAssembly_ORM_O01/Properties"/>
+            <output path="$ComIbmMessageAssembly_Envelope/Properties"/>
+            <override>
+                <assign value="{QuestHL7OrderLibrary}">
+                    <output path="$ComIbmMessageAssembly_Envelope/Properties/MessageSet"/>
+                </assign>
+            </override>
+        </move>
+        <local>
+            <input path="$ComIbmMessageAssembly_ORM_O01/ORM_O01"/>
+            <output path="$ComIbmMessageAssembly_Envelope/Envelope/Body/startOrder/order"/>
+            <local>
+                <input path="MSH"/>
+                <output path="MSH"/>
+                <move>
+                    <input path="MSH.4.SendingFacility/HD.1"/>
+                    <output path="OriginatingFacility"/>
+                </move>
+                <move>
+                    <input path="MSH.6.ReceivingFacility/HD.1"/>
+                    <output path="ReceivingFacility"/>
+                </move>
+                <move>
+                    <input path="MSH.9.MessageType/MSG.1"/>
+                    <output path="MsgType_1"/>
+                </move>
+                <move>
+                    <input path="MSH.9.MessageType/MSG.2"/>
+                    <output path="MsgType_2"/>
+                </move>
+                <move>
+                    <input path="MSH.9.MessageType/MSG.3"/>
+                    <output path="MsgType_3"/>
+                </move>
+            </local>
+            <local>
+                <input path="ORM_O01.PATIENT"/>
+                <output path="ORM_PATIENT"/>
+                <local>
+                    <input path="PID"/>
+                    <output path="PID"/>
+                    <move>
+                        <input path="PID.1.SetIDPID"/>
+                        <output path="PIDSequence"/>
+                    </move>
+                    <move>
+                        <input path="PID.2.PatientID/CX.1"/>
+                        <output path="PatientID1"/>
+                    </move>
+                    <move>
+                        <input path="PID.3.PatientIdentifierList/CX.1"/>
+                        <output path="PatientID2"/>
+                    </move>
+                    <move>
+                        <input path="PID.3.PatientIdentifierList/CX.1"/>
+                        <output path="AccessionNumber"/>
+                    </move>
+                    <move>
+                        <input path="PID.7.DateTimeOfBirth/TS.1"/>
+                        <output path="Birthdate"/>
+                    </move>
+                    <move>
+                        <input path="PID.8.AdministrativeSex"/>
+                        <output path="AdministrativeSex"/>
+                    </move>
+                </local>
+            </local>
+            <foreach>
+                <input path="ORM_O01.ORDER"/>
+                <output path="ORM_ORDER"/>
+                <local>
+                    <input path="ORC"/>
+                    <output path="ORC"/>
+                    <move>
+                        <input path="ORC.1.OrderControl"/>
+                        <output path="OrderControl"/>
+                    </move>
+                    <move>
+                        <input path="ORC.6.ResponseFlag"/>
+                        <output path="ResponseFlag"/>
+                    </move>
+                    <move>
+                        <input path="ORC.5.OrderStatus"/>
+                        <output path="OrderStatus"/>
+                    </move>
+                    <move>
+                        <input path="ORC.12.OrderingProvider/XCN.4"/>
+                        <output path="PhysicianUPIN"/>
+                    </move>
+                    <move>
+                        <input path="ORC.13.EnterersLocation/PL.1"/>
+                        <output path="OriginiatingSiteCode"/>
+                    </move>
+                    <move>
+                        <input path="ORC.17.EnteringOrganization/CE.1"/>
+                        <output path="ClientMnemonic"/>
+                    </move>
+                    <move>
+                        <input path="ORC.17.EnteringOrganization/CE.1"/>
+                        <output path="ClientID"/>
+                    </move>
+                </local>
+                <foreach>
+                    <input path="ORM_O01.ORDER_DETAIL"/>
+                    <output path="ORM_ORDER_DETAIL"/>
+                    <local>
+                        <input path="ORM_O01.CHOICE/OBR"/>
+                        <output path="OBR"/>
+                        <move>
+                            <input path="OBR.1.SetIDOBR"/>
+                            <output path="SequenceNumber"/>
+                        </move>
+                        <move>
+                            <input path="OBR.2.PlacerOrderNumber/EI.1"/>
+                            <output path="AccessionNumber"/>
+                        </move>
+                        <move>
+                            <input path="OBR.2.PlacerOrderNumber/EI.1"/>
+                            <output path="PlacerOrderNumber"/>
+                        </move>
+                        <move>
+                            <input path="OBR.4.UniversalServiceIdentifier/CE.1"/>
+                            <output path="UnitAndOrderCodes_1"/>
+                        </move>
+                        <move>
+                            <input path="OBR.4.UniversalServiceIdentifier/CE.2"/>
+                            <output path="UnitAndOrderCodes_2"/>
+                        </move>
+                        <move>
+                            <input path="OBR.4.UniversalServiceIdentifier/CE.3"/>
+                            <output path="UnitAndOrderCodes_3"/>
+                        </move>
+                        <move>
+                            <input path="OBR.4.UniversalServiceIdentifier/CE.4"/>
+                            <output path="UnitAndOrderCodes_4"/>
+                        </move>
+                        <move>
+                            <input path="OBR.4.UniversalServiceIdentifier/CE.5"/>
+                            <output path="UnitAndOrderCodes_5"/>
+                        </move>
+                        <move>
+                            <input path="OBR.4.UniversalServiceIdentifier/CE.6"/>
+                            <output path="UnitAndOrderCodes_6"/>
+                        </move>
+                        <move>
+                            <input path="OBR.4.UniversalServiceIdentifier/CE.7"/>
+                            <output path="UnitAndOrderCodes_7"/>
+                        </move>
+                        <move>
+                            <input path="OBR.4.UniversalServiceIdentifier/CE.8"/>
+                            <output path="UnitAndOrderCodes_8"/>
+                        </move>
+                        <move>
+                            <input path="OBR.4.UniversalServiceIdentifier/CE.9"/>
+                            <output path="UnitAndOrderCodes_9"/>
+                        </move>
+                        <move>
+                            <input path="OBR.4.UniversalServiceIdentifier/CE.10"/>
+                            <output path="UnitAndOrderCodes_10"/>
+                        </move>
+                    </local>
+                </foreach>
+            </foreach>
+        </local>
+    </mappingDeclaration>
+</mappingRoot>

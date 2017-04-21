@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><mappingRoot xmlns="http://www.ibm.com/2008/ccl/Mapping" domainID="com.ibm.msl.mapping.xml" domainIDExtension="mb" mainMap="true" targetNamespace="default" version="8.0.5.0" xmlns:map="default">
+    <input path="mbsharedlib://QuestHL7OrderLibrary/IBMdefined/org/xmlsoap/schemas/soap/envelope/soapenv11.xsd"/>
+    <output path="jar:file://!com/ibm/etools/mft/map/xsds/predefined/SOAPDomainMsg.xsd"/>
+    <generation engine="xquery"/>
+    <mappingDeclaration name="HL7Services_MQ_to_SOAP">
+        <input namespace="http://schemas.xmlsoap.org/soap/envelope/" path="mb:msg(Envelope,assembly,XMLNSC,Properties)" var="ComIbmMessageAssembly_Envelope"/>
+        <output path="mb:msg(SOAP_Domain_Msg,assembly,SOAP,Properties)" var="ComIbmMessageAssembly_SOAP_Domain_Msg"/>
+        <move>
+            <input path="$ComIbmMessageAssembly_Envelope/Properties"/>
+            <output path="$ComIbmMessageAssembly_SOAP_Domain_Msg/Properties"/>
+        </move>
+    </mappingDeclaration>
+</mappingRoot>

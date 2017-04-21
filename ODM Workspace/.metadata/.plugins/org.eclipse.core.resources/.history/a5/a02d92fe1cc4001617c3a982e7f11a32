@@ -1,0 +1,49 @@
+package hl7.demo.ibm.com;
+
+import java.util.*;
+
+public class OBR_Java {
+  protected List<OBX_Java> obxList = new Vector<OBX_Java>();
+  protected String orderName;  
+  protected String orderValue;  
+  protected boolean isReportable;
+  protected boolean isRereportable;
+  protected boolean isSent;
+public List<OBX_Java> getObxList() {
+	return obxList;
+}
+public void addObx(OBX_Java obx) {
+	this.obxList.add(obx);
+}
+
+public String getOrderName() {
+	return orderName;
+}
+public void setOrderName(String orderName) {
+	this.orderName = orderName;
+}
+public String getOrderValue() {
+	return orderValue;
+}
+public void setOrderValue(String orderValue) {
+	this.orderValue = orderValue;
+}
+public boolean isReportable() {
+	return isReportable;
+}
+public void setReportable(boolean isReportable) {
+	this.isReportable = isReportable;
+}
+public boolean isRereportable() {
+	return isRereportable;
+}
+public void setRereportable(boolean isRereportable) {
+	this.isRereportable = isRereportable;
+}
+public boolean isSent() {
+	return isSent;
+}
+public void setSent(boolean isSent) {
+	this.isSent = isSent;
+}
+}

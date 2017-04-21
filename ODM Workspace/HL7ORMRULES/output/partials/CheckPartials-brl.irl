@@ -1,0 +1,20 @@
+package partials {
+   use Java_ORU;
+   use Java_Client;
+   use answers;
+   rule CheckPartials {
+      property ilog.rules.business_name = "CheckPartials";
+      property ilog.rules.package_name = "partials";
+      property status = "new";
+      when {
+         hl7.demo.ibm.com.ORU_Java() from Java_ORU;
+         hl7.demo.ibm.com.TheClient() from Java_Client;
+         evaluate ((Java_ORU.someReportsAreReady
+         	&& Java_Client.acceptsPartials));
+      } then {
+         answers.setPartialReportsComplete();
+         answers.add("** Partials Ready to Report");
+      }
+   }
+}
+

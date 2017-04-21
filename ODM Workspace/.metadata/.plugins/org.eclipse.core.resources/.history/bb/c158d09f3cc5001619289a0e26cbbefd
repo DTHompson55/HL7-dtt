@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>Short Form</name>
+  <uuid>b7cd91a4-c2da-4cd8-a5f0-c52ae357b466</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[definitions
+    set 'b' to the OBXs of 'the ORU' ;
+    set 'c' to an OBX in b ;
+if
+    the observation name of c is not "Hello"
+then
+    print "xxx This is the short form" ;
+    add "From Short " + the observation name of c to 'the Decision Answer';]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

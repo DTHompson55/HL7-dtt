@@ -1,0 +1,16 @@
+package Init {
+   use ORU;
+   rule MarkReportableResultsRule {
+      property ilog.rules.business_name = "MarkReportableResultsRule";
+      property ilog.rules.package_name = "Init";
+      property status = "new";
+      when {
+         questhl7records.ORU() from ORU;
+         Result: questhl7segments.ORU_PATIENT_RESULT() from ORU.ORU_PATIENT_RESULT;
+         an_Order_Observation: questhl7segments.ORU_ORDER_OBSERVATION() in Result.ORU_ORDER_OBSERVATIONList;
+      } then {
+         an_Order_Observation.MarkReportableResults();
+      }
+   }
+}
+

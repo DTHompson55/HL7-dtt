@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><impactTables>
+    <ruleTable>
+        <vocElt id="questhl7records.ORU/ORU_PATIENT_RESULT/GETTER#0">
+            <rule id="071cc76b-6d7d-4fe4-91f4-c9c8a8d75c74"/>
+        </vocElt>
+        <vocElt id="questhl7records.ORU/TestResult(java.lang.String)/NAVIGATION#0">
+            <rule id="071cc76b-6d7d-4fe4-91f4-c9c8a8d75c74"/>
+        </vocElt>
+        <vocElt id="questhl7records.ORU/isOKToReceivePrelim(java.lang.String)/NAVIGATION#0">
+            <rule id="071cc76b-6d7d-4fe4-91f4-c9c8a8d75c74"/>
+        </vocElt>
+        <vocElt id="questhl7records.ORU/isClinicallyReady(java.lang.String)/NAVIGATION#0">
+            <rule id="071cc76b-6d7d-4fe4-91f4-c9c8a8d75c74"/>
+        </vocElt>
+        <vocElt id="questhl7records.ORU/isOKtoReceivePartialTest(java.lang.String)/NAVIGATION#0">
+            <rule id="071cc76b-6d7d-4fe4-91f4-c9c8a8d75c74"/>
+        </vocElt>
+        <vocElt id="questhl7records.ORU/OrderStatus(java.lang.String)/NAVIGATION#0">
+            <rule id="071cc76b-6d7d-4fe4-91f4-c9c8a8d75c74"/>
+        </vocElt>
+        <vocElt id="questhl7records.ORU/isOKtoReceivePartialPanal(java.lang.String)/NAVIGATION#0">
+            <rule id="071cc76b-6d7d-4fe4-91f4-c9c8a8d75c74"/>
+        </vocElt>
+        <vocElt id="questhl7segments.ORU_PATIENT_RESULT/ORU_ORDER_OBSERVATIONList/GETTER#0">
+            <rule id="071cc76b-6d7d-4fe4-91f4-c9c8a8d75c74"/>
+        </vocElt>
+        <vocElt id="questhl7records.ORU">
+            <rule id="071cc76b-6d7d-4fe4-91f4-c9c8a8d75c74"/>
+        </vocElt>
+        <vocElt id="questhl7segments.ORU_ORDER_OBSERVATION">
+            <rule id="071cc76b-6d7d-4fe4-91f4-c9c8a8d75c74"/>
+        </vocElt>
+    </ruleTable>
+    <vocTable>
+        <rule id="071cc76b-6d7d-4fe4-91f4-c9c8a8d75c74">
+            <vocElt id="questhl7records.ORU/ORU_PATIENT_RESULT/GETTER#0"/>
+            <vocElt id="questhl7records.ORU/TestResult(java.lang.String)/NAVIGATION#0"/>
+            <vocElt id="questhl7records.ORU/isOKToReceivePrelim(java.lang.String)/NAVIGATION#0"/>
+            <vocElt id="questhl7records.ORU/isClinicallyReady(java.lang.String)/NAVIGATION#0"/>
+            <vocElt id="questhl7records.ORU/isOKtoReceivePartialTest(java.lang.String)/NAVIGATION#0"/>
+            <vocElt id="questhl7records.ORU/OrderStatus(java.lang.String)/NAVIGATION#0"/>
+            <vocElt id="questhl7records.ORU/isOKtoReceivePartialPanal(java.lang.String)/NAVIGATION#0"/>
+            <vocElt id="questhl7segments.ORU_PATIENT_RESULT/ORU_ORDER_OBSERVATIONList/GETTER#0"/>
+            <vocElt id="questhl7segments.ORU_ORDER_OBSERVATION"/>
+            <vocElt id="questhl7records.ORU"/>
+        </rule>
+    </vocTable>
+    <ruleParamTable>
+        <param id="ORU">
+            <rule id="071cc76b-6d7d-4fe4-91f4-c9c8a8d75c74"/>
+        </param>
+    </ruleParamTable>
+    <paramTable>
+        <rule id="071cc76b-6d7d-4fe4-91f4-c9c8a8d75c74">
+            <param id="ORU"/>
+        </rule>
+    </paramTable>
+    <projectTable/>
+    <variableTable>
+        <param id="b316e32a-9981-429a-a9f7-a14843e1b72f">
+            <rule id="071cc76b-6d7d-4fe4-91f4-c9c8a8d75c74"/>
+        </param>
+    </variableTable>
+    <ruleVocFileTable>
+        <vocFile file="/HL7ORMProject/bom/model_en_US.voc" id="8822658f-611c-4d29-ab89-a9b5ebb78537">
+            <rule id="071cc76b-6d7d-4fe4-91f4-c9c8a8d75c74"/>
+        </vocFile>
+    </ruleVocFileTable>
+    <resourceTable>
+        <resource file="/HL7ORMProject/rules/DevTest/ReportReady.dta" id="071cc76b-6d7d-4fe4-91f4-c9c8a8d75c74"/>
+        <resource file="/HL7ORMProject/rules/vbls.var" id="b316e32a-9981-429a-a9f7-a14843e1b72f"/>
+    </resourceTable>
+</impactTables>

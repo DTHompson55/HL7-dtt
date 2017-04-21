@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:RulePackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>Tucker</name>
+  <uuid>93b98603-6205-4a81-8dda-150362cb19b4</uuid>
+</ilog.rules.studio.model.base:RulePackage>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;HL7ORMRULES/rules/State/FL/Another AT rule.brl&apos; to &apos;AT rule.brl&apos;" description="Rename resource &apos;Another AT rule.brl&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="rules/State/FL/Another AT rule.brl" name="AT rule.brl" stamp="1482161825821" updateReferences="true"/>
+</session>

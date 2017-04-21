@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.ruleflow:RuleFlow xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.ruleflow="http://ilog.rules.studio/model/ruleflow.ecore">
+  <name>GeoFlow</name>
+  <uuid>fad7716d-d7ae-49e2-a316-bb405f92a483</uuid>
+  <locale>en_US</locale>
+  <categories>any</categories>
+  <rfModel>
+<Ruleflow xmlns="http://schemas.ilog.com/Rules/7.0/Ruleflow">
+  <Body>
+    <TaskList>
+      <StartTask Identifier="task_0"/>
+      <SubflowTask Identifier="task_3" Uuid="543c9c4a-16dc-431a-97d1-39f6cdabb646"/>
+      <ActionTask Identifier="task_4">
+        <Actions Language="irl"><![CDATA[hl7.demo.ibm.com.ORU_Java uj = hl7.demo.ibm.com.ORU_Java.create();]]>&#13;<![CDATA[
+Java_ORU = uj;]]>&#13;<![CDATA[
+uj.facility = stateName;]]></Actions>
+      </ActionTask>
+      <StopTask Identifier="task_1"/>
+    </TaskList>
+    <NodeList>
+      <TaskNode Identifier="node_0" Task="task_0"/>
+      <TaskNode Identifier="node_1" Task="task_1"/>
+      <TaskNode Identifier="node_3" Task="task_3"/>
+      <TaskNode Identifier="node_4" Task="task_4"/>
+    </NodeList>
+    <TransitionList>
+      <Transition Identifier="transition_2" Source="node_0" Target="node_4"/>
+      <Transition Identifier="transition_3" Source="node_4" Target="node_3"/>
+      <Transition Identifier="transition_4" Source="node_3" Target="node_1"/>
+    </TransitionList>
+  </Body>
+  <Resources>
+    <ResourceSet Locale="en_US">
+      <Data Name="node_3#height">40.0</Data>
+      <Data Name="node_0#height">21.0</Data>
+      <Data Name="node_4#x">-376.0</Data>
+      <Data Name="node_4#y">44.0</Data>
+      <Data Name="node_4#name">node_3</Data>
+      <Data Name="node_3#y">134.0</Data>
+      <Data Name="node_3#width">102.0</Data>
+      <Data Name="node_3#name">node_5</Data>
+      <Data Name="node_1#name">node_2</Data>
+      <Data Name="node_3#x">-376.0</Data>
+      <Data Name="node_0#y">-36.5</Data>
+      <Data Name="node_0#x">-376.0</Data>
+      <Data Name="node_4#height">40.0</Data>
+      <Data Name="node_4#width">102.0</Data>
+      <Data Name="node_1#x">-376.0</Data>
+      <Data Name="node_1#width">23.0</Data>
+      <Data Name="node_1#y">215.0</Data>
+      <Data Name="node_1#height">23.0</Data>
+      <Data Name="node_0#width">21.0</Data>
+      <Data Name="node_0#name">node_0</Data>
+    </ResourceSet>
+  </Resources>
+  <Properties>
+    <imports><![CDATA[import hl7.demo.ibm.com.ORU_Java;
+use Java_ORU;
+use stateName;
+]]></imports>
+  </Properties>
+</Ruleflow></rfModel>
+</ilog.rules.studio.model.ruleflow:RuleFlow>

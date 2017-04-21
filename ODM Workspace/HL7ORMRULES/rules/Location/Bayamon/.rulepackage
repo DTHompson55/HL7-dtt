@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:RulePackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>Bayamon</name>
+  <uuid>9b6c9857-7976-49af-a90c-cf78e25c95dd</uuid>
+</ilog.rules.studio.model.base:RulePackage>

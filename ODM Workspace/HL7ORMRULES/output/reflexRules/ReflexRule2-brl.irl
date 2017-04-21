@@ -1,0 +1,22 @@
+package reflexRules {
+   use Java_ORU;
+   use answers;
+   rule ReflexRule2 {
+      property ilog.rules.business_name = "ReflexRule2";
+      property ilog.rules.package_name = "reflexRules";
+      property status = "new";
+      when {
+         hl7.demo.ibm.com.ORU_Java() from Java_ORU;
+         the_observation_set: hl7.demo.ibm.com.OBR_Java() from Java_ORU.getObrByName("CBC (INCLUDES DIFF/PLT)");
+         evaluate ((the_observation_set != null
+         	&& ((the_observation_set.getOBX("30000000").high) && (the_observation_set.getOBX("RED BLOOD CELL COUNT").low) && (the_observation_set.getOBX("HEMOGLOBIN").abnormal))));
+      } then {
+         answers.add("** Order Reflex Test #2 based on CBC hi, low, normal wbc,rbc,hemo ");
+      } else {
+         answers.add(("No Reflex Test #2 RBC " + Java_ORU.getOBX("RED BLOOD CELL COUNT").observationValue));
+         answers.add(("No Reflex Test #2 30000000 " + Java_ORU.getOBX("30000000").observationValue));
+         answers.add(("No Reflex Test #2 HEMO " + Java_ORU.getOBX("HEMOGLOBIN").observationValue));
+      }
+   }
+}
+

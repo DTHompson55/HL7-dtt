@@ -1,0 +1,17 @@
+package Init {
+   use ORU;
+   rule Check_for_Nilables {
+      property ilog.rules.business_name = "Check for Nilables";
+      property ilog.rules.package_name = "Init";
+      property status = "new";
+      when {
+         questhl7records.ORU() from ORU;
+         Result: questhl7segments.ORU_PATIENT_RESULT() from ORU.ORU_PATIENT_RESULT;
+         an_Order_Observation: questhl7segments.ORU_ORDER_OBSERVATION() in Result.ORU_ORDER_OBSERVATIONList;
+         an_OBR: questhl7segments.OBR() from an_Order_Observation.OBR;
+      } then {
+         an_OBR.removeNilValues();
+      }
+   }
+}
+

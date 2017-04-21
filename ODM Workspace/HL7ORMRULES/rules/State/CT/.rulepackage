@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:RulePackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>CT</name>
+  <uuid>5b819d46-2442-4623-84aa-a3a4806a45df</uuid>
+</ilog.rules.studio.model.base:RulePackage>

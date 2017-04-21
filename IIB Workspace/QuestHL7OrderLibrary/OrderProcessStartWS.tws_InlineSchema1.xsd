@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><schema xmlns="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://QDP/OrderProcessStartWS.tws" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:ibmSchExtn="http://www.ibm.com/schema/extensions" xmlns:impl="http://QDP/OrderProcessStartWS.tws" xmlns:impl1="http://QuestHL7Records" xmlns:intf="http://QDP/OrderProcessStartWS.tws" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                                                      <xsd:import namespace="http://QuestHL7Records" schemaLocation="OrderProcessStartWS.tws_InlineSchema4.xsd"/>
+ <element ibmSchExtn:docRoot="true" name="startOrder">
+    <complexType>
+      <sequence>
+        <element name="order" type="impl1:ORM"/>
+      </sequence>
+    </complexType>
+  </element>
+ 
+ <element ibmSchExtn:docRoot="true" name="startOrderResponse">
+    <complexType>
+      <sequence>
+        <element name="returnCode" type="string"/>
+      </sequence>
+    </complexType>
+  </element>
+  
+ <element ibmSchExtn:docRoot="true" name="WriteItType">
+    <complexType>
+      <sequence>
+        <element name="order" type="impl1:ORM"/>
+      </sequence>
+    </complexType>
+  </element>
+ 
+ <element ibmSchExtn:docRoot="true" name="WriteItResponseType">
+    <complexType>
+      <sequence>
+        <element name="returnCode" type="string"/>
+      </sequence>
+    </complexType>
+  </element>   
+    
+        </schema>

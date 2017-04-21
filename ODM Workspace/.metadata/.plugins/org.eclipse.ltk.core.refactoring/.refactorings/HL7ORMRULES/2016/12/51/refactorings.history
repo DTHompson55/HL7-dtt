@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;HL7ORMRULES/rules/pkg&apos; to &apos;partials&apos;" description="Rename resource &apos;pkg&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="rules/pkg" name="partials" stamp="1481931371389" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;HL7ORMRULES/HL7ORMRULESXOM.xsd&apos; to &apos;QuestHL7Answers.xsd&apos;" description="Rename resource &apos;HL7ORMRULESXOM.xsd&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="HL7ORMRULESXOM.xsd" name="QuestHL7Answers.xsd" stamp="1481944039259" updateReferences="true"/>
+</session>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" xmlns:ilog.rules.studio.model.query.extractor="http://ilog.rules.studio/model/query/extractor.ecore" rulesetName="op1" usingRuleflow="true" ruleflowName="flow" targetRuleProjectName="HL7ORMProject">
+  <name>op1</name>
+  <uuid>6440aa82-55a8-465d-8929-1a2418da42bc</uuid>
+  <referencedVariables variableName="ORM" variableSetName="vbls" direction="IN_OUT">
+    <variableSet href="../rules/vbls.var#b316e32a-9981-429a-a9f7-a14843e1b72f"/>
+  </referencedVariables>
+  <referencedVariables variableName="ORU" variableSetName="vbls" direction="IN_OUT">
+    <variableSet href="../rules/vbls.var#b316e32a-9981-429a-a9f7-a14843e1b72f"/>
+  </referencedVariables>
+  <referencedVariables variableName="decisionType" variableSetName="vbls">
+    <variableSet href="../rules/vbls.var#b316e32a-9981-429a-a9f7-a14843e1b72f"/>
+  </referencedVariables>
+  <referencedVariables variableName="decisionAnswer" variableSetName="vbls" direction="OUT">
+    <variableSet href="../rules/vbls.var#b316e32a-9981-429a-a9f7-a14843e1b72f"/>
+  </referencedVariables>
+  <referencedVariables variableName="client" variableSetName="vbls">
+    <variableSet href="../rules/vbls.var#b316e32a-9981-429a-a9f7-a14843e1b72f"/>
+  </referencedVariables>
+  <referencedVariables variableName="reportAll" variableSetName="vbls" direction="OUT">
+    <variableSet href="../rules/vbls.var#b316e32a-9981-429a-a9f7-a14843e1b72f"/>
+  </referencedVariables>
+  <referencedVariables variableName="reportPartials" variableSetName="vbls" direction="OUT">
+    <variableSet href="../rules/vbls.var#b316e32a-9981-429a-a9f7-a14843e1b72f"/>
+  </referencedVariables>
+  <ruleflow href="../rules/flow.rfl#2a15ea4c-9f2b-4a77-9e15-e8f2cf509b89"/>
+  <extractor xsi:type="ilog.rules.studio.model.query.extractor:QueryExtractor" name="op1_extractor" validator="Default Validator"/>
+  <targetRuleProject href="../../HL7ORMProject#c410049d-3734-4d9b-a1e4-9c49ce7f6fa6"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>

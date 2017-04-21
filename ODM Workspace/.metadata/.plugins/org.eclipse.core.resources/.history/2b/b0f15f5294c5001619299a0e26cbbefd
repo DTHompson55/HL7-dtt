@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.ruleflow:RuleFlow xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.ruleflow="http://ilog.rules.studio/model/ruleflow.ecore">
+  <name>IF_Flow</name>
+  <uuid>357648ba-adc7-422a-86df-9b6ae891ce07</uuid>
+  <locale>en_US</locale>
+  <categories>any</categories>
+  <rfModel>
+<Ruleflow xmlns="http://schemas.ilog.com/Rules/7.0/Ruleflow">
+  <Body>
+    <TaskList>
+      <StartTask Identifier="task_0"/>
+      <ActionTask Identifier="task_2">
+        <Actions Language="irl"><![CDATA[ Java_Client.acceptsPartials =client.flagPartialAccepted != 0;]]>&#13;<![CDATA[
+Java_Client.acceptsRereportables =client.flagRereportPartials != 0;]]>&#13;<![CDATA[
+]]>&#13;<![CDATA[
+hl7.demo.ibm.com.ORU_Java uj = hl7.demo.ibm.com.ORU_Java.create();]]>&#13;<![CDATA[
+uj.allReportsAreReady = false;]]>&#13;<![CDATA[
+uj.someReportsAreReady = false;]]>&#13;<![CDATA[
+]]>&#13;<![CDATA[
+java.util.Vector vooo = ORU.ORU_PATIENT_RESULT.ORU_ORDER_OBSERVATIONList;]]>&#13;<![CDATA[
+]]>&#13;<![CDATA[
+]]>&#13;<![CDATA[
+for (int i = 0 ; i < vooo.size();  i++){]]>&#13;<![CDATA[
+ questhl7segments.ORU_ORDER_OBSERVATION ooo = vooo.get(i) as questhl7segments.ORU_ORDER_OBSERVATION;]]>&#13;<![CDATA[
+ questhl7segments.OBR obr = ooo.OBR;]]>&#13;<![CDATA[
+ hl7.demo.ibm.com.OBR_Java rj = uj.createOBR_Java();]]>&#13;<![CDATA[
+]]>&#13;<![CDATA[
+ java.util.Vector voo = ooo.ORU_OBSERVATIONList;]]>&#13;<![CDATA[
+ for (int j = 0 ; j < voo.size(); j++ ){]]>&#13;<![CDATA[
+ 	]]>&#13;<![CDATA[
+ questhl7segments.ORU_OBSERVATION oo = voo.get(j) as questhl7segments.ORU_OBSERVATION;]]>&#13;<![CDATA[
+  	]]>&#13;<![CDATA[
+  questhl7segments.OBX obx = oo.OBX;]]>&#13;<![CDATA[
+  java.lang.String id = obx.ObservationID;]]>&#13;<![CDATA[
+  java.lang.String name = obx.ObservationName;]]>&#13;<![CDATA[
+  ]]>&#13;<![CDATA[
+  hl7.demo.ibm.com.OBX_Java xj = uj.createOBX_Java(rj, id, name);]]>&#13;<![CDATA[
+  ]]>&#13;<![CDATA[
+  xj.OBXSequenceNumber = obx.OBXSequenceNumber;]]>&#13;<![CDATA[
+  xj.control = obx.Control;]]>&#13;<![CDATA[
+  xj.accessionNumber = obx.AccessionNumber;]]>&#13;<![CDATA[
+  xj.observationID = obx.ObservationID;]]>&#13;<![CDATA[
+  xj.observationName = obx.ObservationName;]]>&#13;<![CDATA[
+  xj.observationValue = obx.ObservationValue;]]>&#13;<![CDATA[
+ // xj.observationDoubleValue = obx.ObservationDoubleValue;]]>&#13;<![CDATA[
+  xj.observationUnits = obx.ObservationUnits;]]>&#13;<![CDATA[
+  xj.observationRange = obx.ObservationRange;]]>&#13;<![CDATA[
+  xj.abnormalFlags = obx.AbnormalFlags;]]>&#13;<![CDATA[
+  xj.natureOfAbnoralFlags = obx.NatureOfAbnoralFlags;]]>&#13;<![CDATA[
+  xj.observationResultStatus = obx.ObservationResultStatus;]]>&#13;<![CDATA[
+]]>&#13;<![CDATA[
+ java.util.Vector vnte = oo.NTEList;]]>&#13;<![CDATA[
+ for (int n = 0 ; n < vnte.size(); n++ ){]]>&#13;<![CDATA[
+  questhl7segments.NTE nte = vnte.get(n) as questhl7segments.NTE;]]>&#13;<![CDATA[
+  xj.pending = nte.Comment_1.startsWith("PENDING");]]>&#13;<![CDATA[
+  break;]]>&#13;<![CDATA[
+ }]]>&#13;<![CDATA[
+ }]]>&#13;<![CDATA[
+}]]>&#13;<![CDATA[
+]]>&#13;<![CDATA[
+]]></Actions>
+      </ActionTask>
+      <StopTask Identifier="task_1"/>
+    </TaskList>
+    <NodeList>
+      <TaskNode Identifier="node_0" Task="task_0"/>
+      <TaskNode Identifier="node_1" Task="task_1"/>
+      <TaskNode Identifier="node_2" Task="task_2"/>
+    </NodeList>
+    <TransitionList>
+      <Transition Identifier="transition_1" Source="node_0" Target="node_2"/>
+      <Transition Identifier="transition_0" Source="node_2" Target="node_1"/>
+    </TransitionList>
+  </Body>
+  <Resources>
+    <ResourceSet Locale="en_US">
+      <Data Name="node_0#height">21.0</Data>
+      <Data Name="node_2#height">40.0</Data>
+      <Data Name="node_2#name">node_3</Data>
+      <Data Name="node_2#width">102.0</Data>
+      <Data Name="node_1#name">node_2</Data>
+      <Data Name="node_0#y">10.5</Data>
+      <Data Name="node_0#x">51.0</Data>
+      <Data Name="node_1#x">51.000004</Data>
+      <Data Name="node_1#width">20.000006</Data>
+      <Data Name="node_1#y">171.0</Data>
+      <Data Name="node_1#height">19.999998</Data>
+      <Data Name="node_2#x">51.0</Data>
+      <Data Name="node_2#y">91.0</Data>
+      <Data Name="node_0#width">21.0</Data>
+      <Data Name="node_0#name">node_0</Data>
+    </ResourceSet>
+  </Resources>
+  <Properties>
+    <imports><![CDATA[import questhl7segments.ORU_ORDER_OBSERVATION;
+import questhl7segments.OBX;
+import hl7.demo.ibm.com.OBR_Java;
+import questhl7segments.ORM_ORDER;
+import questhl7segments.ORU_OBSERVATION;
+import hl7.demo.ibm.com.ORU_Java;
+]]></imports>
+  </Properties>
+</Ruleflow></rfModel>
+</ilog.rules.studio.model.ruleflow:RuleFlow>

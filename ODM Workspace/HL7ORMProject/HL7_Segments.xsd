@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema 
+    targetNamespace="http://QuestHL7Segments"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:tns="http://QuestHL7Segments">
+
+  <xsd:complexType name="MSH">
+    <xsd:sequence>
+    <xsd:element nillable="true"  minOccurs="0" name="OriginatingFacility" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0" name="MsgType_1" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0" name="MsgType_2" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0" name="MsgType_3" type="xsd:string"></xsd:element>      
+      <xsd:element nillable="true"  minOccurs="0" name="ControlID" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0" name="ReceivingFacility" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  
+ <xsd:complexType name="PID">
+    <xsd:sequence>
+      <xsd:element nillable="true"  minOccurs="0" name="PIDSequence" type="xsd:string"></xsd:element>
+        <xsd:element nillable="true"  minOccurs="0" name="PatientID1" type="xsd:string"></xsd:element>
+        <xsd:element nillable="true"  minOccurs="0" name="PatientID2" type="xsd:string"></xsd:element>
+        <xsd:element nillable="true"  minOccurs="0" name="AccessionNumber" type="xsd:string"></xsd:element>
+        <xsd:element nillable="true"  minOccurs="0" name="MRN" type="xsd:string"></xsd:element>
+        <xsd:element nillable="true"  minOccurs="0" name="ChartId" type="xsd:string"></xsd:element>
+        <xsd:element nillable="true"  minOccurs="0" name="EnterpriseID" type="xsd:string"></xsd:element>
+        <xsd:element nillable="true"  minOccurs="0" name="PatientAccountNum" type="xsd:string"></xsd:element>
+        <xsd:element nillable="true"  minOccurs="0" name="AdministrativeSex" type="xsd:string"></xsd:element>
+        <xsd:element nillable="true"  minOccurs="0" name="Birthdate" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  
+  <xsd:complexType name="ORM_PATIENT">
+      <xsd:sequence>
+        <xsd:element nillable="true"  minOccurs="0" name="PID" type="tns:PID"></xsd:element>
+      </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="ORM_ORDER">
+      <xsd:sequence>
+        <xsd:element nillable="true"  minOccurs="0" name="ORC" type="tns:ORC"></xsd:element>
+        <xsd:element nillable="true"  minOccurs="0" name="ORM_ORDER_DETAIL" type="tns:ORM_ORDER_DETAIL"></xsd:element>
+      </xsd:sequence>
+  </xsd:complexType>
+
+ <xsd:complexType name="ORC">
+    <xsd:sequence>
+      <xsd:element nillable="true"  minOccurs="0" name="OrderControl" type="xsd:string"></xsd:element>
+        <xsd:element nillable="true"  maxOccurs="1" minOccurs="0" name="OrderStatus" type="xsd:string"/>
+        <xsd:element nillable="true"  maxOccurs="1" minOccurs="0" name="ResponseFlag" type="xsd:string"/>
+      
+        <xsd:element nillable="true"  minOccurs="0"  name="Specimens_1" type="xsd:string"></xsd:element>
+    <xsd:element nillable="true"  minOccurs="0"  name="Specimens_2" type="xsd:string"></xsd:element>
+    <xsd:element nillable="true"  minOccurs="0"  name="Specimens_3" type="xsd:string"></xsd:element>
+    <xsd:element nillable="true"  minOccurs="0"  name="Specimens_4" type="xsd:string"></xsd:element>
+    <xsd:element nillable="true"  minOccurs="0"  name="Specimens_5" type="xsd:string"></xsd:element>
+    <xsd:element nillable="true"  minOccurs="0"  name="Specimens_6" type="xsd:string"></xsd:element>
+    <xsd:element nillable="true"  minOccurs="0"  name="Specimens_7" type="xsd:string"></xsd:element>
+    <xsd:element nillable="true"  minOccurs="0"  name="Specimens_8" type="xsd:string"></xsd:element>
+    <xsd:element nillable="true"  minOccurs="0"  name="Specimens_9" type="xsd:string"></xsd:element>
+    <xsd:element nillable="true"  minOccurs="0"  name="Specimens_10" type="xsd:string"></xsd:element>
+      
+      <xsd:element nillable="true"  minOccurs="0" name="ChangeOrderDate_1" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0" name="ChangeOrderDate_2" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0" name="PhysicianUPIN" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0" name="OriginiatingSiteCode" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0" name="CollectionDate" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0" name="ClientMnemonic" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0" name="Minilog" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0" name="Maxilog" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0" name="WhoLoggedItUPIN" type="xsd:string"></xsd:element>
+
+      <xsd:element nillable="true"  maxOccurs="1" minOccurs="0" name="AltPatientID" type="xsd:string"/>
+      <xsd:element nillable="true"  maxOccurs="1" minOccurs="0" name="AccessionNumber" type="xsd:string"/>     
+      <xsd:element nillable="true"  minOccurs="0" name="ClientID" type="xsd:string"></xsd:element>
+
+
+    </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="ORM_ORDER_DETAIL">
+      <xsd:sequence>
+        <xsd:element nillable="true"  minOccurs="0" name="OBR" type="tns:OBR"></xsd:element>
+        <xsd:element nillable="true"  minOccurs="0" maxOccurs="unbounded" name="ZSI" type="tns:ZSI"></xsd:element>
+      </xsd:sequence>
+  </xsd:complexType>
+
+ <xsd:complexType name="OBR">
+    <xsd:sequence>
+      <xsd:element nillable="true"  minOccurs="0" name="SequenceNumber" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0" name="PlacerOrderNumber" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0" name="AccessionNumber" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0"  name="UnitAndOrderCodes_1" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0"  name="UnitAndOrderCodes_2" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0"  name="UnitAndOrderCodes_3" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0"  name="UnitAndOrderCodes_4" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0"  name="UnitAndOrderCodes_5" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0"  name="UnitAndOrderCodes_6" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0"  name="UnitAndOrderCodes_7" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0"  name="UnitAndOrderCodes_8" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0"  name="UnitAndOrderCodes_9" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0"  name="UnitAndOrderCodes_10" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0"  name="UnitAndOrderCodes_11" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0"  name="UnitAndOrderCodes_12" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0"  name="UnitAndOrderCodes_13" type="xsd:string"></xsd:element>
+
+      <xsd:element nillable="true"  minOccurs="0"  name="isReportable" type="xsd:boolean"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0"  name="isReportSent" type="xsd:boolean"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0"  name="isReReportable" type="xsd:boolean"></xsd:element>
+
+
+    </xsd:sequence>
+  </xsd:complexType>
+
+
+ <xsd:complexType name="ZOR">
+    <xsd:sequence>
+      <xsd:element nillable="true"  minOccurs="0" name="ZORSequenceNumber" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+
+ <xsd:complexType name="NTE">
+    <xsd:sequence>
+      <xsd:element nillable="true"  minOccurs="0" name="NTESequenceNumber" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0" name="ReportComment" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0"  name="Comment_1" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0"  name="Comment_2" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0"  name="Comment_3" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0"  name="Comment_4" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0"  name="Comment_5" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0"  name="Comment_6" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0"  name="Comment_7" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+
+
+ <xsd:complexType name="OBX">
+    <xsd:sequence>
+      <xsd:element nillable="true"  minOccurs="0" name="OBXSequenceNumber"  type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0" name="Control"            type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0" name="AccessionNumber"    type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0" name="ObservationID"      type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0" name="ObservationName"    type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0" name="ObservationValue"   type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0" name="ObservationUnits"   type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0" name="ObservationRange"   type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0" name="AbnormalFlags"      type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0" name="NatureOfAbnoralFlags" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0" name="ObservationResultStatus" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0" name="ODMStatus"            type="xsd:string"></xsd:element>
+
+    </xsd:sequence>
+  </xsd:complexType>
+
+ <xsd:complexType name="ORU_OBSERVATION">
+    <xsd:sequence>
+      <xsd:element nillable="true"  minOccurs="0" name="OBX" type="tns:OBX"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0" maxOccurs="unbounded" name="NTE" type="tns:NTE"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+
+
+
+ <xsd:complexType name="ZRQ">
+    <xsd:sequence>
+      <xsd:element nillable="true"  minOccurs="0" name="ZRQSequenceNumber" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0" name="AccessionNumber" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0"  name="zrqData_1" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0"  name="zrqData_2" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0"  name="zrqData_3" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0"  name="zrqData_4" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0"  name="zrqData_5" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0"  name="zrqData_6" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0"  name="zrqData_7" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0"  name="zrqData_8" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0"  name="zrqData_9" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0"  name="zrqData_10" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0"  name="zrqData_11" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0"  name="zrqData_12" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0"  name="zrqData_13" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0"  name="zrqData_14" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0"  name="zrqData_15" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0"  name="zrqData_16" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0"  name="zrqData_17" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0"  name="zrqData_18" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0"  name="zrqData_19" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0"  name="zrqData_20" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0"  name="zrqData_21" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0"  name="zrqData_22" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0"  name="zrqData_23" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+
+ <xsd:complexType name="ZSI">
+    <xsd:sequence>
+      <xsd:element nillable="true"  minOccurs="0" name="SampleID" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0" name="StorageSite" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0" name="IntraLabManifestIndicator" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0" name="UnitCodeNumber" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0" name="LabelDevice" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0" name="LableFormat" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0" name="ContainerType" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0"  name="DepartmentIDs_1" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0"  name="DepartmentIDs_2" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0"  name="DepartmentIDs_3" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0"  name="DepartmentIDs_4" type="xsd:string"></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0" name="Sendouts" type="xsd:string"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+ 
+
+  
+  <xsd:complexType name="ORU_PATIENT">
+      <xsd:sequence>
+        <xsd:element nillable="true"  minOccurs="0" name="PID" type="tns:PID"></xsd:element>
+        <xsd:element nillable="true"  minOccurs="0" maxOccurs="unbounded" name="NTE" type="tns:NTE"></xsd:element>
+        <xsd:element nillable="true"  minOccurs="0" maxOccurs="unbounded" name="ZRQ" type="tns:ZRQ"></xsd:element>
+      </xsd:sequence>
+  </xsd:complexType>
+
+  <xsd:complexType name="ORU_PATIENT_RESULT">
+      <xsd:sequence> 
+      <xsd:element nillable="true"  minOccurs="0" maxOccurs="1" name="ORU_PATIENT"  type="tns:ORU_PATIENT" ></xsd:element>
+      <xsd:element nillable="true"  minOccurs="0" maxOccurs="unbounded" name="ORU_ORDER_OBSERVATION"  type="tns:ORU_ORDER_OBSERVATION" ></xsd:element>
+      </xsd:sequence>
+  </xsd:complexType>
+  
+  <xsd:complexType name="ORU_ORDER_OBSERVATION">
+      <xsd:sequence>
+        <xsd:element nillable="true"  minOccurs="0" maxOccurs="1" name="ORC" type="tns:ORC"></xsd:element>
+        <xsd:element nillable="true"  minOccurs="0" maxOccurs="1" name="OBR" type="tns:OBR"></xsd:element>
+        <xsd:element nillable="true"  minOccurs="0" maxOccurs="unbounded" name="ZOR" type="tns:ZOR"></xsd:element>
+        <xsd:element nillable="true"  minOccurs="0" maxOccurs="unbounded" name="NTE" type="tns:NTE"></xsd:element>
+        <xsd:element nillable="true"  minOccurs="0" maxOccurs="unbounded" name="ORU_OBSERVATION" type="tns:ORU_OBSERVATION"></xsd:element>
+      </xsd:sequence>
+  </xsd:complexType>
+
+</xsd:schema>

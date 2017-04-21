@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:RuleProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore" xmlns:ilog.rules.studio.model.bom="http://ilog.rules.studio/model/bom.ecore" xmlns:ilog.rules.studio.model.query="http://ilog.rules.studio/model/query.ecore" xmlns:ilog.rules.studio.model.rule="http://ilog.rules.studio/model/rule.ecore" xmlns:ilog.rules.studio.model.xom="http://ilog.rules.studio/model/xom.ecore" isADecisionService="true" migrationFlag="3">
+  <name>HL7ORMIF</name>
+  <uuid>c7bc2511-da8b-45db-aa19-b112c4399a95</uuid>
+  <outputLocation>output</outputLocation>
+  <categories>any</categories>
+  <paths xsi:type="ilog.rules.studio.model.xom:XOMPath" pathID="XOM">
+    <entries xsi:type="ilog.rules.studio.model.xom:DynamicXOMPathEntry" name="HL7_Records.xsd" url="platform:/HL7ORMIF/HL7_Records.xsd" kind="XSD" rootPackage="questhl7records" namespace="http://QuestHL7Records">
+      <dependencies name="HL7_Segments.xsd" url="file:C:/QuestProject/HL7-dtt/ODM Workspace/HL7ORMIF/HL7_Segments.xsd" kind="XSD" rootPackage="questhl7segments" namespace="http://QuestHL7Segments"/>
+    </entries>
+    <entries xsi:type="ilog.rules.studio.model.xom:DynamicXOMPathEntry" name="client.xsd" url="platform:/HL7ORMIF/client.xsd" kind="XSD" rootPackage="qdp" namespace="http://QDP"/>
+    <entries xsi:type="ilog.rules.studio.model.xom:LibraryXOMPathEntry" name="org.eclipse.jdt.launching.JRE_CONTAINER" url="file:org.eclipse.jdt.launching.JRE_CONTAINER" kind="LIBRARY"/>
+    <entries xsi:type="ilog.rules.studio.model.xom:SystemXOMPathEntry" name="HL7ORMRULES" url="platform:/HL7ORMRULES" kind="RULE_PROJECT"/>
+    <entries xsi:type="ilog.rules.studio.model.xom:DynamicXOMPathEntry" name="HL7_Segments.xsd" url="platform:/HL7ORMIF/HL7_Segments.xsd" kind="XSD" rootPackage="questhl7segments" namespace="http://QuestHL7Segments"/>
+  </paths>
+  <paths xsi:type="ilog.rules.studio.model.bom:BOMPath" pathID="BOM" pathEntriesModified="true">
+    <entries xsi:type="ilog.rules.studio.model.bom:ProjectBOMEntry" name="HL7ORMRULES" url="platform:/HL7ORMRULES" kind="RULE_PROJECT">
+      <ruleProject href="HL7ORMRULES#7a54e543-bced-4c5b-a50d-c3df016f758a"/>
+    </entries>
+    <entries xsi:type="ilog.rules.studio.model.bom:BOMEntry" name="Client_IF_Model" url="platform:/HL7ORMIF/bom/Client_IF_Model.bom" origin="xom:/HL7ORMIF//HL7ORMIF/client.xsd"/>
+  </paths>
+  <modelFolders xsi:type="ilog.rules.studio.model.base:SourceFolder">
+    <name>rules</name>
+  </modelFolders>
+  <modelFolders xsi:type="ilog.rules.studio.model.bom:BOMFolder">
+    <name>bom</name>
+  </modelFolders>
+  <modelFolders xsi:type="ilog.rules.studio.model.rule:TemplateFolder">
+    <name>templates</name>
+  </modelFolders>
+  <modelFolders xsi:type="ilog.rules.studio.model.query:QueryFolder">
+    <name>queries</name>
+  </modelFolders>
+  <modelFolders xsi:type="ilog.rules.studio.model.base:ResourceFolder">
+    <name>resources</name>
+  </modelFolders>
+  <modelFolders xsi:type="com.ibm.rules.studio.model.decisionservice:OperationFolder">
+    <name>deployment</name>
+  </modelFolders>
+  <schemaDependencies location="./client.xsd" namespace="http://QDP"/>
+  <schemaDependencies location="./HL7_Records.xsd" namespace="http://QuestHL7Records"/>
+  <schemaDependencies location="./HL7_Segments.xsd" namespace="http://QuestHL7Segments"/>
+</ilog.rules.studio.model.base:RuleProject>

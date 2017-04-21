@@ -1,0 +1,26 @@
+
+
+Importing file: C:\QuestProject\HL7-dtt\ODM Workspace\XMLExamples\BPMServicesExample.wsdl
+
+The WSDL import will proceed with bindings BPM1Binding.
+Creating wsdl schema document for file:///C:/QuestProject/HL7-dtt/ODM Workspace/XMLExamples/BPMServicesExample.wsdl.
+Parsing wsdl binding {http://www.ibm.com/rules/decisionservice/Hl7/Op1}BPM1Binding.
+Parsing wsdl binding input Op1.
+Parsing wsdl binding output Op1.
+Parsing wsdl binding fault Op1SoapFault.
+Processing doc style for operation Op1.
+Populating WSDL schema BPMServicesExample.xsd.
+Creating file BPMServicesExample.xsd in the workspace.
+Creating file /HL7Services/Hl7Op1DecisionService.xsd in the workspace.
+Creating file /HL7Services/Hl7Op1Parameters.xsd in the workspace.
+Creating file /HL7Services/HL7_Records.xsd in the workspace.
+Creating file /HL7Services/HL7_Segments.xsd in the workspace.
+Copying source WSDL BPMServicesExample.wsdl to BPMServicesExample.wsdl.
+
+Elapsed time processing this message definition file: 0.203 seconds
+Number of warnings for this message definition file: 0
+
+
+Number of files processed: 1
+
+

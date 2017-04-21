@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>OBX Test</name>
+  <uuid>f58c0de8-6703-4b19-a815-d68dda5e4010</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[then print "This was the old OBX Test";]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

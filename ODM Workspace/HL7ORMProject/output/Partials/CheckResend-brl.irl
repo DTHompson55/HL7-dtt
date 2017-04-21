@@ -1,0 +1,21 @@
+package Partials {
+   use client;
+   use ORU;
+   use decisionAnswer;
+   rule CheckResend {
+      property ilog.rules.business_name = "CheckResend";
+      property ilog.rules.package_name = "Partials";
+      property status = "new";
+      when {
+         qdp.Client() from client;
+         evaluate (reportable : (client.flagRereportPartials));
+         questhl7records.ORU() from ORU;
+         evaluate ((ORU.hasSomeOrdersReady()
+         	&& ORU.checkReReportables(reportable)));
+      } then {
+         decisionAnswer.add("** Partials Ready to RE-Report");
+         decisionAnswer.add(("The RE-Reportable flag is " + client.flagRereportPartials));
+      }
+   }
+}
+

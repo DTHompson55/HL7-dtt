@@ -1,0 +1,23 @@
+package hl7.demo.ibm.com;
+
+import java.util.*;
+
+public class HL7_Helper {
+
+	protected String events[][] = new String[][]{
+		{"TSH","5600000899"},
+		{"CBC","3100006399"},
+		{"Chemistry","2600070083"},
+		{"Microbiology","2600070083"}};
+	
+	Map<String, String> myMap = new HashMap<String, String> ()
+	for (int i = 0; i < events.length; i++) {
+	    myMap.put(events[i][0], events[i][1]);
+	}
+	
+	
+	public String getEventType(String unitCode){return "";}
+	public String getMedicalConditionFromICD(String icdCode){return "";}
+	public void addMessageToList(String s) {messages.add(s);}
+
+}

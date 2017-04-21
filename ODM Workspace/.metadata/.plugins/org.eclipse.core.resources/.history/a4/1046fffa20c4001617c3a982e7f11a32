@@ -1,0 +1,47 @@
+# Vocabulary Properties
+hl7.demo.ibm.com.HL7_Helper.addMessageToList(java.lang.String)#phrase.action = add {0} to the messages of {this}
+uuid = 10deb137-953c-4c93-85be-85136ce77203
+
+# hl7.demo.ibm.com.HL7_Helper
+hl7.demo.ibm.com.HL7_Helper#concept.label = HL7 helper
+
+# hl7.demo.ibm.com.HL7_Helper.NV
+hl7.demo.ibm.com.HL7_Helper.NV#concept.label = NV
+hl7.demo.ibm.com.HL7_Helper.messages#phrase.action = set the messages of {this} to {message}
+hl7.demo.ibm.com.HL7_Helper.messages#phrase.navigation = {message} of {this}
+
+# hl7.demo.ibm.com.ICD10
+hl7.demo.ibm.com.ICD10#concept.label = ICD10
+
+# hl7.demo.ibm.com.ICD9
+hl7.demo.ibm.com.ICD9#concept.label = ICD9
+
+# hl7.demo.ibm.com.OBX_Java
+hl7.demo.ibm.com.OBX_Java#concept.label = OBX java
+hl7.demo.ibm.com.OBX_Java.ObservationRange#phrase.action = set the observation range of {this} to {observation range}
+hl7.demo.ibm.com.OBX_Java.ObservationRange#phrase.navigation = {observation range} of {this}
+hl7.demo.ibm.com.OBX_Java.ObservationValue#phrase.action = set the observation value of {this} to {observation value}
+hl7.demo.ibm.com.OBX_Java.ObservationValue#phrase.navigation = {observation value} of {this}
+hl7.demo.ibm.com.OBX_Java.high#phrase.navigation = {this} is high
+hl7.demo.ibm.com.OBX_Java.low#phrase.navigation = {this} is low
+hl7.demo.ibm.com.OBX_Java.normal#phrase.navigation = {this} is normal
+
+# hl7.demo.ibm.com.ORM_Java
+hl7.demo.ibm.com.ORM_Java#concept.label = ORM java
+
+# hl7.demo.ibm.com.ORU_Java
+hl7.demo.ibm.com.ORU_Java#concept.label = ORU java
+hl7.demo.ibm.com.ORU_Java.allReportsAreReady#phrase.action = make it {all reports are ready} that {this} is all reports are ready
+hl7.demo.ibm.com.ORU_Java.allReportsAreReady#phrase.navigation = all observations of {this} are ready
+hl7.demo.ibm.com.ORU_Java.obxMapByID#phrase.navigation = {obx map by ID} of {this}
+hl7.demo.ibm.com.ORU_Java.obxMapByName#phrase.navigation = {obx map by name} of {this}
+hl7.demo.ibm.com.ORU_Java.oooList#phrase.action = set the ooos of {this} to {ooo}
+hl7.demo.ibm.com.ORU_Java.oooList#phrase.navigation = {ooo} of {this}
+hl7.demo.ibm.com.ORU_Java.someReportsAreReady#phrase.navigation = some observations of {this} are ready
+
+# hl7.demo.ibm.com.TheClient
+hl7.demo.ibm.com.TheClient#concept.label = the client
+hl7.demo.ibm.com.TheClient.acceptsPartials#phrase.action = make it {accepts partials} that {this} is accepts partials
+hl7.demo.ibm.com.TheClient.acceptsPartials#phrase.navigation = {this} can accept partials
+hl7.demo.ibm.com.TheClient.acceptsRereportables#phrase.action = make it {accepts rereportables} that {this} is accepts rereportables
+hl7.demo.ibm.com.TheClient.acceptsRereportables#phrase.navigation = {this} can accept rereportables

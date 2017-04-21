@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http:///HL7Services/HL7SoapSchemas.xsd" xmlns:this="http:///HL7Services/HL7SoapSchemas.xsd">
+
+<xsd:element name="HL7ReqType">
+<xsd:complexType>
+    <xsd:sequence>
+      <xsd:element form="unqualified" maxOccurs="1" minOccurs="1" name="ReqType" nillable="false" type="xsd:string"/>
+      <xsd:element form="unqualified" maxOccurs="1" minOccurs="1" name="ReqBody" nillable="false" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:element>
+
+<xsd:element name="HL7RespType">
+<xsd:complexType>
+    <xsd:sequence>
+      <xsd:element form="unqualified" maxOccurs="1" minOccurs="1" name="RespBody" nillable="false" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:element>
+
+</xsd:schema>

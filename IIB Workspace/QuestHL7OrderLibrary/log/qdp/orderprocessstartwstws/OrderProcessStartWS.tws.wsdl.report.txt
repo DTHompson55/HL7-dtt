@@ -1,0 +1,35 @@
+
+
+Importing file: C:\Users\IBM_ADMIN\Downloads\OrderProcessStartWS.tws.wsdl
+
+Copying source WSDL OrderProcessStartWS.tws.wsdl to OrderProcessStartWS.tws.wsdl.
+
+The following is a list of WS-I warning messages found when importing:
+XSD: The location '' has not been resolved because the import is unused, Line: 22, Column: 3
+
+
+The WSDL import will proceed with bindings OrderProcessStartWSSoapSoapBinding.
+Creating wsdl schema document for file:///C:/Users/IBM_ADMIN/Downloads/OrderProcessStartWS.tws.wsdl.
+Parsing wsdl binding {http://QDP/OrderProcessStartWS.tws}OrderProcessStartWSSoapSoapBinding.
+Parsing wsdl binding input startOrder.
+Parsing wsdl binding output startOrder.
+Processing doc style for operation startOrder.
+Populating WSDL schema OrderProcessStartWS.tws.xsd.
+Removing unnecessary import statement with namespace http://QuestHL7Records from schema OrderProcessStartWS.tws_InlineSchema1.xsd.  This statement was not resolved and is never used.
+Removing unnecessary import statement with namespace http://QuestHL7Records from schema OrderProcessStartWS.tws_InlineSchema1.xsd.  This statement was not resolved and is never used.
+Removing unnecessary import statement with namespace http://QuestHL7Records from schema OrderProcessStartWS.tws_InlineSchema1.xsd.  This statement was not resolved and is never used.
+Removing unnecessary import statement with namespace http://QuestHL7Segments from schema /QuestHL7OrderLibrary/OrderProcessStartWS.tws_InlineSchema4.xsd.  This statement was not resolved and is never used.
+Removing unnecessary import statement with namespace http://QuestHL7Segments from schema /QuestHL7OrderLibrary/OrderProcessStartWS.tws_InlineSchema4.xsd.  This statement was not resolved and is never used.
+Removing unnecessary import statement with namespace http://QuestHL7Records from schema /QuestHL7OrderLibrary/OrderProcessStartWS.tws_InlineSchema2.xsd.  This statement was not resolved and is never used.
+Creating file OrderProcessStartWS.tws.xsd in the workspace.
+Creating file /QuestHL7OrderLibrary/OrderProcessStartWS.tws_InlineSchema1.xsd in the workspace.
+Creating file /QuestHL7OrderLibrary/OrderProcessStartWS.tws_InlineSchema4.xsd in the workspace.
+Creating file /QuestHL7OrderLibrary/OrderProcessStartWS.tws_InlineSchema2.xsd in the workspace.
+
+Elapsed time processing this message definition file: 0.935 seconds
+Number of warnings for this message definition file: 0
+
+
+Number of files processed: 1
+
+

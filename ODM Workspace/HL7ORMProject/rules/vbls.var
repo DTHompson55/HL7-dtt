@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:VariableSet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>vbls</name>
+  <uuid>b316e32a-9981-429a-a9f7-a14843e1b72f</uuid>
+  <variables name="ORM" type="questhl7records.ORM" initialValue="" verbalization="the ORM"/>
+  <variables name="ORU" type="questhl7records.ORU" initialValue="" verbalization="the ORU"/>
+  <variables name="decisionType" type="java.lang.String" initialValue="" verbalization="the Decision Type"/>
+  <variables name="decisionAnswer" type="questpocanswers.Answers" initialValue="new questpocanswers.Answers()" verbalization="the Decision Answer"/>
+  <variables name="client" type="qdp.Client" initialValue="" verbalization="the Client"/>
+  <variables name="reportAll" type="boolean" initialValue="false" verbalization="reportAll"/>
+  <variables name="reportPartials" type="boolean" initialValue="false" verbalization="reportPartials"/>
+</ilog.rules.studio.model.base:VariableSet>

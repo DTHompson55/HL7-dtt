@@ -1,0 +1,78 @@
+
+property loadGetterSetterAsProperties "true"
+property origin "xom:/HL7ORMProject//HL7ORMProject/client.xsd"
+property uuid "9a440678-29a0-49a9-85ba-6e83e810205c"
+package qdp;
+
+
+public class Client
+        extends ilog.rules.xml.IlrXmlObject
+{
+    public string alphaName domain 0,1;
+    public string areaRouteStop domain 0,1;
+    public string autodialGroup domain 0,1;
+    public string clientNmemonic domain 0,1;
+    public string clientNumber domain 0,1;
+    public string defaultChargeTo domain 0,1;
+    public int flag18 domain 0,1;
+    public int flag19 domain 0,1;
+    public int flag20 domain 0,1;
+    public int flagAbnormals domain 0,1;
+    public int flagAddFaxCoverPage domain 0,1;
+    public int flagAddTestReports domain 0,1;
+    public int flagAlert domain 0,1;
+    public int flagCallPriority3 domain 0,1;
+    public int flagCallTiqToClient domain 0,1;
+    public int flagCallTnpsToClient domain 0,1;
+    public int flagCopyToFinalOnly domain 0,1;
+    public int flagCumulative domain 0,1;
+    public int flagFaxMiTrailers domain 0,1;
+    public int flagImageReq domain 0,1;
+    public int flagNumberOfCopies domain 0,1;
+    public int flagPapReminders domain 0,1;
+    public int flagPapSummary domain 0,1;
+    public int flagPartialAccepted domain 0,1;
+    public int flagPatientAddressOnReport domain 0,1;
+    public int flagPatientLetterOnReport domain 0,1;
+    public int flagReportDid domain 0,1;
+    public int flagReportOnlyClient domain 0,1;
+    public int flagRereportPartials domain 0,1;
+    public int flagRestrictClientAccess domain 0,1;
+    public int flagSendCustomPanelId domain 0,1;
+    public int flagStandardResultCodes domain 0,1;
+    public int flagStatus domain 0,1;
+    public int flagTissueSummary domain 0,1;
+    public string masterClientNumber domain 0,1;
+    public string name domain 0,1;
+    public string reportRoutine domain 0,1;
+    public Client();
+    public void setUnknownFlag18();
+    public void setUnknownFlag19();
+    public void setUnknownFlag20();
+    public void setUnknownFlagAbnormals();
+    public void setUnknownFlagAddFaxCoverPage();
+    public void setUnknownFlagAddTestReports();
+    public void setUnknownFlagAlert();
+    public void setUnknownFlagCallPriority3();
+    public void setUnknownFlagCallTiqToClient();
+    public void setUnknownFlagCallTnpsToClient();
+    public void setUnknownFlagCopyToFinalOnly();
+    public void setUnknownFlagCumulative();
+    public void setUnknownFlagFaxMiTrailers();
+    public void setUnknownFlagImageReq();
+    public void setUnknownFlagNumberOfCopies();
+    public void setUnknownFlagPapReminders();
+    public void setUnknownFlagPapSummary();
+    public void setUnknownFlagPartialAccepted();
+    public void setUnknownFlagPatientAddressOnReport();
+    public void setUnknownFlagPatientLetterOnReport();
+    public void setUnknownFlagReportDid();
+    public void setUnknownFlagReportOnlyClient();
+    public void setUnknownFlagRereportPartials();
+    public void setUnknownFlagRestrictClientAccess();
+    public void setUnknownFlagSendCustomPanelId();
+    public void setUnknownFlagStandardResultCodes();
+    public void setUnknownFlagStatus();
+    public void setUnknownFlagTissueSummary();
+}
+

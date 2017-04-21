@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:RulePackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>State</name>
+  <uuid>bc6d7381-cdd4-4c25-940d-ccb2b453a969</uuid>
+</ilog.rules.studio.model.base:RulePackage>

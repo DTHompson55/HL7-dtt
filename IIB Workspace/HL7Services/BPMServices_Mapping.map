@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><mappingRoot xmlns="http://www.ibm.com/2008/ccl/Mapping" domainID="com.ibm.msl.mapping.xml" domainIDExtension="mb" mainMap="true" targetNamespace="default" version="8.0.5.0" xmlns:map="default">
+    <input path="mbsharedlib://QuestHL7OrderLibrary/OrderProcessStartWS.tws_InlineSchema1.xsd"/>
+    <output path="mbsharedlib://QuestHL7OrderLibrary/OrderProcessStartWS.tws_InlineSchema1.xsd"/>
+    <namespaces>
+        <namespace kind="supplement" prefix="io3" uri="http://QDP/OrderProcessStartWS.tws"/>
+        <namespace kind="supplement" prefix="io2" uri="http://QuestHL7Records"/>
+        <namespace kind="supplement" prefix="io" uri="http://QuestHL7Segments"/>
+    </namespaces>
+    <generation engine="xquery"/>
+    <mappingDeclaration name="BPMServices_Mapping">
+        <input namespace="http://QDP/OrderProcessStartWS.tws" path="mb:msg(WriteItResponseType,assembly,XMLNSC,Properties)" var="ComIbmMessageAssembly_WriteItResponseType"/>
+        <output namespace="http://QDP/OrderProcessStartWS.tws" path="mb:msg(WriteItResponseType,assembly,XMLNSC,Properties)" var="ComIbmMessageAssembly_WriteItResponseType1"/>
+        <move>
+            <input path="$ComIbmMessageAssembly_WriteItResponseType/Properties"/>
+            <output path="$ComIbmMessageAssembly_WriteItResponseType1/Properties"/>
+            <override>
+                <assign value="{QuestHL7OrderLibrary}">
+                    <output path="$ComIbmMessageAssembly_WriteItResponseType1/Properties/MessageSet"/>
+                </assign>
+            </override>
+        </move>
+        <assign value="ORM-OK">
+            <output path="$ComIbmMessageAssembly_WriteItResponseType1/WriteItResponseType/returnCode"/>
+        </assign>
+    </mappingDeclaration>
+</mappingRoot>

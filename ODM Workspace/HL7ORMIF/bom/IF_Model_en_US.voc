@@ -1,0 +1,338 @@
+# Vocabulary Properties
+uuid = e74ed856-7c87-4e96-bf29-059b5070ef36
+
+# questhl7records.ORM
+questhl7records.ORM#concept.label = ORM
+questhl7records.ORM.MSH#phrase.action = set the MSH of {this} to {MSH}
+questhl7records.ORM.MSH#phrase.navigation = {MSH} of {this}
+questhl7records.ORM.ORM_ORDERList#phrase.action = set the ORM ORDERs of {this} to {ORM ORDER}
+questhl7records.ORM.ORM_ORDERList#phrase.navigation = {ORM ORDER} of {this}
+questhl7records.ORM.ORM_PATIENT#phrase.action = set the ORM PATIENT of {this} to {ORM PATIENT}
+questhl7records.ORM.ORM_PATIENT#phrase.navigation = {ORM PATIENT} of {this}
+
+# questhl7records.ORU
+questhl7records.ORU#concept.label = ORU
+questhl7records.ORU.MSH#phrase.action = set the MSH of {this} to {MSH}
+questhl7records.ORU.MSH#phrase.navigation = {MSH} of {this}
+questhl7records.ORU.ORU_PATIENT_RESULT#phrase.action = set the ORU PATIENT RESULT of {this} to {ORU PATIENT RESULT}
+questhl7records.ORU.ORU_PATIENT_RESULT#phrase.navigation = {ORU PATIENT RESULT} of {this}
+
+# questhl7segments.MSH
+questhl7segments.MSH#concept.label = MSH
+questhl7segments.MSH.ControlID#phrase.action = set the control ID of {this} to {control ID}
+questhl7segments.MSH.ControlID#phrase.navigation = {control ID} of {this}
+questhl7segments.MSH.MsgType_1#phrase.action = set the msg type 1 of {this} to {msg type 1}
+questhl7segments.MSH.MsgType_1#phrase.navigation = {msg type 1} of {this}
+questhl7segments.MSH.MsgType_2#phrase.action = set the msg type 2 of {this} to {msg type 2}
+questhl7segments.MSH.MsgType_2#phrase.navigation = {msg type 2} of {this}
+questhl7segments.MSH.MsgType_3#phrase.action = set the msg type 3 of {this} to {msg type 3}
+questhl7segments.MSH.MsgType_3#phrase.navigation = {msg type 3} of {this}
+questhl7segments.MSH.OriginatingFacility#phrase.action = set the originating facility of {this} to {originating facility}
+questhl7segments.MSH.OriginatingFacility#phrase.navigation = {originating facility} of {this}
+questhl7segments.MSH.ReceivingFacility#phrase.action = set the receiving facility of {this} to {receiving facility}
+questhl7segments.MSH.ReceivingFacility#phrase.navigation = {receiving facility} of {this}
+
+# questhl7segments.NTE
+questhl7segments.NTE#concept.label = NTE
+questhl7segments.NTE.Comment_1#phrase.action = set the comment 1 of {this} to {comment 1}
+questhl7segments.NTE.Comment_1#phrase.navigation = {comment 1} of {this}
+questhl7segments.NTE.Comment_2#phrase.action = set the comment 2 of {this} to {comment 2}
+questhl7segments.NTE.Comment_2#phrase.navigation = {comment 2} of {this}
+questhl7segments.NTE.Comment_3#phrase.action = set the comment 3 of {this} to {comment 3}
+questhl7segments.NTE.Comment_3#phrase.navigation = {comment 3} of {this}
+questhl7segments.NTE.Comment_4#phrase.action = set the comment 4 of {this} to {comment 4}
+questhl7segments.NTE.Comment_4#phrase.navigation = {comment 4} of {this}
+questhl7segments.NTE.Comment_5#phrase.action = set the comment 5 of {this} to {comment 5}
+questhl7segments.NTE.Comment_5#phrase.navigation = {comment 5} of {this}
+questhl7segments.NTE.Comment_6#phrase.action = set the comment 6 of {this} to {comment 6}
+questhl7segments.NTE.Comment_6#phrase.navigation = {comment 6} of {this}
+questhl7segments.NTE.Comment_7#phrase.action = set the comment 7 of {this} to {comment 7}
+questhl7segments.NTE.Comment_7#phrase.navigation = {comment 7} of {this}
+questhl7segments.NTE.NTESequenceNumber#phrase.action = set the NTESequence number of {this} to {NTESequence number}
+questhl7segments.NTE.NTESequenceNumber#phrase.navigation = {NTESequence number} of {this}
+questhl7segments.NTE.ReportComment#phrase.action = set the report comment of {this} to {report comment}
+questhl7segments.NTE.ReportComment#phrase.navigation = {report comment} of {this}
+
+# questhl7segments.OBR
+questhl7segments.OBR#concept.label = OBR
+questhl7segments.OBR.AccessionNumber#phrase.action = set the accession number of {this} to {accession number}
+questhl7segments.OBR.AccessionNumber#phrase.navigation = {accession number} of {this}
+questhl7segments.OBR.PlacerOrderNumber#phrase.action = set the placer order number of {this} to {placer order number}
+questhl7segments.OBR.PlacerOrderNumber#phrase.navigation = {placer order number} of {this}
+questhl7segments.OBR.SequenceNumber#phrase.action = set the sequence number of {this} to {sequence number}
+questhl7segments.OBR.SequenceNumber#phrase.navigation = {sequence number} of {this}
+questhl7segments.OBR.UnitAndOrderCodes_1#phrase.action = set the unit and order codes 1 of {this} to {unit and order codes 1}
+questhl7segments.OBR.UnitAndOrderCodes_1#phrase.navigation = {unit and order codes 1} of {this}
+questhl7segments.OBR.UnitAndOrderCodes_10#phrase.action = set the unit and order codes 10 of {this} to {unit and order codes 10}
+questhl7segments.OBR.UnitAndOrderCodes_10#phrase.navigation = {unit and order codes 10} of {this}
+questhl7segments.OBR.UnitAndOrderCodes_11#phrase.action = set the unit and order codes 11 of {this} to {unit and order codes 11}
+questhl7segments.OBR.UnitAndOrderCodes_11#phrase.navigation = {unit and order codes 11} of {this}
+questhl7segments.OBR.UnitAndOrderCodes_12#phrase.action = set the unit and order codes 12 of {this} to {unit and order codes 12}
+questhl7segments.OBR.UnitAndOrderCodes_12#phrase.navigation = {unit and order codes 12} of {this}
+questhl7segments.OBR.UnitAndOrderCodes_13#phrase.action = set the unit and order codes 13 of {this} to {unit and order codes 13}
+questhl7segments.OBR.UnitAndOrderCodes_13#phrase.navigation = {unit and order codes 13} of {this}
+questhl7segments.OBR.UnitAndOrderCodes_2#phrase.action = set the unit and order codes 2 of {this} to {unit and order codes 2}
+questhl7segments.OBR.UnitAndOrderCodes_2#phrase.navigation = {unit and order codes 2} of {this}
+questhl7segments.OBR.UnitAndOrderCodes_3#phrase.action = set the unit and order codes 3 of {this} to {unit and order codes 3}
+questhl7segments.OBR.UnitAndOrderCodes_3#phrase.navigation = {unit and order codes 3} of {this}
+questhl7segments.OBR.UnitAndOrderCodes_4#phrase.action = set the unit and order codes 4 of {this} to {unit and order codes 4}
+questhl7segments.OBR.UnitAndOrderCodes_4#phrase.navigation = {unit and order codes 4} of {this}
+questhl7segments.OBR.UnitAndOrderCodes_5#phrase.action = set the unit and order codes 5 of {this} to {unit and order codes 5}
+questhl7segments.OBR.UnitAndOrderCodes_5#phrase.navigation = {unit and order codes 5} of {this}
+questhl7segments.OBR.UnitAndOrderCodes_6#phrase.action = set the unit and order codes 6 of {this} to {unit and order codes 6}
+questhl7segments.OBR.UnitAndOrderCodes_6#phrase.navigation = {unit and order codes 6} of {this}
+questhl7segments.OBR.UnitAndOrderCodes_7#phrase.action = set the unit and order codes 7 of {this} to {unit and order codes 7}
+questhl7segments.OBR.UnitAndOrderCodes_7#phrase.navigation = {unit and order codes 7} of {this}
+questhl7segments.OBR.UnitAndOrderCodes_8#phrase.action = set the unit and order codes 8 of {this} to {unit and order codes 8}
+questhl7segments.OBR.UnitAndOrderCodes_8#phrase.navigation = {unit and order codes 8} of {this}
+questhl7segments.OBR.UnitAndOrderCodes_9#phrase.action = set the unit and order codes 9 of {this} to {unit and order codes 9}
+questhl7segments.OBR.UnitAndOrderCodes_9#phrase.navigation = {unit and order codes 9} of {this}
+questhl7segments.OBR.isReReportable#phrase.action = make it {re reportable} that {this} is re reportable
+questhl7segments.OBR.isReReportable#phrase.navigation = {this} is re reportable
+questhl7segments.OBR.isReportSent#phrase.action = make it {report sent} that {this} is report sent
+questhl7segments.OBR.isReportSent#phrase.navigation = {this} is report sent
+questhl7segments.OBR.isReportable#phrase.action = make it {reportable} that {this} is reportable
+questhl7segments.OBR.isReportable#phrase.navigation = {this} is reportable
+
+# questhl7segments.OBX
+questhl7segments.OBX#concept.label = OBX
+questhl7segments.OBX.AbnormalFlags#phrase.action = set the abnormal flags of {this} to {abnormal flags}
+questhl7segments.OBX.AbnormalFlags#phrase.navigation = {abnormal flags} of {this}
+questhl7segments.OBX.AccessionNumber#phrase.action = set the accession number of {this} to {accession number}
+questhl7segments.OBX.AccessionNumber#phrase.navigation = {accession number} of {this}
+questhl7segments.OBX.Control#phrase.action = set the control of {this} to {control}
+questhl7segments.OBX.Control#phrase.navigation = {control} of {this}
+questhl7segments.OBX.NatureOfAbnoralFlags#phrase.action = set the nature of abnoral flags of {this} to {nature of abnoral flags}
+questhl7segments.OBX.NatureOfAbnoralFlags#phrase.navigation = {nature of abnoral flags} of {this}
+questhl7segments.OBX.OBXSequenceNumber#phrase.action = set the OBXSequence number of {this} to {OBXSequence number}
+questhl7segments.OBX.OBXSequenceNumber#phrase.navigation = {OBXSequence number} of {this}
+questhl7segments.OBX.ODMStatus#phrase.action = set the ODMStatus of {this} to {ODMStatus}
+questhl7segments.OBX.ODMStatus#phrase.navigation = {ODMStatus} of {this}
+questhl7segments.OBX.ObservationID#phrase.action = set the observation ID of {this} to {observation ID}
+questhl7segments.OBX.ObservationID#phrase.navigation = {observation ID} of {this}
+questhl7segments.OBX.ObservationName#phrase.action = set the observation name of {this} to {observation name}
+questhl7segments.OBX.ObservationName#phrase.navigation = {observation name} of {this}
+questhl7segments.OBX.ObservationRange#phrase.action = set the observation range of {this} to {observation range}
+questhl7segments.OBX.ObservationRange#phrase.navigation = {observation range} of {this}
+questhl7segments.OBX.ObservationResultStatus#phrase.action = set the observation result status of {this} to {observation result status}
+questhl7segments.OBX.ObservationResultStatus#phrase.navigation = {observation result status} of {this}
+questhl7segments.OBX.ObservationUnits#phrase.action = set the observation units of {this} to {observation units}
+questhl7segments.OBX.ObservationUnits#phrase.navigation = {observation units} of {this}
+questhl7segments.OBX.ObservationValue#phrase.action = set the observation value of {this} to {observation value}
+questhl7segments.OBX.ObservationValue#phrase.navigation = {observation value} of {this}
+
+# questhl7segments.ORC
+questhl7segments.ORC#concept.label = ORC
+questhl7segments.ORC.AccessionNumber#phrase.action = set the accession number of {this} to {accession number}
+questhl7segments.ORC.AccessionNumber#phrase.navigation = {accession number} of {this}
+questhl7segments.ORC.AltPatientID#phrase.action = set the alt patient ID of {this} to {alt patient ID}
+questhl7segments.ORC.AltPatientID#phrase.navigation = {alt patient ID} of {this}
+questhl7segments.ORC.ChangeOrderDate_1#phrase.action = set the change order date 1 of {this} to {change order date 1}
+questhl7segments.ORC.ChangeOrderDate_1#phrase.navigation = {change order date 1} of {this}
+questhl7segments.ORC.ChangeOrderDate_2#phrase.action = set the change order date 2 of {this} to {change order date 2}
+questhl7segments.ORC.ChangeOrderDate_2#phrase.navigation = {change order date 2} of {this}
+questhl7segments.ORC.ClientID#phrase.action = set the client ID of {this} to {client ID}
+questhl7segments.ORC.ClientID#phrase.navigation = {client ID} of {this}
+questhl7segments.ORC.ClientMnemonic#phrase.action = set the client mnemonic of {this} to {client mnemonic}
+questhl7segments.ORC.ClientMnemonic#phrase.navigation = {client mnemonic} of {this}
+questhl7segments.ORC.CollectionDate#phrase.action = set the collection date of {this} to {collection date}
+questhl7segments.ORC.CollectionDate#phrase.navigation = {collection date} of {this}
+questhl7segments.ORC.Maxilog#phrase.action = set the maxilog of {this} to {maxilog}
+questhl7segments.ORC.Maxilog#phrase.navigation = {maxilog} of {this}
+questhl7segments.ORC.Minilog#phrase.action = set the minilog of {this} to {minilog}
+questhl7segments.ORC.Minilog#phrase.navigation = {minilog} of {this}
+questhl7segments.ORC.OrderControl#phrase.action = set the order control of {this} to {order control}
+questhl7segments.ORC.OrderControl#phrase.navigation = {order control} of {this}
+questhl7segments.ORC.OrderStatus#phrase.action = set the order status of {this} to {order status}
+questhl7segments.ORC.OrderStatus#phrase.navigation = {order status} of {this}
+questhl7segments.ORC.OriginiatingSiteCode#phrase.action = set the originiating site code of {this} to {originiating site code}
+questhl7segments.ORC.OriginiatingSiteCode#phrase.navigation = {originiating site code} of {this}
+questhl7segments.ORC.PhysicianUPIN#phrase.action = set the physician UPIN of {this} to {physician UPIN}
+questhl7segments.ORC.PhysicianUPIN#phrase.navigation = {physician UPIN} of {this}
+questhl7segments.ORC.ResponseFlag#phrase.action = set the response flag of {this} to {response flag}
+questhl7segments.ORC.ResponseFlag#phrase.navigation = {response flag} of {this}
+questhl7segments.ORC.Specimens_1#phrase.action = set the specimens 1 of {this} to {specimens 1}
+questhl7segments.ORC.Specimens_1#phrase.navigation = {specimens 1} of {this}
+questhl7segments.ORC.Specimens_10#phrase.action = set the specimens 10 of {this} to {specimens 10}
+questhl7segments.ORC.Specimens_10#phrase.navigation = {specimens 10} of {this}
+questhl7segments.ORC.Specimens_2#phrase.action = set the specimens 2 of {this} to {specimens 2}
+questhl7segments.ORC.Specimens_2#phrase.navigation = {specimens 2} of {this}
+questhl7segments.ORC.Specimens_3#phrase.action = set the specimens 3 of {this} to {specimens 3}
+questhl7segments.ORC.Specimens_3#phrase.navigation = {specimens 3} of {this}
+questhl7segments.ORC.Specimens_4#phrase.action = set the specimens 4 of {this} to {specimens 4}
+questhl7segments.ORC.Specimens_4#phrase.navigation = {specimens 4} of {this}
+questhl7segments.ORC.Specimens_5#phrase.action = set the specimens 5 of {this} to {specimens 5}
+questhl7segments.ORC.Specimens_5#phrase.navigation = {specimens 5} of {this}
+questhl7segments.ORC.Specimens_6#phrase.action = set the specimens 6 of {this} to {specimens 6}
+questhl7segments.ORC.Specimens_6#phrase.navigation = {specimens 6} of {this}
+questhl7segments.ORC.Specimens_7#phrase.action = set the specimens 7 of {this} to {specimens 7}
+questhl7segments.ORC.Specimens_7#phrase.navigation = {specimens 7} of {this}
+questhl7segments.ORC.Specimens_8#phrase.action = set the specimens 8 of {this} to {specimens 8}
+questhl7segments.ORC.Specimens_8#phrase.navigation = {specimens 8} of {this}
+questhl7segments.ORC.Specimens_9#phrase.action = set the specimens 9 of {this} to {specimens 9}
+questhl7segments.ORC.Specimens_9#phrase.navigation = {specimens 9} of {this}
+questhl7segments.ORC.WhoLoggedItUPIN#phrase.action = set the who logged it UPIN of {this} to {who logged it UPIN}
+questhl7segments.ORC.WhoLoggedItUPIN#phrase.navigation = {who logged it UPIN} of {this}
+
+# questhl7segments.ORM_ORDER
+questhl7segments.ORM_ORDER#concept.label = ORM ORDER
+questhl7segments.ORM_ORDER.ORC#phrase.action = set the ORC of {this} to {ORC}
+questhl7segments.ORM_ORDER.ORC#phrase.navigation = {ORC} of {this}
+questhl7segments.ORM_ORDER.ORM_ORDER_DETAIL#phrase.action = set the ORM ORDER DETAIL of {this} to {ORM ORDER DETAIL}
+questhl7segments.ORM_ORDER.ORM_ORDER_DETAIL#phrase.navigation = {ORM ORDER DETAIL} of {this}
+
+# questhl7segments.ORM_ORDER_DETAIL
+questhl7segments.ORM_ORDER_DETAIL#concept.label = ORM ORDER DETAIL
+questhl7segments.ORM_ORDER_DETAIL.OBR#phrase.action = set the OBR of {this} to {OBR}
+questhl7segments.ORM_ORDER_DETAIL.OBR#phrase.navigation = {OBR} of {this}
+questhl7segments.ORM_ORDER_DETAIL.ZSIList#phrase.action = set the ZSIs of {this} to {ZSI}
+questhl7segments.ORM_ORDER_DETAIL.ZSIList#phrase.navigation = {ZSI} of {this}
+
+# questhl7segments.ORM_PATIENT
+questhl7segments.ORM_PATIENT#concept.label = ORM PATIENT
+questhl7segments.ORM_PATIENT.PID#phrase.action = set the PID of {this} to {PID}
+questhl7segments.ORM_PATIENT.PID#phrase.navigation = {PID} of {this}
+
+# questhl7segments.ORU_OBSERVATION
+questhl7segments.ORU_OBSERVATION#concept.label = ORU OBSERVATION
+questhl7segments.ORU_OBSERVATION.NTEList#phrase.action = set the NTEs of {this} to {NTE}
+questhl7segments.ORU_OBSERVATION.NTEList#phrase.navigation = {NTE} of {this}
+questhl7segments.ORU_OBSERVATION.OBX#phrase.action = set the OBX of {this} to {OBX}
+questhl7segments.ORU_OBSERVATION.OBX#phrase.navigation = {OBX} of {this}
+
+# questhl7segments.ORU_ORDER_OBSERVATION
+questhl7segments.ORU_ORDER_OBSERVATION#concept.label = ORU ORDER OBSERVATION
+questhl7segments.ORU_ORDER_OBSERVATION.NTEList#phrase.action = set the NTEs of {this} to {NTE}
+questhl7segments.ORU_ORDER_OBSERVATION.NTEList#phrase.navigation = {NTE} of {this}
+questhl7segments.ORU_ORDER_OBSERVATION.OBR#phrase.action = set the OBR of {this} to {OBR}
+questhl7segments.ORU_ORDER_OBSERVATION.OBR#phrase.navigation = {OBR} of {this}
+questhl7segments.ORU_ORDER_OBSERVATION.ORC#phrase.action = set the ORC of {this} to {ORC}
+questhl7segments.ORU_ORDER_OBSERVATION.ORC#phrase.navigation = {ORC} of {this}
+questhl7segments.ORU_ORDER_OBSERVATION.ORU_OBSERVATIONList#phrase.action = set the ORU OBSERVATIONs of {this} to {ORU OBSERVATION}
+questhl7segments.ORU_ORDER_OBSERVATION.ORU_OBSERVATIONList#phrase.navigation = {ORU OBSERVATION} of {this}
+questhl7segments.ORU_ORDER_OBSERVATION.ZORList#phrase.action = set the ZORs of {this} to {ZOR}
+questhl7segments.ORU_ORDER_OBSERVATION.ZORList#phrase.navigation = {ZOR} of {this}
+
+# questhl7segments.ORU_PATIENT
+questhl7segments.ORU_PATIENT#concept.label = ORU PATIENT
+questhl7segments.ORU_PATIENT.NTEList#phrase.action = set the NTEs of {this} to {NTE}
+questhl7segments.ORU_PATIENT.NTEList#phrase.navigation = {NTE} of {this}
+questhl7segments.ORU_PATIENT.PID#phrase.action = set the PID of {this} to {PID}
+questhl7segments.ORU_PATIENT.PID#phrase.navigation = {PID} of {this}
+questhl7segments.ORU_PATIENT.ZRQList#phrase.action = set the ZRQs of {this} to {ZRQ}
+questhl7segments.ORU_PATIENT.ZRQList#phrase.navigation = {ZRQ} of {this}
+
+# questhl7segments.ORU_PATIENT_RESULT
+questhl7segments.ORU_PATIENT_RESULT#concept.label = ORU PATIENT RESULT
+questhl7segments.ORU_PATIENT_RESULT.ORU_ORDER_OBSERVATIONList#phrase.action = set the ORU ORDER OBSERVATIONs of {this} to {ORU ORDER OBSERVATION}
+questhl7segments.ORU_PATIENT_RESULT.ORU_ORDER_OBSERVATIONList#phrase.navigation = {ORU ORDER OBSERVATION} of {this}
+questhl7segments.ORU_PATIENT_RESULT.ORU_PATIENT#phrase.action = set the ORU PATIENT of {this} to {ORU PATIENT}
+questhl7segments.ORU_PATIENT_RESULT.ORU_PATIENT#phrase.navigation = {ORU PATIENT} of {this}
+
+# questhl7segments.PID
+questhl7segments.PID#concept.label = PID
+questhl7segments.PID.AccessionNumber#phrase.action = set the accession number of {this} to {accession number}
+questhl7segments.PID.AccessionNumber#phrase.navigation = {accession number} of {this}
+questhl7segments.PID.AdministrativeSex#phrase.action = set the administrative sex of {this} to {administrative sex}
+questhl7segments.PID.AdministrativeSex#phrase.navigation = {administrative sex} of {this}
+questhl7segments.PID.Birthdate#phrase.action = set the birthdate of {this} to {birthdate}
+questhl7segments.PID.Birthdate#phrase.navigation = {birthdate} of {this}
+questhl7segments.PID.ChartId#phrase.action = set the chart id of {this} to {chart id}
+questhl7segments.PID.ChartId#phrase.navigation = {chart id} of {this}
+questhl7segments.PID.EnterpriseID#phrase.action = set the enterprise ID of {this} to {enterprise ID}
+questhl7segments.PID.EnterpriseID#phrase.navigation = {enterprise ID} of {this}
+questhl7segments.PID.MRN#phrase.action = set the MRN of {this} to {MRN}
+questhl7segments.PID.MRN#phrase.navigation = {MRN} of {this}
+questhl7segments.PID.PIDSequence#phrase.action = set the PIDSequence of {this} to {PIDSequence}
+questhl7segments.PID.PIDSequence#phrase.navigation = {PIDSequence} of {this}
+questhl7segments.PID.PatientAccountNum#phrase.action = set the patient account num of {this} to {patient account num}
+questhl7segments.PID.PatientAccountNum#phrase.navigation = {patient account num} of {this}
+questhl7segments.PID.PatientID1#phrase.action = set the patient ID1 of {this} to {patient ID1}
+questhl7segments.PID.PatientID1#phrase.navigation = {patient ID1} of {this}
+questhl7segments.PID.PatientID2#phrase.action = set the patient ID2 of {this} to {patient ID2}
+questhl7segments.PID.PatientID2#phrase.navigation = {patient ID2} of {this}
+
+# questhl7segments.ZOR
+questhl7segments.ZOR#concept.label = ZOR
+questhl7segments.ZOR.ZORSequenceNumber#phrase.action = set the ZORSequence number of {this} to {ZORSequence number}
+questhl7segments.ZOR.ZORSequenceNumber#phrase.navigation = {ZORSequence number} of {this}
+
+# questhl7segments.ZRQ
+questhl7segments.ZRQ#concept.label = ZRQ
+questhl7segments.ZRQ.AccessionNumber#phrase.action = set the accession number of {this} to {accession number}
+questhl7segments.ZRQ.AccessionNumber#phrase.navigation = {accession number} of {this}
+questhl7segments.ZRQ.ZRQSequenceNumber#phrase.action = set the ZRQSequence number of {this} to {ZRQSequence number}
+questhl7segments.ZRQ.ZRQSequenceNumber#phrase.navigation = {ZRQSequence number} of {this}
+questhl7segments.ZRQ.zrqData_1#phrase.action = set the zrq data 1 of {this} to {zrq data 1}
+questhl7segments.ZRQ.zrqData_1#phrase.navigation = {zrq data 1} of {this}
+questhl7segments.ZRQ.zrqData_10#phrase.action = set the zrq data 10 of {this} to {zrq data 10}
+questhl7segments.ZRQ.zrqData_10#phrase.navigation = {zrq data 10} of {this}
+questhl7segments.ZRQ.zrqData_11#phrase.action = set the zrq data 11 of {this} to {zrq data 11}
+questhl7segments.ZRQ.zrqData_11#phrase.navigation = {zrq data 11} of {this}
+questhl7segments.ZRQ.zrqData_12#phrase.action = set the zrq data 12 of {this} to {zrq data 12}
+questhl7segments.ZRQ.zrqData_12#phrase.navigation = {zrq data 12} of {this}
+questhl7segments.ZRQ.zrqData_13#phrase.action = set the zrq data 13 of {this} to {zrq data 13}
+questhl7segments.ZRQ.zrqData_13#phrase.navigation = {zrq data 13} of {this}
+questhl7segments.ZRQ.zrqData_14#phrase.action = set the zrq data 14 of {this} to {zrq data 14}
+questhl7segments.ZRQ.zrqData_14#phrase.navigation = {zrq data 14} of {this}
+questhl7segments.ZRQ.zrqData_15#phrase.action = set the zrq data 15 of {this} to {zrq data 15}
+questhl7segments.ZRQ.zrqData_15#phrase.navigation = {zrq data 15} of {this}
+questhl7segments.ZRQ.zrqData_16#phrase.action = set the zrq data 16 of {this} to {zrq data 16}
+questhl7segments.ZRQ.zrqData_16#phrase.navigation = {zrq data 16} of {this}
+questhl7segments.ZRQ.zrqData_17#phrase.action = set the zrq data 17 of {this} to {zrq data 17}
+questhl7segments.ZRQ.zrqData_17#phrase.navigation = {zrq data 17} of {this}
+questhl7segments.ZRQ.zrqData_18#phrase.action = set the zrq data 18 of {this} to {zrq data 18}
+questhl7segments.ZRQ.zrqData_18#phrase.navigation = {zrq data 18} of {this}
+questhl7segments.ZRQ.zrqData_19#phrase.action = set the zrq data 19 of {this} to {zrq data 19}
+questhl7segments.ZRQ.zrqData_19#phrase.navigation = {zrq data 19} of {this}
+questhl7segments.ZRQ.zrqData_2#phrase.action = set the zrq data 2 of {this} to {zrq data 2}
+questhl7segments.ZRQ.zrqData_2#phrase.navigation = {zrq data 2} of {this}
+questhl7segments.ZRQ.zrqData_20#phrase.action = set the zrq data 20 of {this} to {zrq data 20}
+questhl7segments.ZRQ.zrqData_20#phrase.navigation = {zrq data 20} of {this}
+questhl7segments.ZRQ.zrqData_21#phrase.action = set the zrq data 21 of {this} to {zrq data 21}
+questhl7segments.ZRQ.zrqData_21#phrase.navigation = {zrq data 21} of {this}
+questhl7segments.ZRQ.zrqData_22#phrase.action = set the zrq data 22 of {this} to {zrq data 22}
+questhl7segments.ZRQ.zrqData_22#phrase.navigation = {zrq data 22} of {this}
+questhl7segments.ZRQ.zrqData_23#phrase.action = set the zrq data 23 of {this} to {zrq data 23}
+questhl7segments.ZRQ.zrqData_23#phrase.navigation = {zrq data 23} of {this}
+questhl7segments.ZRQ.zrqData_3#phrase.action = set the zrq data 3 of {this} to {zrq data 3}
+questhl7segments.ZRQ.zrqData_3#phrase.navigation = {zrq data 3} of {this}
+questhl7segments.ZRQ.zrqData_4#phrase.action = set the zrq data 4 of {this} to {zrq data 4}
+questhl7segments.ZRQ.zrqData_4#phrase.navigation = {zrq data 4} of {this}
+questhl7segments.ZRQ.zrqData_5#phrase.action = set the zrq data 5 of {this} to {zrq data 5}
+questhl7segments.ZRQ.zrqData_5#phrase.navigation = {zrq data 5} of {this}
+questhl7segments.ZRQ.zrqData_6#phrase.action = set the zrq data 6 of {this} to {zrq data 6}
+questhl7segments.ZRQ.zrqData_6#phrase.navigation = {zrq data 6} of {this}
+questhl7segments.ZRQ.zrqData_7#phrase.action = set the zrq data 7 of {this} to {zrq data 7}
+questhl7segments.ZRQ.zrqData_7#phrase.navigation = {zrq data 7} of {this}
+questhl7segments.ZRQ.zrqData_8#phrase.action = set the zrq data 8 of {this} to {zrq data 8}
+questhl7segments.ZRQ.zrqData_8#phrase.navigation = {zrq data 8} of {this}
+questhl7segments.ZRQ.zrqData_9#phrase.action = set the zrq data 9 of {this} to {zrq data 9}
+questhl7segments.ZRQ.zrqData_9#phrase.navigation = {zrq data 9} of {this}
+
+# questhl7segments.ZSI
+questhl7segments.ZSI#concept.label = ZSI
+questhl7segments.ZSI.ContainerType#phrase.action = set the container type of {this} to {container type}
+questhl7segments.ZSI.ContainerType#phrase.navigation = {container type} of {this}
+questhl7segments.ZSI.DepartmentIDs_1#phrase.action = set the department IDs 1 of {this} to {department IDs 1}
+questhl7segments.ZSI.DepartmentIDs_1#phrase.navigation = {department IDs 1} of {this}
+questhl7segments.ZSI.DepartmentIDs_2#phrase.action = set the department IDs 2 of {this} to {department IDs 2}
+questhl7segments.ZSI.DepartmentIDs_2#phrase.navigation = {department IDs 2} of {this}
+questhl7segments.ZSI.DepartmentIDs_3#phrase.action = set the department IDs 3 of {this} to {department IDs 3}
+questhl7segments.ZSI.DepartmentIDs_3#phrase.navigation = {department IDs 3} of {this}
+questhl7segments.ZSI.DepartmentIDs_4#phrase.action = set the department IDs 4 of {this} to {department IDs 4}
+questhl7segments.ZSI.DepartmentIDs_4#phrase.navigation = {department IDs 4} of {this}
+questhl7segments.ZSI.IntraLabManifestIndicator#phrase.action = set the intra lab manifest indicator of {this} to {intra lab manifest indicator}
+questhl7segments.ZSI.IntraLabManifestIndicator#phrase.navigation = {intra lab manifest indicator} of {this}
+questhl7segments.ZSI.LabelDevice#phrase.action = set the label device of {this} to {label device}
+questhl7segments.ZSI.LabelDevice#phrase.navigation = {label device} of {this}
+questhl7segments.ZSI.LableFormat#phrase.action = set the lable format of {this} to {lable format}
+questhl7segments.ZSI.LableFormat#phrase.navigation = {lable format} of {this}
+questhl7segments.ZSI.SampleID#phrase.action = set the sample ID of {this} to {sample ID}
+questhl7segments.ZSI.SampleID#phrase.navigation = {sample ID} of {this}
+questhl7segments.ZSI.Sendouts#phrase.action = set the sendouts of {this} to {sendouts}
+questhl7segments.ZSI.Sendouts#phrase.navigation = {sendouts} of {this}
+questhl7segments.ZSI.StorageSite#phrase.action = set the storage site of {this} to {storage site}
+questhl7segments.ZSI.StorageSite#phrase.navigation = {storage site} of {this}
+questhl7segments.ZSI.UnitCodeNumber#phrase.action = set the unit code number of {this} to {unit code number}
+questhl7segments.ZSI.UnitCodeNumber#phrase.navigation = {unit code number} of {this}

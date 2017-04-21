@@ -1,0 +1,16 @@
+package DevTest {
+   use decisionType;
+   use decisionAnswer;
+   rule DefaultRule {
+      property ilog.rules.business_name = "DefaultRule";
+      property ilog.rules.package_name = "DevTest";
+      property status = "new";
+      when {
+         IlrContext() from ?context;
+         evaluate ((decisionType.equals("ORM")));
+      } then {
+         decisionAnswer.add("An ORM Answer");
+      }
+   }
+}
+

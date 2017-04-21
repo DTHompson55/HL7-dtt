@@ -1,0 +1,8 @@
+variables {
+  hl7.demo.ibm.com.ORU_Java Java_ORU;
+  hl7.demo.ibm.com.TheClient Java_Client;
+  hl7.demo.ibm.com.OBR_Java Java_OBR;
+  hl7.demo.ibm.com.OBX_Java Java_OBX;
+  hl7.demo.ibm.com.HL7_Helper HL7_Util;
+  hl7.demo.ibm.com.ORM_Java Java_ORM;
+}

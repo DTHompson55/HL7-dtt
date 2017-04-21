@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:VariableSet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>IFVbls</name>
+  <uuid>979e43ca-c661-4c3f-9471-e0ea26842895</uuid>
+</ilog.rules.studio.model.base:VariableSet>

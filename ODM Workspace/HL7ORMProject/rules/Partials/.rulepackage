@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:RulePackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>Partials</name>
+  <uuid>85013881-6afa-4b0d-88ce-f7cca8d77c6f</uuid>
+</ilog.rules.studio.model.base:RulePackage>

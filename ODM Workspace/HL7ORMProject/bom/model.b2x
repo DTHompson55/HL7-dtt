@@ -1,0 +1,589 @@
+<b2x:translation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://schemas.ilog.com/JRules/1.1/Translation ilog/rules/schemas/1_1/b2x.xsd"
+        xmlns:b2x="http://schemas.ilog.com/JRules/1.1/Translation">
+    <id>09b11363-a06c-4a88-bdfa-b660b0dfebbc</id>
+    <class>
+        <businessName>questhl7records.ORU</businessName>
+        <import>questhl7records.*</import>
+        <import>questhl7segments.*</import>
+        <import>java.util.Vector</import>
+        <attribute>
+            <name>thePID</name>
+            <getter language="irl"><![CDATA[
+            ORU_PATIENT_RESULT a = this.ORU_PATIENT_RESULT;
+ORU_PATIENT b = a.ORU_PATIENT;
+return b.PID;
+            ]]></getter>
+        </attribute>
+        <method>
+            <name>AllOBX</name>
+            <body language="irl"><![CDATA[
+            Vector vObx = new Vector();
+ORU_PATIENT_RESULT res = this.ORU_PATIENT_RESULT;
+Vector v = res.ORU_ORDER_OBSERVATIONList;
+if ( v == null ) return vObx;
+int n = 0;
+for (int i = 0; i < v.size(); i++ ){
+System.out.println("xxx I is "+i);
+	ORU_ORDER_OBSERVATION oo = (ORU_ORDER_OBSERVATION)v.elementAt(i);
+	if (oo == null) {
+	System.out.println("xxx OO is NUll");
+	return vObx;
+	}
+	Vector voo = oo.ORU_OBSERVATIONList;
+	if (voo == null){
+	System.out.println("xxx VOO is NUll");
+  return vObx;
+  }
+  for (int j = 0; j < voo.size(); j++ ){
+	System.out.println("xxx J is "+j);
+	    ORU_OBSERVATION obs = (ORU_OBSERVATION)voo.elementAt(j);
+	    if (obs == null){
+	    System.out.println("xxx OBS is NUll");
+	    continue;
+	    }
+	    vObx.add(obs.OBX);
+   } 
+}
+return vObx;
+            ]]></body>
+        </method>
+        <method>
+            <name>GetOrderObservationByOBXID</name>
+            <parameter type="java.lang.String"/>
+            <body language="irl"><![CDATA[
+            System.out.println("Searching ORU for Observations with "+compareString);
+String id = compareString;
+boolean retval = false;
+ORU_PATIENT_RESULT res = this.ORU_PATIENT_RESULT;
+if (res == null) {System.out.println("Patient Result is null"); return null;}
+Vector vooo = res.ORU_ORDER_OBSERVATIONList;
+if ( vooo == null ) {System.out.println("Vooo is null"); return null;}
+int n = 0;
+for (int i = 0; i < vooo.size(); i++ ){
+	ORU_ORDER_OBSERVATION oo = (ORU_ORDER_OBSERVATION)vooo.elementAt(i);
+	if (oo == null) {
+	continue;
+	}
+	OBR obr = oo.OBR;
+	if ( obr.UnitAndOrderCodes_1 == null) {System.out.println ("null value in unit order code1 "+compareString);return null;}
+	if ( obr.UnitAndOrderCodes_2 == null) {System.out.println ("null value in unit order code2 "+compareString);return null;}
+	if ( obr.UnitAndOrderCodes_3 == null) {System.out.println ("null value in unit order code3 "+compareString);return null;}	
+
+	
+	if ( obr.UnitAndOrderCodes_1.equals(id)) {System.out.println ("found OBR ID by code1 "+compareString);return oo;}
+	if ( obr.UnitAndOrderCodes_2.equals(id)) {System.out.println ("found OBR ID by code2 "+compareString);return oo;}
+	if ( obr.UnitAndOrderCodes_3.equals(id)) {System.out.println ("found OBR ID by code3 "+compareString);return oo;}	
+}
+return null;
+            ]]></body>
+        </method>
+        <method>
+            <name>OrderStatus</name>
+            <parameter type="java.lang.String"/>
+            <body language="irl"><![CDATA[
+            return true;
+            ]]></body>
+        </method>
+        <method>
+            <name>ResultEvent</name>
+            <body language="irl"><![CDATA[
+            return "TSH";
+            ]]></body>
+        </method>
+        <method>
+            <name>TestResult</name>
+            <parameter type="java.lang.String"/>
+            <body language="irl"><![CDATA[
+            return true;
+            ]]></body>
+        </method>
+        <method>
+            <name>allOrdersReady</name>
+            <body language="irl"><![CDATA[
+            //
+// This is used to test that all orders are ready. Called when 'no partials' is set
+//
+boolean retval = false;
+ORU_PATIENT_RESULT res = this.ORU_PATIENT_RESULT;
+Vector v = res.ORU_ORDER_OBSERVATIONList;
+if ( v == null ) return retval;
+int n = 0;
+for (int i = 0; i < v.size(); i++ ){
+	ORU_ORDER_OBSERVATION oo = (ORU_ORDER_OBSERVATION)v.elementAt(i);
+	if (oo == null) {
+	continue;
+	}
+	OBR obr = oo.OBR;
+	if (! obr.isReportable) return false;
+  } 
+return true;
+            ]]></body>
+        </method>
+        <method>
+            <name>checkReReportables</name>
+            <parameter type="int"/>
+            <body language="irl"><![CDATA[
+            //
+// This is used to mark things as rereportable, when the isSent flag is set and isReReportable is set.
+//
+boolean retval = false;
+boolean bAllowReReportables = (flagReReportable != 0);
+
+//System.out.println("The bAllowReReportables was "+bAllowReReportables+" and the flagReReportables was "+ flagReReportable);
+
+ORU_PATIENT_RESULT res = this.ORU_PATIENT_RESULT;
+Vector v = res.ORU_ORDER_OBSERVATIONList;
+if ( v == null ) return retval;
+int n = 0;
+for (int i = 0; i < v.size(); i++ ){
+	ORU_ORDER_OBSERVATION oo = (ORU_ORDER_OBSERVATION)v.elementAt(i);
+	if (oo == null) {
+	continue;
+	}
+	OBR obr = oo.OBR;
+	if (obr.isReportable){
+	//  System.out.println("The OBR is reportable in the RE reportable test");		
+	  retval = true;
+	  if (obr.isReportSent){
+	  //		  System.out.println("The OBR is marked as sent in the RE reportable test");	
+	  	      obr.isReReportable = bAllowReReportables;
+	  		  System.out.println("The OBR is RE Reportable is marked as "+bAllowReReportables);	
+	  }
+	}
+  } 
+return retval;
+            ]]></body>
+        </method>
+        <method>
+            <name>clearAllOrders</name>
+            <body language="irl"><![CDATA[
+            //
+// This is used to clear all reportables. Called when 'no partials' is set.
+//
+boolean retval = false;
+ORU_PATIENT_RESULT res = this.ORU_PATIENT_RESULT;
+Vector v = res.ORU_ORDER_OBSERVATIONList;
+if ( v == null ) return;
+int n = 0;
+for (int i = 0; i < v.size(); i++ ){
+	ORU_ORDER_OBSERVATION oo = (ORU_ORDER_OBSERVATION)v.elementAt(i);
+	if (oo == null) {
+	continue;
+	}
+	OBR obr = oo.OBR;
+	obr.isReportable = false;
+  } 
+return;
+            ]]></body>
+        </method>
+        <method>
+            <name>getOBX</name>
+            <parameter type="java.lang.String"/>
+            <body language="irl"><![CDATA[
+            //
+// This gets one particular OBX by ID, alternatively and empty OBX, for use is Reflex Orders
+//
+System.out.println("Calling getOBX from ORU with id="+id);
+OBX Obx = new OBX();
+ORU_PATIENT_RESULT res = this.ORU_PATIENT_RESULT;
+//System.out.println("1 res is "+res);
+if (res == null) return Obx;
+Vector v = res.ORU_ORDER_OBSERVATIONList;
+if (v == null) return Obx;
+//System.out.println("2 vector is "+v);
+int n = 0;
+  //System.out.println("2a v.size() is "+v.size());
+for (int i = 0; i < v.size(); i++ ){
+	ORU_ORDER_OBSERVATION oo = (ORU_ORDER_OBSERVATION)v.elementAt(i);
+	//System.out.println("3 oo is "+oo);
+	if ( oo == null )return Obx;
+	Vector voo = oo.ORU_OBSERVATIONList;
+	//System.out.println("4 voo is "+voo);
+	if (voo == null ) return Obx;
+    //System.out.println("4a voo.size() is "+voo.size());
+
+   for (int j = 0; j < voo.size(); j++ ){
+   	  //  System.out.println("5a getting obs");
+	    ORU_OBSERVATION obs = (ORU_OBSERVATION)voo.elementAt(j);
+	    //System.out.println("5b obs os "+obs);
+	    if ( obs == null ){System.out.println ("found null OBS at iteration "+j); return Obx;}
+	    Obx = obs.OBX;
+	    if ( Obx == null ) {System.out.println ("found null OBX at iteration "+j);  continue;}
+        System.out.println ("found some OBX with "+Obx.ObservationID+"/"+Obx.ObservationName+" value is "+Obx.ObservationValue+" range is "+Obx.ObservationRange);
+
+	    //System.out.println("5c Obx os "+Obx);
+	    //System.out.println("5c Obx.ID is "+Obx.ObservationID);
+	    if ( Obx.ObservationID.equals(id)) {System.out.println ("found OBX ID "+id+" value is "+Obx.ObservationValue+" range is "+Obx.ObservationRange); return Obx;}
+        if ( Obx.ObservationName.equals(id)) {System.out.println ("found OBX Name "+id+" value is "+Obx.ObservationValue+" range is "+Obx.ObservationRange); return Obx;}
+	    }
+	    System.out.println ("DID NOT find the OBX with "+id);
+	    
+}
+return Obx;
+            ]]></body>
+        </method>
+        <method>
+            <name>hasSomeOrdersReady</name>
+            <body language="irl"><![CDATA[
+            //
+// This tests to see if any orders are complete for use when send partials is selected.
+//
+boolean retval = false;
+//boolean bAllowReReportables = (allowReReportables != "0");
+
+ORU_PATIENT_RESULT res = this.ORU_PATIENT_RESULT;
+Vector v = res.ORU_ORDER_OBSERVATIONList;
+if ( v == null ) return retval;
+int n = 0;
+for (int i = 0; i < v.size(); i++ ){
+	ORU_ORDER_OBSERVATION oo = (ORU_ORDER_OBSERVATION)v.elementAt(i);
+	if (oo == null) {
+	continue;
+	}
+	OBR obr = oo.OBR;
+	if (obr.isReportable){
+	  retval = true;
+//	  if (obr.isReportSent){
+//	  	obr.isReportable = false;
+//	  }
+	}
+  } 
+return retval;
+            ]]></body>
+        </method>
+        <method>
+            <name>isClinicallyReady</name>
+            <parameter type="java.lang.String"/>
+            <body language="irl"><![CDATA[
+            return true;
+            ]]></body>
+        </method>
+        <method>
+            <name>isOKToReceivePrelim</name>
+            <parameter type="java.lang.String"/>
+            <body language="irl"><![CDATA[
+            return true;
+            ]]></body>
+        </method>
+        <method>
+            <name>isOKtoReceivePartialPanal</name>
+            <parameter type="java.lang.String"/>
+            <body language="irl"><![CDATA[
+            return true;
+            ]]></body>
+        </method>
+        <method>
+            <name>isOKtoReceivePartialTest</name>
+            <parameter type="java.lang.String"/>
+            <body language="irl"><![CDATA[
+            return true;
+            ]]></body>
+        </method>
+        <method>
+            <name>theOrderObservationsOf</name>
+            <body language="irl"><![CDATA[
+            ORU_PATIENT_RESULT res = this.ORU_PATIENT_RESULT;
+Vector v = res.ORU_ORDER_OBSERVATIONList;
+if ( v == null ) return new Vector();
+int n = 0;
+for (int i = 0; i < v.size(); i++ ){
+	ORU_ORDER_OBSERVATION oo = (ORU_ORDER_OBSERVATION)v.elementAt(i);
+	if (oo == null) {
+	return new Vector();
+	}
+	return oo.ORU_OBSERVATIONList;
+}
+return new Vector();
+            ]]></body>
+        </method>
+    </class>
+    <class>
+        <businessName>questhl7segments.OBR</businessName>
+        <method>
+            <name>removeNilValues</name>
+            <body language="irl"><![CDATA[
+            try {
+	if (this.isReportable) {}
+} catch (Exception e){
+	this.isReportable = false;	
+}
+try {
+	if (this.isReReportable) {}
+} catch (Exception e){
+	this.isReReportable = false;	
+}
+try {
+	if (this.isReportSent) {}
+} catch (Exception e){
+	this.isReportSent = false;	
+}
+            ]]></body>
+        </method>
+    </class>
+    <class>
+        <businessName>questhl7segments.OBX</businessName>
+        <attribute>
+            <name>isHigh</name>
+            <getter language="irl"><![CDATA[
+            String s = this.ObservationRange;
+if (this.ObservationValue == "DNR")return false;
+Float value = 0.0;
+try {
+ value = Float.parseFloat(this.ObservationValue);
+} catch (Exception e){
+	return false;
+}
+int i;
+int retval;
+float comparison;
+float c_1;
+float c_2;
+retval = 99;
+String a;
+
+a = "> OR = ";
+i = s.indexOf(a);
+if (i >= 0 ) {comparison = Float.parseFloat(s.substring(i+a.length())); if ( value >= comparison)return false; else return false;} else {
+
+	a = "< OR = ";
+	i = s.indexOf(a);
+	if (i >= 0 ) {comparison = Float.parseFloat(s.substring(i+a.length())); if ( value <= comparison)return false; else return true;} else {
+
+		a = ">";
+		i = s.indexOf(a);
+		if (i >= 0 ) {comparison = Float.parseFloat(s.substring(i+a.length())); if ( value > comparison)return false; else return false;} else {
+
+			a = "<";
+			i = s.indexOf(a);
+			if (i >= 0 ) {comparison = Float.parseFloat(s.substring(i+a.length())); if ( value < comparison)return false; else return true;} else {
+
+				a = "-";
+				i = s.indexOf(a);
+				if (i >= 0 ) {
+				 c_1 = Float.parseFloat(s.substring(0,i));
+				 c_2 = Float.parseFloat(s.substring(i+1));
+				 if ( value >= c_1) {if (value <= c_2) return false; else return true;} else return false;
+				}
+			}
+		}
+	}
+}
+return false;
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>isLow</name>
+            <getter language="irl"><![CDATA[
+            String s = this.ObservationRange;
+if (this.ObservationValue == "DNR")return false;
+Float value = 0.0;
+try {
+ value = Float.parseFloat(this.ObservationValue);
+} catch (Exception e){
+	return false;
+}
+
+int i;
+int retval;
+float comparison;
+float c_1;
+float c_2;
+retval = 99;
+String a;
+
+a = "> OR = ";
+i = s.indexOf(a);
+if (i >= 0 ) {comparison = Float.parseFloat(s.substring(i+a.length())); if ( value >= comparison)return false; else return true;} else {
+
+	a = "< OR = ";
+	i = s.indexOf(a);
+	if (i >= 0 ) {comparison = Float.parseFloat(s.substring(i+a.length())); if ( value <= comparison)return false; else return false;} else {
+
+		a = ">";
+		i = s.indexOf(a);
+		if (i >= 0 ) {comparison = Float.parseFloat(s.substring(i+a.length())); if ( value > comparison)return false; else return true;} else {
+
+			a = "<";
+			i = s.indexOf(a);
+			if (i >= 0 ) {comparison = Float.parseFloat(s.substring(i+a.length())); if ( value < comparison)return false; else return false;} else {
+
+				a = "-";
+				i = s.indexOf(a);
+				if (i >= 0 ) {
+				 c_1 = Float.parseFloat(s.substring(0,i));
+				 c_2 = Float.parseFloat(s.substring(i+1));
+				 if ( value >= c_1) {if (value <= c_2) return false; else return false;} else return true;
+				}
+			}
+		}
+	}
+}
+return false;
+            ]]></getter>
+        </attribute>
+        <attribute>
+            <name>isNormal</name>
+            <getter language="irl"><![CDATA[
+            String s = this.ObservationRange;
+if (this.ObservationValue == "DNR")return false;
+Float value = 0.0;
+try {
+ value = Float.parseFloat(this.ObservationValue);
+} catch (Exception e){
+	return false;
+}
+int i;
+int retval;
+float comparison;
+float c_1;
+float c_2;
+retval = 99;
+String a;
+
+a = "> OR = ";
+i = s.indexOf(a);
+if (i >= 0 ) {comparison = Float.parseFloat(s.substring(i+a.length())); if ( value >= comparison)return true; else return false;} else {
+
+	a = "< OR = ";
+	i = s.indexOf(a);
+	if (i >= 0 ) {comparison = Float.parseFloat(s.substring(i+a.length())); if ( value <= comparison)return true; else return false;} else {
+
+		a = ">";
+		i = s.indexOf(a);
+		if (i >= 0 ) {comparison = Float.parseFloat(s.substring(i+a.length())); if ( value > comparison)return true; else return false;} else {
+
+			a = "<";
+			i = s.indexOf(a);
+			if (i >= 0 ) {comparison = Float.parseFloat(s.substring(i+a.length())); if ( value < comparison)return true; else return false;} else {
+
+				a = "-";
+				i = s.indexOf(a);
+				if (i >= 0 ) {
+				 c_1 = Float.parseFloat(s.substring(0,i));
+				 c_2 = Float.parseFloat(s.substring(i+1));
+				 if ( value >= c_1) {if (value <= c_2) return true; else return false;} else return false;
+				}
+			}
+		}
+	}
+}
+return false;
+            ]]></getter>
+        </attribute>
+        <method>
+            <name>comparator</name>
+            <body language="irl"><![CDATA[
+            String s = this.ObservationRange;
+Float value = Float.parseFloat(this.ObservationValue);
+		int i;
+		int retval;
+		float comparison;
+		float c_1;
+		float c_2;
+		retval = 99;
+		String a;
+		
+		a = "> OR = ";
+		i = s.indexOf(a);
+		if (i >= 0 ) {comparison = Float.parseFloat(s.substring(i+a.length())); if ( value >= comparison)return 0; else return -1;} else {
+
+			a = "< OR = ";
+			i = s.indexOf(a);
+			if (i >= 0 ) {comparison = Float.parseFloat(s.substring(i+a.length())); if ( value <= comparison)return 0; else return 1;} else {
+
+				a = ">";
+				i = s.indexOf(a);
+				if (i >= 0 ) {comparison = Float.parseFloat(s.substring(i+a.length())); if ( value > comparison)return 0; else return -1;} else {
+
+					a = "<";
+					i = s.indexOf(a);
+					if (i >= 0 ) {comparison = Float.parseFloat(s.substring(i+a.length())); if ( value < comparison)return 0; else return 1;} else {
+
+						a = "-";
+						i = s.indexOf(a);
+						if (i >= 0 ) {
+						 c_1 = Float.parseFloat(s.substring(0,i));
+						 c_2 = Float.parseFloat(s.substring(i+1));
+						 if ( value >= c_1) {if (value <= c_2) return 0; else return 1;} else return -1;
+						}
+					}
+				}
+			}
+		}
+return 99;
+            ]]></body>
+        </method>
+    </class>
+    <class>
+        <businessName>questhl7segments.ORU_ORDER_OBSERVATION</businessName>
+        <import>java.util.Vector</import>
+        <import>questhl7segments.OBX</import>
+        <import>questhl7segments.ORU_OBSERVATION</import>
+        <import>questhl7segments.OBR</import>
+        <import>questhl7segments.NTE</import>
+        <method>
+            <name>MarkReportableResults</name>
+            <body language="irl"><![CDATA[
+            //
+// This checks for any OBX records, and if there are OBX AND there is an NTE that says pending, ... then it is not reportable
+// otherwise, just an OBX, means it is reportable
+//
+
+System.out.println("Checking for reportables from ORU ORDER OBSERVATION");
+System.out.println("This Version Checks NTEs");
+OBR obr = this.OBR;
+try { if (obr.isReportable) return; } catch (Exception e){obr.isReportable = false;}
+
+Vector v = this.ORU_OBSERVATIONList;
+if ( v == null ) {
+ System.out.println ("This list of observables is null");
+ return;
+ }
+ 
+if ( v.isEmpty() ) {
+	System.out.println ("This list of observables is empty");
+	return;
+	}
+boolean retval = false;
+for ( int i = 0 ; i < v.size(); i++){
+	    ORU_OBSERVATION obs = (ORU_OBSERVATION)v.elementAt(i);
+	    if (obs == null){
+	     continue;
+	    }
+
+     OBX obx = obs.OBX;
+     if ( obx != null) {
+     	obr.isReportable = true;
+     	System.out.println("Found an OBX in MarkReportable with NTE Size "+obs.NTEList.size());
+     	CharSequence pending = "PENDING";
+
+     	for (int n = 0 ; n < obs.NTEList.size(); n++){
+     	System.out.println("Checking NTEList["+n+"]");
+     	try{
+     		NTE nte = (NTE)obs.NTEList.elementAt(n);
+     		System.out.println("Checking NTE["+n+"] >>"+nte.Comment_1+"<<");
+     		if (nte.Comment_1.contains(pending)){
+     			obr.isReportable = false;
+     			System.out.println("Found PENDING");
+     			break;
+     		}
+     	} catch (Exception e){System.out.println("Exception at NTEList Loop "+e);} 
+     	}
+     	return;
+     }
+}
+return;
+            ]]></body>
+        </method>
+    </class>
+    <class>
+        <businessName>questhl7segments.PID</businessName>
+        <method>
+            <name>age</name>
+            <body language="irl"><![CDATA[
+            return 52;
+            ]]></body>
+        </method>
+    </class>
+</b2x:translation>

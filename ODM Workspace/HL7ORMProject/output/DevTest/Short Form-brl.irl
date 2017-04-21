@@ -1,0 +1,19 @@
+package DevTest {
+   use ORU;
+   use decisionAnswer;
+   rule Short_Form {
+      property ilog.rules.business_name = "Short Form";
+      property ilog.rules.package_name = "DevTest";
+      property status = "new";
+      when {
+         questhl7records.ORU() from ORU;
+         b: collect questhl7segments.OBX() in ORU.AllOBX();
+         c: questhl7segments.OBX() in b;
+         evaluate (!(c.ObservationName.equals("Hello")));
+      } then {
+         ilog.rules.brl.System.printMessage("xxx This is the short form");
+         decisionAnswer.add(("From Short " + c.ObservationName));
+      }
+   }
+}
+

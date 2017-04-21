@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:RulePackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>San Jose</name>
+  <uuid>1d0cf514-9442-4dcd-8b43-c6c28cc60020</uuid>
+</ilog.rules.studio.model.base:RulePackage>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;XMLExamples/BPMServices.wsdl&apos; to &apos;BPMServicesExample.wsdl&apos;" description="Rename resource &apos;BPMServices.wsdl&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="BPMServices.wsdl" name="BPMServicesExample.wsdl" stamp="1480611300420" updateReferences="true"/>
+</session>

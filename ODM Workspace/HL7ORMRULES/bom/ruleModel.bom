@@ -1,0 +1,19 @@
+
+property loadGetterSetterAsProperties "true"
+property origin "xom:/HL7ORMRULES//HL7ORMRULES/QuestHL7Answers.xsd"
+property uuid "4a8f8b57-e203-418a-b270-788d593a7409"
+package questpocanswers;
+
+
+public class Answers
+        extends ilog.rules.xml.IlrXmlObject
+{
+    public java.util.Vector AnswerList domain 0,* class string;
+    public Answers();
+    public void add(string message);
+    public void clear();
+    public void clearReports();
+    public void setAllReportsComplete();
+    public void setPartialReportsComplete();
+}
+

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>CheckPartials</name>
+  <uuid>6f8d5547-6ef4-4e25-8f1a-008ddcf9e8a6</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+  'the ORU' has Some Orders Ready  
+  and the flag partial accepted of 'the Client' does not equal 0          
+then
+  add "** Partials Ready to Report" to 'the Decision Answer' ;
+  set reportPartials to true;
+  ]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

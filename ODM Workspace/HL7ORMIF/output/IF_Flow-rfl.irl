@@ -1,0 +1,72 @@
+import questhl7segments.ORU_ORDER_OBSERVATION;
+import questhl7segments.OBX;
+import hl7.demo.ibm.com.OBR_Java;
+import questhl7segments.ORM_ORDER;
+import questhl7segments.ORU_OBSERVATION;
+import hl7.demo.ibm.com.ORU_Java;
+use Java_ORU;
+import hl7.demo.ibm.com.TheClient;
+
+
+flowtask IF$_$Flow {
+  property mainflowtask = false;
+  property ilog.rules.business_name = "IF_Flow";
+  property ilog.rules.package_name = "";
+  body {
+    IF$_$Flow#task$_$2;
+  }
+};
+
+functiontask IF$_$Flow#task$_$2 {
+  property ilog.rules.business_name = "IF_Flow>task_2";
+  property ilog.rules.package_name = "";
+  body {
+    hl7.demo.ibm.com.TheClient tc = hl7.demo.ibm.com.TheClient.create();
+    Java_Client = tc;
+    Java_Client.acceptsPartials =client.flagPartialAccepted != 0;
+    Java_Client.acceptsRereportables =client.flagRereportPartials != 0;
+    hl7.demo.ibm.com.ORU_Java uj = hl7.demo.ibm.com.ORU_Java.create();
+    Java_ORU = uj;
+    uj.allReportsAreReady = false;
+    uj.someReportsAreReady = false;
+    java.util.Vector vooo = ORU.ORU_PATIENT_RESULT.ORU_ORDER_OBSERVATIONList;
+    for (int i = 0 ; i < vooo.size();  i++){
+     questhl7segments.ORU_ORDER_OBSERVATION ooo = vooo.get(i) as questhl7segments.ORU_ORDER_OBSERVATION;
+     questhl7segments.OBR obr = ooo.OBR;
+     hl7.demo.ibm.com.OBR_Java rj = null;
+     rj = uj.createOBR_Java(obr.UnitAndOrderCodes_4,obr.UnitAndOrderCodes_5);
+     java.util.Vector voo = ooo.ORU_OBSERVATIONList;
+     for (int j = 0 ; j < voo.size(); j++ ){
+     	
+     questhl7segments.ORU_OBSERVATION oo = voo.get(j) as questhl7segments.ORU_OBSERVATION;
+      	
+      questhl7segments.OBX obx = oo.OBX;
+      java.lang.String id = obx.ObservationID;
+      java.lang.String name = obx.ObservationName;
+      
+      hl7.demo.ibm.com.OBX_Java xj = uj.createOBX_Java(rj, id, name);
+      
+      xj.OBXSequenceNumber = obx.OBXSequenceNumber;
+      xj.control = obx.Control;
+      xj.accessionNumber = obx.AccessionNumber;
+      xj.observationID = obx.ObservationID;
+      xj.observationName = obx.ObservationName;
+      xj.observationValue = obx.ObservationValue;
+     // xj.observationDoubleValue = obx.ObservationDoubleValue;
+      xj.observationUnits = obx.ObservationUnits;
+      xj.observationRange = obx.ObservationRange;
+      xj.abnormalFlags = obx.AbnormalFlags;
+      xj.natureOfAbnoralFlags = obx.NatureOfAbnoralFlags;
+      xj.observationResultStatus = obx.ObservationResultStatus;
+     java.util.Vector vnte = oo.NTEList;
+     for (int n = 0 ; n < vnte.size(); n++ ){
+      questhl7segments.NTE nte = vnte.get(n) as questhl7segments.NTE;
+      xj.pending = nte.Comment_1.startsWith("PENDING");
+      break;
+     }
+     }
+    }
+
+  }
+};
+

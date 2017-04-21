@@ -1,0 +1,877 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.dt:DecisionTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.dt="http://ilog.rules.studio/model/dt.ecore">
+  <name>ReportReady</name>
+  <uuid>d0d1891f-0f1c-489e-b09b-91e5798b8e60</uuid>
+  <locale>en_US</locale>
+  <definition>
+<DT xmlns="http://schemas.ilog.com/Rules/7.0/DecisionTable" Version="7.0">
+  <Body>
+    <Preconditions>
+      <Text><![CDATA[definitions 
+	set 'The OOOs' to the ORU ORDER OBSERVATIONs of the ORU PATIENT RESULT of 'the ORU' ;
+    set 'An OOO' to an ORU ORDER OBSERVATION in 'The OOOs' ;
+    ]]></Text>
+    </Preconditions>
+    <Structure>
+      <ConditionDefinitions>
+        <ConditionDefinition Id="C0">
+          <ExpressionDefinition>
+            <Text><![CDATA['An OOO'.EventType(<a string>)]]></Text>
+          </ExpressionDefinition>
+        </ConditionDefinition>
+        <ConditionDefinition Id="C1">
+          <ExpressionDefinition>
+            <Text><![CDATA['the ORU'.isClinicallyReady(<a string>)]]></Text>
+          </ExpressionDefinition>
+        </ConditionDefinition>
+        <ConditionDefinition Id="C2">
+          <ExpressionDefinition>
+            <Text><![CDATA['the ORU'.TestResult(<a string>)]]></Text>
+          </ExpressionDefinition>
+        </ConditionDefinition>
+        <ConditionDefinition Id="C3">
+          <ExpressionDefinition>
+            <Text><![CDATA['the ORU'.isOKToReceivePrelim(<a string>)]]></Text>
+          </ExpressionDefinition>
+        </ConditionDefinition>
+        <ConditionDefinition Id="C5">
+          <ExpressionDefinition>
+            <Text><![CDATA['the ORU'.isOKtoReceivePartialTest(<a string>)]]></Text>
+          </ExpressionDefinition>
+        </ConditionDefinition>
+        <ConditionDefinition Id="C4">
+          <ExpressionDefinition>
+            <Text><![CDATA['the ORU'.isOKtoReceivePartialPanal(<a string>)]]></Text>
+          </ExpressionDefinition>
+        </ConditionDefinition>
+        <ConditionDefinition Id="C6">
+          <ExpressionDefinition>
+            <Text><![CDATA['the ORU'.OrderStatus(<a string>)]]></Text>
+          </ExpressionDefinition>
+        </ConditionDefinition>
+      </ConditionDefinitions>
+      <ActionDefinitions>
+        <ActionDefinition Id="A0">
+          <ExpressionDefinition>
+            <Text><![CDATA[print <a string>]]></Text>
+          </ExpressionDefinition>
+        </ActionDefinition>
+      </ActionDefinitions>
+    </Structure>
+    <Contents>
+      <Partition DefId="C0">
+        <Condition>
+          <Expression>
+            <Param><![CDATA["Chemistry Event"]]></Param>
+          </Expression>
+          <Partition DefId="C1">
+            <Condition>
+              <Expression>
+                <Param><![CDATA["NA"]]></Param>
+              </Expression>
+              <Partition DefId="C2">
+                <Condition>
+                  <Expression>
+                    <Param><![CDATA["All Result Received"]]></Param>
+                  </Expression>
+                  <Partition DefId="C3">
+                    <Condition>
+                      <Expression>
+                        <Param><![CDATA["NA"]]></Param>
+                      </Expression>
+                      <Partition DefId="C5">
+                        <Condition>
+                          <Expression>
+                            <Param><![CDATA["Yes"]]></Param>
+                          </Expression>
+                          <Partition DefId="C4">
+                            <Condition>
+                              <Expression>
+                                <Param><![CDATA["Yes"]]></Param>
+                              </Expression>
+                              <Partition DefId="C6">
+                                <Condition>
+                                  <Expression>
+                                    <Param><![CDATA["NA"]]></Param>
+                                  </Expression>
+                                  <ActionSet>
+                                    <Action DefId="A0">
+                                      <Expression>
+                                        <Param><![CDATA["Result #1"]]></Param>
+                                      </Expression>
+                                    </Action>
+                                  </ActionSet>
+                                </Condition>
+                              </Partition>
+                            </Condition>
+                            <Condition>
+                              <Expression>
+                                <Param><![CDATA["No"]]></Param>
+                              </Expression>
+                              <Partition DefId="C6">
+                                <Condition>
+                                  <Expression>
+                                    <Param><![CDATA["NA"]]></Param>
+                                  </Expression>
+                                  <ActionSet>
+                                    <Action DefId="A0">
+                                      <Expression>
+                                        <Param><![CDATA["Result #2"]]></Param>
+                                      </Expression>
+                                    </Action>
+                                  </ActionSet>
+                                </Condition>
+                              </Partition>
+                            </Condition>
+                          </Partition>
+                        </Condition>
+                        <Condition>
+                          <Expression>
+                            <Param><![CDATA["No"]]></Param>
+                          </Expression>
+                          <Partition DefId="C4">
+                            <Condition>
+                              <Expression>
+                                <Param><![CDATA["Yes"]]></Param>
+                              </Expression>
+                              <Partition DefId="C6">
+                                <Condition>
+                                  <Expression>
+                                    <Param><![CDATA["NA"]]></Param>
+                                  </Expression>
+                                  <ActionSet>
+                                    <Action DefId="A0">
+                                      <Expression>
+                                        <Param><![CDATA["Result #3"]]></Param>
+                                      </Expression>
+                                    </Action>
+                                  </ActionSet>
+                                </Condition>
+                              </Partition>
+                            </Condition>
+                            <Condition>
+                              <Expression>
+                                <Param><![CDATA["No"]]></Param>
+                              </Expression>
+                              <Partition DefId="C6">
+                                <Condition>
+                                  <Expression>
+                                    <Param><![CDATA["NA"]]></Param>
+                                  </Expression>
+                                  <ActionSet>
+                                    <Action DefId="A0">
+                                      <Expression>
+                                        <Param><![CDATA["Result #4"]]></Param>
+                                      </Expression>
+                                    </Action>
+                                  </ActionSet>
+                                </Condition>
+                              </Partition>
+                            </Condition>
+                          </Partition>
+                        </Condition>
+                      </Partition>
+                    </Condition>
+                  </Partition>
+                </Condition>
+                <Condition>
+                  <Expression>
+                    <Param><![CDATA["Partial Result Received, Panel Filled"]]></Param>
+                  </Expression>
+                  <Partition DefId="C3">
+                    <Condition>
+                      <Expression>
+                        <Param><![CDATA["NA"]]></Param>
+                      </Expression>
+                      <Partition DefId="C5">
+                        <Condition>
+                          <Expression>
+                            <Param><![CDATA["Yes"]]></Param>
+                          </Expression>
+                          <Partition DefId="C4">
+                            <Condition>
+                              <Expression>
+                                <Param><![CDATA["Yes"]]></Param>
+                              </Expression>
+                              <Partition DefId="C6">
+                                <Condition>
+                                  <Expression>
+                                    <Param><![CDATA["NA"]]></Param>
+                                  </Expression>
+                                  <ActionSet>
+                                    <Action DefId="A0">
+                                      <Expression>
+                                        <Param><![CDATA["Result #5"]]></Param>
+                                      </Expression>
+                                    </Action>
+                                  </ActionSet>
+                                </Condition>
+                              </Partition>
+                            </Condition>
+                            <Condition>
+                              <Expression>
+                                <Param><![CDATA["No"]]></Param>
+                              </Expression>
+                              <Partition DefId="C6">
+                                <Condition>
+                                  <Expression>
+                                    <Param><![CDATA["NA"]]></Param>
+                                  </Expression>
+                                  <ActionSet>
+                                    <Action DefId="A0">
+                                      <Expression>
+                                        <Param><![CDATA["Result #6"]]></Param>
+                                      </Expression>
+                                    </Action>
+                                  </ActionSet>
+                                </Condition>
+                              </Partition>
+                            </Condition>
+                          </Partition>
+                        </Condition>
+                        <Condition>
+                          <Expression>
+                            <Param><![CDATA["No"]]></Param>
+                          </Expression>
+                          <Partition DefId="C4">
+                            <Condition>
+                              <Expression>
+                                <Param><![CDATA["Yes"]]></Param>
+                              </Expression>
+                              <Partition DefId="C6">
+                                <Condition>
+                                  <Expression>
+                                    <Param><![CDATA["NA"]]></Param>
+                                  </Expression>
+                                  <ActionSet>
+                                    <Action DefId="A0">
+                                      <Expression>
+                                        <Param><![CDATA["Result #7"]]></Param>
+                                      </Expression>
+                                    </Action>
+                                  </ActionSet>
+                                </Condition>
+                              </Partition>
+                            </Condition>
+                          </Partition>
+                        </Condition>
+                        <Condition>
+                          <Expression>
+                            <Param><![CDATA["Yes"]]></Param>
+                          </Expression>
+                          <Partition DefId="C4">
+                            <Condition>
+                              <Expression>
+                                <Param><![CDATA["Yes"]]></Param>
+                              </Expression>
+                              <Partition DefId="C6">
+                                <Condition>
+                                  <Expression>
+                                    <Param><![CDATA["NA"]]></Param>
+                                  </Expression>
+                                  <ActionSet>
+                                    <Action DefId="A0">
+                                      <Expression>
+                                        <Param><![CDATA["Result #8"]]></Param>
+                                      </Expression>
+                                    </Action>
+                                  </ActionSet>
+                                </Condition>
+                              </Partition>
+                            </Condition>
+                          </Partition>
+                        </Condition>
+                      </Partition>
+                    </Condition>
+                  </Partition>
+                </Condition>
+              </Partition>
+            </Condition>
+          </Partition>
+        </Condition>
+        <Condition>
+          <Expression>
+            <Param><![CDATA["TSH"]]></Param>
+          </Expression>
+          <Partition DefId="C1">
+            <Condition>
+              <Expression>
+                <Param><![CDATA["Yes"]]></Param>
+              </Expression>
+              <Partition DefId="C2">
+                <Condition>
+                  <Expression>
+                    <Param><![CDATA["Partial Result Received, Panel Not Filled"]]></Param>
+                  </Expression>
+                  <Partition DefId="C3">
+                    <Condition>
+                      <Expression>
+                        <Param><![CDATA["NA"]]></Param>
+                      </Expression>
+                      <Partition DefId="C5">
+                        <Condition>
+                          <Expression>
+                            <Param><![CDATA["Yes"]]></Param>
+                          </Expression>
+                          <Partition DefId="C4">
+                            <Condition>
+                              <Expression>
+                                <Param><![CDATA["Yes"]]></Param>
+                              </Expression>
+                              <Partition DefId="C6">
+                                <Condition>
+                                  <Expression>
+                                    <Param><![CDATA["NA"]]></Param>
+                                  </Expression>
+                                  <ActionSet>
+                                    <Action DefId="A0">
+                                      <Expression>
+                                        <Param><![CDATA["Result #9"]]></Param>
+                                      </Expression>
+                                    </Action>
+                                  </ActionSet>
+                                </Condition>
+                              </Partition>
+                            </Condition>
+                          </Partition>
+                        </Condition>
+                      </Partition>
+                    </Condition>
+                  </Partition>
+                </Condition>
+                <Condition>
+                  <Expression>
+                    <Param><![CDATA["Partial Result"]]></Param>
+                  </Expression>
+                  <Partition DefId="C3">
+                    <Condition>
+                      <Expression>
+                        <Param><![CDATA["NA"]]></Param>
+                      </Expression>
+                      <Partition DefId="C5">
+                        <Condition>
+                          <Expression>
+                            <Param><![CDATA["No"]]></Param>
+                          </Expression>
+                          <Partition DefId="C4">
+                            <Condition>
+                              <Expression>
+                                <Param><![CDATA["No"]]></Param>
+                              </Expression>
+                              <Partition DefId="C6">
+                                <Condition>
+                                  <Expression>
+                                    <Param><![CDATA["NA"]]></Param>
+                                  </Expression>
+                                  <ActionSet>
+                                    <Action DefId="A0">
+                                      <Expression>
+                                        <Param><![CDATA["Result #10"]]></Param>
+                                      </Expression>
+                                    </Action>
+                                  </ActionSet>
+                                </Condition>
+                              </Partition>
+                            </Condition>
+                          </Partition>
+                        </Condition>
+                        <Condition>
+                          <Expression>
+                            <Param><![CDATA["NA"]]></Param>
+                          </Expression>
+                          <Partition DefId="C4">
+                            <Condition>
+                              <Expression>
+                                <Text><![CDATA[<an ORU> .isOKToReceivePrelim( <a string> )]]></Text>
+                                <Param><![CDATA["NA"]]></Param>
+                              </Expression>
+                              <Partition DefId="C6">
+                                <Condition>
+                                  <Expression>
+                                    <Param><![CDATA["NA"]]></Param>
+                                  </Expression>
+                                  <ActionSet>
+                                    <Action DefId="A0">
+                                      <Expression>
+                                        <Param><![CDATA["Result #11"]]></Param>
+                                      </Expression>
+                                    </Action>
+                                  </ActionSet>
+                                </Condition>
+                              </Partition>
+                            </Condition>
+                          </Partition>
+                        </Condition>
+                      </Partition>
+                    </Condition>
+                  </Partition>
+                </Condition>
+                <Condition>
+                  <Expression>
+                    <Param><![CDATA["All Result Received"]]></Param>
+                  </Expression>
+                  <Partition DefId="C3">
+                    <Condition>
+                      <Expression>
+                        <Param><![CDATA["NA"]]></Param>
+                      </Expression>
+                      <Partition DefId="C5">
+                        <Condition>
+                          <Expression>
+                            <Param><![CDATA["NA"]]></Param>
+                          </Expression>
+                          <Partition DefId="C4">
+                            <Condition>
+                              <Expression>
+                                <Text><![CDATA[<an ORU> .isOKToReceivePrelim( <a string> )]]></Text>
+                                <Param><![CDATA["NA"]]></Param>
+                              </Expression>
+                              <Partition DefId="C6">
+                                <Condition>
+                                  <Expression>
+                                    <Param><![CDATA["NA"]]></Param>
+                                  </Expression>
+                                  <ActionSet>
+                                    <Action DefId="A0">
+                                      <Expression>
+                                        <Param><![CDATA["Result #12"]]></Param>
+                                      </Expression>
+                                    </Action>
+                                  </ActionSet>
+                                </Condition>
+                              </Partition>
+                            </Condition>
+                          </Partition>
+                        </Condition>
+                      </Partition>
+                    </Condition>
+                  </Partition>
+                </Condition>
+              </Partition>
+            </Condition>
+            <Condition>
+              <Expression>
+                <Param><![CDATA["No"]]></Param>
+              </Expression>
+              <Partition DefId="C2">
+                <Condition>
+                  <Expression>
+                    <Param><![CDATA["NA"]]></Param>
+                  </Expression>
+                  <Partition DefId="C3">
+                    <Condition>
+                      <Expression>
+                        <Param><![CDATA["NA"]]></Param>
+                      </Expression>
+                      <Partition DefId="C5">
+                        <Condition>
+                          <Expression>
+                            <Param><![CDATA["NA"]]></Param>
+                          </Expression>
+                          <Partition DefId="C4">
+                            <Condition>
+                              <Expression>
+                                <Text><![CDATA[<an ORU> .isOKToReceivePrelim( <a string> )]]></Text>
+                                <Param><![CDATA["NA"]]></Param>
+                              </Expression>
+                              <Partition DefId="C6">
+                                <Condition>
+                                  <Expression>
+                                    <Param><![CDATA["NA"]]></Param>
+                                  </Expression>
+                                  <ActionSet>
+                                    <Action DefId="A0">
+                                      <Expression>
+                                        <Param><![CDATA["Result #13"]]></Param>
+                                      </Expression>
+                                    </Action>
+                                  </ActionSet>
+                                </Condition>
+                              </Partition>
+                            </Condition>
+                            <Condition>
+                              <Expression>
+                                <Text><![CDATA[<an ORU> .isOKToReceivePrelim( <a string> )]]></Text>
+                                <Param><![CDATA["NA"]]></Param>
+                              </Expression>
+                              <Partition DefId="C6">
+                                <Condition>
+                                  <Expression>
+                                    <Param><![CDATA["NA"]]></Param>
+                                  </Expression>
+                                  <ActionSet>
+                                    <Action DefId="A0">
+                                      <Expression>
+                                        <Param><![CDATA["Result #14"]]></Param>
+                                      </Expression>
+                                    </Action>
+                                  </ActionSet>
+                                </Condition>
+                              </Partition>
+                            </Condition>
+                          </Partition>
+                        </Condition>
+                      </Partition>
+                    </Condition>
+                  </Partition>
+                </Condition>
+              </Partition>
+            </Condition>
+          </Partition>
+        </Condition>
+        <Condition>
+          <Expression>
+            <Param><![CDATA["CBC"]]></Param>
+          </Expression>
+          <Partition DefId="C1">
+            <Condition>
+              <Expression>
+                <Param><![CDATA["NA"]]></Param>
+              </Expression>
+              <Partition DefId="C2">
+                <Condition>
+                  <Expression>
+                    <Param><![CDATA["Partial Result Received, Panel Complete"]]></Param>
+                  </Expression>
+                  <Partition DefId="C3">
+                    <Condition>
+                      <Expression>
+                        <Param><![CDATA["NA"]]></Param>
+                      </Expression>
+                      <Partition DefId="C5">
+                        <Condition>
+                          <Expression>
+                            <Param><![CDATA["Yes"]]></Param>
+                          </Expression>
+                          <Partition DefId="C4">
+                            <Condition>
+                              <Expression>
+                                <Text><![CDATA[<an ORU> .isOKToReceivePrelim( <a string> )]]></Text>
+                                <Param><![CDATA["NA"]]></Param>
+                              </Expression>
+                              <Partition DefId="C6">
+                                <Condition>
+                                  <Expression>
+                                    <Param><![CDATA["Order Updated with Additional Tests"]]></Param>
+                                  </Expression>
+                                  <ActionSet>
+                                    <Action DefId="A0">
+                                      <Expression>
+                                        <Param><![CDATA["Result #15"]]></Param>
+                                      </Expression>
+                                    </Action>
+                                  </ActionSet>
+                                </Condition>
+                              </Partition>
+                            </Condition>
+                          </Partition>
+                        </Condition>
+                        <Condition>
+                          <Expression>
+                            <Param><![CDATA["No"]]></Param>
+                          </Expression>
+                          <Partition DefId="C4">
+                            <Condition>
+                              <Expression>
+                                <Text><![CDATA[<an ORU> .isOKToReceivePrelim( <a string> )]]></Text>
+                                <Param><![CDATA["NA"]]></Param>
+                              </Expression>
+                              <Partition DefId="C6">
+                                <Condition>
+                                  <Expression>
+                                    <Param><![CDATA["NA"]]></Param>
+                                  </Expression>
+                                  <ActionSet>
+                                    <Action DefId="A0">
+                                      <Expression>
+                                        <Param><![CDATA["Result #16"]]></Param>
+                                      </Expression>
+                                    </Action>
+                                  </ActionSet>
+                                </Condition>
+                                <Condition>
+                                  <Expression>
+                                    <Param><![CDATA["Order Updated with Additional Tests"]]></Param>
+                                  </Expression>
+                                  <ActionSet>
+                                    <Action DefId="A0">
+                                      <Expression>
+                                        <Param><![CDATA["Result #17"]]></Param>
+                                      </Expression>
+                                    </Action>
+                                  </ActionSet>
+                                </Condition>
+                              </Partition>
+                            </Condition>
+                          </Partition>
+                        </Condition>
+                        <Condition>
+                          <Expression>
+                            <Param><![CDATA["Yes"]]></Param>
+                          </Expression>
+                          <Partition DefId="C4">
+                            <Condition>
+                              <Expression>
+                                <Text><![CDATA[<an ORU> .isOKToReceivePrelim( <a string> )]]></Text>
+                                <Param><![CDATA["NA"]]></Param>
+                              </Expression>
+                              <Partition DefId="C6">
+                                <Condition>
+                                  <Expression>
+                                    <Param><![CDATA["NA"]]></Param>
+                                  </Expression>
+                                  <ActionSet>
+                                    <Action DefId="A0">
+                                      <Expression>
+                                        <Param><![CDATA["Result #18"]]></Param>
+                                      </Expression>
+                                    </Action>
+                                  </ActionSet>
+                                </Condition>
+                              </Partition>
+                            </Condition>
+                          </Partition>
+                        </Condition>
+                      </Partition>
+                    </Condition>
+                  </Partition>
+                </Condition>
+              </Partition>
+            </Condition>
+          </Partition>
+        </Condition>
+        <Condition>
+          <Expression>
+            <Param><![CDATA["Microbology Blood"]]></Param>
+          </Expression>
+          <Partition DefId="C1">
+            <Condition>
+              <Expression>
+                <Param><![CDATA["Prelim"]]></Param>
+              </Expression>
+              <Partition DefId="C2">
+                <Condition>
+                  <Expression>
+                    <Param><![CDATA["Partial Result"]]></Param>
+                  </Expression>
+                  <Partition DefId="C3">
+                    <Condition>
+                      <Expression>
+                        <Param><![CDATA["Yes"]]></Param>
+                      </Expression>
+                      <Partition DefId="C5">
+                        <Condition>
+                          <Expression>
+                            <Param><![CDATA["NA"]]></Param>
+                          </Expression>
+                          <Partition DefId="C4">
+                            <Condition>
+                              <Expression>
+                                <Text><![CDATA[<an ORU> .isOKToReceivePrelim( <a string> )]]></Text>
+                                <Param><![CDATA["NA"]]></Param>
+                              </Expression>
+                              <Partition DefId="C6">
+                                <Condition>
+                                  <Expression>
+                                    <Param><![CDATA["Order Updated with Additional Tests"]]></Param>
+                                  </Expression>
+                                  <ActionSet>
+                                    <Action DefId="A0">
+                                      <Expression>
+                                        <Param><![CDATA["Result #19"]]></Param>
+                                      </Expression>
+                                    </Action>
+                                  </ActionSet>
+                                </Condition>
+                              </Partition>
+                            </Condition>
+                          </Partition>
+                        </Condition>
+                      </Partition>
+                    </Condition>
+                    <Condition>
+                      <Expression>
+                        <Param><![CDATA["No"]]></Param>
+                      </Expression>
+                      <Partition DefId="C5">
+                        <Condition>
+                          <Expression>
+                            <Param><![CDATA["NA"]]></Param>
+                          </Expression>
+                          <Partition DefId="C4">
+                            <Condition>
+                              <Expression>
+                                <Text><![CDATA[<an ORU> .isOKToReceivePrelim( <a string> )]]></Text>
+                                <Param><![CDATA["NA"]]></Param>
+                              </Expression>
+                              <Partition DefId="C6">
+                                <Condition>
+                                  <Expression>
+                                    <Param><![CDATA["Order Updated with Additional Tests"]]></Param>
+                                  </Expression>
+                                  <ActionSet>
+                                    <Action DefId="A0">
+                                      <Expression>
+                                        <Param><![CDATA["Result #20"]]></Param>
+                                      </Expression>
+                                    </Action>
+                                  </ActionSet>
+                                </Condition>
+                              </Partition>
+                            </Condition>
+                          </Partition>
+                        </Condition>
+                      </Partition>
+                    </Condition>
+                  </Partition>
+                </Condition>
+                <Condition>
+                  <Expression>
+                    <Param><![CDATA["NA"]]></Param>
+                  </Expression>
+                  <Partition DefId="C3">
+                    <Condition>
+                      <Expression>
+                        <Param><![CDATA["NA"]]></Param>
+                      </Expression>
+                      <Partition DefId="C5">
+                        <Condition>
+                          <Expression>
+                            <Param><![CDATA["NA"]]></Param>
+                          </Expression>
+                          <Partition DefId="C4">
+                            <Condition>
+                              <Expression>
+                                <Text><![CDATA[<an ORU> .isOKToReceivePrelim( <a string> )]]></Text>
+                                <Param><![CDATA["NA"]]></Param>
+                              </Expression>
+                              <Partition DefId="C6">
+                                <Condition>
+                                  <Expression>
+                                    <Param><![CDATA["NA"]]></Param>
+                                  </Expression>
+                                  <ActionSet>
+                                    <Action DefId="A0">
+                                      <Expression>
+                                        <Param><![CDATA["Result #21"]]></Param>
+                                      </Expression>
+                                    </Action>
+                                  </ActionSet>
+                                </Condition>
+                              </Partition>
+                            </Condition>
+                          </Partition>
+                        </Condition>
+                      </Partition>
+                    </Condition>
+                  </Partition>
+                </Condition>
+              </Partition>
+            </Condition>
+          </Partition>
+        </Condition>
+        <Condition>
+          <Expression/>
+          <ActionSet>
+            <Action DefId="A0">
+              <Expression/>
+            </Action>
+          </ActionSet>
+        </Condition>
+        <Condition>
+          <Expression/>
+          <ActionSet>
+            <Action DefId="A0">
+              <Expression/>
+            </Action>
+          </ActionSet>
+        </Condition>
+        <Condition>
+          <Expression/>
+          <ActionSet>
+            <Action DefId="A0">
+              <Expression/>
+            </Action>
+          </ActionSet>
+        </Condition>
+        <Condition>
+          <Expression/>
+          <ActionSet>
+            <Action DefId="A0">
+              <Expression/>
+            </Action>
+          </ActionSet>
+        </Condition>
+        <Condition>
+          <Expression/>
+          <ActionSet>
+            <Action DefId="A0">
+              <Expression/>
+            </Action>
+          </ActionSet>
+        </Condition>
+        <Condition>
+          <Expression/>
+          <ActionSet>
+            <Action DefId="A0">
+              <Expression/>
+            </Action>
+          </ActionSet>
+        </Condition>
+        <Condition>
+          <Expression/>
+          <ActionSet>
+            <Action DefId="A0">
+              <Expression/>
+            </Action>
+          </ActionSet>
+        </Condition>
+        <Condition>
+          <Expression/>
+          <ActionSet>
+            <Action DefId="A0">
+              <Expression/>
+            </Action>
+          </ActionSet>
+        </Condition>
+        <Condition>
+          <Expression/>
+          <ActionSet>
+            <Action DefId="A0">
+              <Expression/>
+            </Action>
+          </ActionSet>
+        </Condition>
+        <Condition>
+          <Expression/>
+          <ActionSet>
+            <Action DefId="A0">
+              <Expression/>
+            </Action>
+          </ActionSet>
+        </Condition>
+      </Partition>
+    </Contents>
+  </Body>
+  <Resources DefaultLocale="en_US">
+    <ResourceSet Locale="en_US">
+      <Data Name="Definitions(A0)#HeaderText"><![CDATA[Result]]></Data>
+      <Data Name="Definitions(A0)#Width"><![CDATA[182]]></Data>
+      <Data Name="Definitions(C0)#HeaderText"><![CDATA[Result Event]]></Data>
+      <Data Name="Definitions(C0)#Width"><![CDATA[123]]></Data>
+      <Data Name="Definitions(C1)#HeaderText"><![CDATA[is Clinically Ready?]]></Data>
+      <Data Name="Definitions(C1)#Width"><![CDATA[121]]></Data>
+      <Data Name="Definitions(C2)#HeaderText"><![CDATA[Test Result]]></Data>
+      <Data Name="Definitions(C2)#Width"><![CDATA[223]]></Data>
+      <Data Name="Definitions(C3)#HeaderText"><![CDATA[OK to Receive Prelim?]]></Data>
+      <Data Name="Definitions(C3)#Width"><![CDATA[99]]></Data>
+      <Data Name="Definitions(C4)#HeaderText"><![CDATA[OK to Receive Partial Panel?]]></Data>
+      <Data Name="Definitions(C4)#Width"><![CDATA[124]]></Data>
+      <Data Name="Definitions(C5)#HeaderText"><![CDATA[OK to Receive Partial Test?]]></Data>
+      <Data Name="Definitions(C5)#Width"><![CDATA[131]]></Data>
+      <Data Name="Definitions(C6)#HeaderText"><![CDATA[Order Status]]></Data>
+      <Data Name="Definitions(C6)#Width"><![CDATA[142]]></Data>
+    </ResourceSet>
+  </Resources>
+</DT></definition>
+</ilog.rules.studio.model.dt:DecisionTable>

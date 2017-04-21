@@ -1,0 +1,11 @@
+package hl7.demo.ibm.com;
+
+import java.util.*;
+
+public class OBR_Java {
+  public Vector<OBX_Java> obxList = new Vector<OBX_Java>();
+  public boolean isReportable;
+  public boolean isRereportable;
+  public boolean isSent;
+
+}

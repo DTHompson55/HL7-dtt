@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?><schema 
+xmlns="http://www.w3.org/2001/XMLSchema" 
+attributeFormDefault="unqualified" 
+elementFormDefault="qualified" 
+targetNamespace="http://QuestHL7Segments" 
+xmlns:apachesoap="http://xml.apache.org/xml-soap" 
+xmlns:impl="http://QDP/OrderProcessStartWS.tws" 
+xmlns:impl1="http://QuestHL7Segments" 
+xmlns:impl2="http://QuestHL7Records" 
+xmlns:intf="http://QDP/OrderProcessStartWS.tws" 
+xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" 
+xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+                                                        <import namespace="http://QDP/OrderProcessStartWS.tws" schemaLocation="OrderProcessStartWS.tws_InlineSchema1.xsd">
+    <!--Add URI of the schema document for the imported namespace using 'schemaLocation' attribute.-->
+  </import>
+            <complexType name="ZSI">
+    <sequence>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="SampleID" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="StorageSite" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="IntraLabManifestIndicator" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="UnitCodeNumber" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="LabelDevice" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="LableFormat" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="ContainerType" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="DepartmentIDs_1" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="DepartmentIDs_2" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="DepartmentIDs_3" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="DepartmentIDs_4" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="Sendouts" nillable="true" type="string"/>
+    </sequence>
+  </complexType>
+            <complexType name="ORM_ORDER">
+    <sequence>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="ORC" nillable="true" type="impl1:ORC"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="ORM_ORDER_DETAIL" nillable="true" type="impl1:ORM_ORDER_DETAIL"/>
+    </sequence>
+  </complexType>
+            <complexType name="OBR">
+    <sequence>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="SequenceNumber" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="PlacerOrderNumber" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="AccessionNumber" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="UnitAndOrderCodes_1" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="UnitAndOrderCodes_2" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="UnitAndOrderCodes_3" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="UnitAndOrderCodes_4" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="UnitAndOrderCodes_5" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="UnitAndOrderCodes_6" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="UnitAndOrderCodes_7" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="UnitAndOrderCodes_8" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="UnitAndOrderCodes_9" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="UnitAndOrderCodes_10" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="UnitAndOrderCodes_11" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="UnitAndOrderCodes_12" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="UnitAndOrderCodes_13" nillable="true" type="string"/>
+
+      <element form="unqualified" nillable="true" maxOccurs="1" minOccurs="0"  name="isReportable" type="boolean"></element>
+      <element form="unqualified" nillable="true" maxOccurs="1" minOccurs="0"  name="isReportSent" type="boolean"></element>
+      <element form="unqualified" nillable="true" maxOccurs="1" minOccurs="0"  name="isReReportable" type="boolean"></element>
+
+    </sequence>
+  </complexType>
+            <complexType name="MSH">
+    <sequence>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="OriginatingFacility" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="MsgType_1" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="MsgType_2" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="MsgType_3" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="ControlID" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="ReceivingFacility" nillable="true" type="string"/>
+    </sequence>
+  </complexType>
+            <complexType name="ORC">
+    <sequence>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="OrderControl" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="OrderStatus" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="ResponseFlag" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="Specimens_1" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="Specimens_2" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="Specimens_3" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="Specimens_4" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="Specimens_5" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="Specimens_6" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="Specimens_7" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="Specimens_8" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="Specimens_9" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="Specimens_10" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="ChangeOrderDate_1" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="ChangeOrderDate_2" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="PhysicianUPIN" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="OriginiatingSiteCode" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="CollectionDate" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="ClientMnemonic" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="Minilog" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="Maxilog" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="WhoLoggedItUPIN" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="AltPatientID" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="AccessionNumber" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="ClientID" nillable="true" type="string"/>
+    </sequence>
+  </complexType>
+            <complexType name="ORM_ORDER_DETAIL">
+    <sequence>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="OBR" nillable="true" type="impl1:OBR"/>
+      <element form="unqualified" maxOccurs="unbounded" minOccurs="0" name="ZSI" nillable="true" type="impl1:ZSI"/>
+    </sequence>
+  </complexType>
+            <complexType name="ORM_PATIENT">
+    <sequence>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="PID" nillable="true" type="impl1:PID"/>
+    </sequence>
+  </complexType>
+            <complexType name="PID">
+    <sequence>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="PIDSequence" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="PatientID1" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="PatientID2" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="AccessionNumber" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="MRN" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="ChartId" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="EnterpriseID" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="PatientAccountNum" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="AdministrativeSex" nillable="true" type="string"/>
+      <element form="unqualified" maxOccurs="1" minOccurs="0" name="Birthdate" nillable="true" type="string"/>
+    </sequence>
+  </complexType>
+            <complexType name="ArrayOf_ZSI">
+    <sequence>
+      <element maxOccurs="unbounded" minOccurs="0" name="item" nillable="true" type="impl1:ZSI"/>
+    </sequence>
+  </complexType>
+            <complexType name="ArrayOf_ORM_ORDER">
+    <sequence>
+      <element maxOccurs="unbounded" minOccurs="0" name="item" nillable="true" type="impl1:ORM_ORDER"/>
+    </sequence>
+  </complexType>
+            <complexType name="ArrayOf_string">
+    <sequence>
+      <element maxOccurs="unbounded" minOccurs="0" name="item" nillable="true" type="string"/>
+    </sequence>
+  </complexType>
+            <complexType name="ArrayOf_ORC">
+    <sequence>
+      <element maxOccurs="unbounded" minOccurs="0" name="item" nillable="true" type="impl1:ORC"/>
+    </sequence>
+  </complexType>
+            <complexType name="ArrayOf_ORM_ORDER_DETAIL">
+    <sequence>
+      <element maxOccurs="unbounded" minOccurs="0" name="item" nillable="true" type="impl1:ORM_ORDER_DETAIL"/>
+    </sequence>
+  </complexType>
+            <complexType name="ArrayOf_OBR">
+    <sequence>
+      <element maxOccurs="unbounded" minOccurs="0" name="item" nillable="true" type="impl1:OBR"/>
+    </sequence>
+  </complexType>
+        </schema>

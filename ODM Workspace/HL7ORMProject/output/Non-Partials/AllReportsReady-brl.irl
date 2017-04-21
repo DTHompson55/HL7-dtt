@@ -1,0 +1,22 @@
+package Non$45$Partials {
+   use ORU;
+   use decisionAnswer;
+   use reportAll;
+   rule AllReportsReady {
+      property ilog.rules.business_name = "AllReportsReady";
+      property ilog.rules.package_name = "Non-Partials";
+      property status = "new";
+      when {
+         questhl7records.ORU() from ORU;
+         evaluate (ORU.allOrdersReady());
+      } then {
+         decisionAnswer.add("** All Observations are Ready to Report");
+         reportAll = true;
+         ?context.updateContext();
+      } else {
+         ORU.clearAllOrders();
+         decisionAnswer.add("** Some incomplete observations, do not report");
+      }
+   }
+}
+

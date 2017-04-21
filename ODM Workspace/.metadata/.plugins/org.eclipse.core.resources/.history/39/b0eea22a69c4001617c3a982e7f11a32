@@ -1,0 +1,262 @@
+
+property loadGetterSetterAsProperties "true"
+property origin "xom:/HL7ORMIF//HL7ORMIF/HL7_Records.xsd"
+property uuid "52b3b31b-b145-4c7c-9ad4-63af74c4ceab"
+package questhl7records;
+
+
+public class ORM
+        extends ilog.rules.xml.IlrXmlObject
+{
+    public questhl7segments.MSH MSH;
+    public java.util.Vector ORM_ORDERList domain 1,* class questhl7segments.ORM_ORDER;
+    public questhl7segments.ORM_PATIENT ORM_PATIENT domain 0,1;
+    public ORM();
+}
+
+public class ORU
+        extends ilog.rules.xml.IlrXmlObject
+{
+    public questhl7segments.MSH MSH;
+    public questhl7segments.ORU_PATIENT_RESULT ORU_PATIENT_RESULT domain 0,1;
+    public ORU();
+}
+
+package questhl7segments;
+
+
+public class MSH
+        extends ilog.rules.xml.IlrXmlObject
+{
+    public string ControlID domain 0,1;
+    public string MsgType_1 domain 0,1;
+    public string MsgType_2 domain 0,1;
+    public string MsgType_3 domain 0,1;
+    public string OriginatingFacility domain 0,1;
+    public string ReceivingFacility domain 0,1;
+    public MSH();
+}
+
+public class NTE
+        extends ilog.rules.xml.IlrXmlObject
+{
+    public string Comment_1 domain 0,1;
+    public string Comment_2 domain 0,1;
+    public string Comment_3 domain 0,1;
+    public string Comment_4 domain 0,1;
+    public string Comment_5 domain 0,1;
+    public string Comment_6 domain 0,1;
+    public string Comment_7 domain 0,1;
+    public string NTESequenceNumber domain 0,1;
+    public string ReportComment domain 0,1;
+    public NTE();
+}
+
+public class OBR
+        extends ilog.rules.xml.IlrXmlObject
+{
+    public string AccessionNumber domain 0,1;
+    public string PlacerOrderNumber domain 0,1;
+    public string SequenceNumber domain 0,1;
+    public string UnitAndOrderCodes_1 domain 0,1;
+    public string UnitAndOrderCodes_10 domain 0,1;
+    public string UnitAndOrderCodes_11 domain 0,1;
+    public string UnitAndOrderCodes_12 domain 0,1;
+    public string UnitAndOrderCodes_13 domain 0,1;
+    public string UnitAndOrderCodes_2 domain 0,1;
+    public string UnitAndOrderCodes_3 domain 0,1;
+    public string UnitAndOrderCodes_4 domain 0,1;
+    public string UnitAndOrderCodes_5 domain 0,1;
+    public string UnitAndOrderCodes_6 domain 0,1;
+    public string UnitAndOrderCodes_7 domain 0,1;
+    public string UnitAndOrderCodes_8 domain 0,1;
+    public string UnitAndOrderCodes_9 domain 0,1;
+    public boolean isReReportable domain 0,1;
+    public boolean isReportSent domain 0,1;
+    public boolean isReportable domain 0,1;
+    public OBR();
+    public void setUnknownIsReReportable();
+    public void setUnknownIsReportSent();
+    public void setUnknownIsReportable();
+}
+
+public class OBX
+        extends ilog.rules.xml.IlrXmlObject
+{
+    public string AbnormalFlags domain 0,1;
+    public string AccessionNumber domain 0,1;
+    public string Control domain 0,1;
+    public string NatureOfAbnoralFlags domain 0,1;
+    public string OBXSequenceNumber domain 0,1;
+    public string ODMStatus domain 0,1;
+    public string ObservationID domain 0,1;
+    public string ObservationName domain 0,1;
+    public string ObservationRange domain 0,1;
+    public string ObservationResultStatus domain 0,1;
+    public string ObservationUnits domain 0,1;
+    public string ObservationValue domain 0,1;
+    public OBX();
+}
+
+public class ORC
+        extends ilog.rules.xml.IlrXmlObject
+{
+    public string AccessionNumber domain 0,1;
+    public string AltPatientID domain 0,1;
+    public string ChangeOrderDate_1 domain 0,1;
+    public string ChangeOrderDate_2 domain 0,1;
+    public string ClientID domain 0,1;
+    public string ClientMnemonic domain 0,1;
+    public string CollectionDate domain 0,1;
+    public string Maxilog domain 0,1;
+    public string Minilog domain 0,1;
+    public string OrderControl domain 0,1;
+    public string OrderStatus domain 0,1;
+    public string OriginiatingSiteCode domain 0,1;
+    public string PhysicianUPIN domain 0,1;
+    public string ResponseFlag domain 0,1;
+    public string Specimens_1 domain 0,1;
+    public string Specimens_10 domain 0,1;
+    public string Specimens_2 domain 0,1;
+    public string Specimens_3 domain 0,1;
+    public string Specimens_4 domain 0,1;
+    public string Specimens_5 domain 0,1;
+    public string Specimens_6 domain 0,1;
+    public string Specimens_7 domain 0,1;
+    public string Specimens_8 domain 0,1;
+    public string Specimens_9 domain 0,1;
+    public string WhoLoggedItUPIN domain 0,1;
+    public ORC();
+}
+
+public class ORM_ORDER
+        extends ilog.rules.xml.IlrXmlObject
+{
+    public questhl7segments.ORC ORC domain 0,1;
+    public questhl7segments.ORM_ORDER_DETAIL ORM_ORDER_DETAIL domain 0,1;
+    public ORM_ORDER();
+}
+
+public class ORM_ORDER_DETAIL
+        extends ilog.rules.xml.IlrXmlObject
+{
+    public questhl7segments.OBR OBR domain 0,1;
+    public java.util.Vector ZSIList domain 0,* class questhl7segments.ZSI;
+    public ORM_ORDER_DETAIL();
+}
+
+public class ORM_PATIENT
+        extends ilog.rules.xml.IlrXmlObject
+{
+    public questhl7segments.PID PID domain 0,1;
+    public ORM_PATIENT();
+}
+
+public class ORU_OBSERVATION
+        extends ilog.rules.xml.IlrXmlObject
+{
+    public java.util.Vector NTEList domain 0,* class questhl7segments.NTE;
+    public questhl7segments.OBX OBX domain 0,1;
+    public ORU_OBSERVATION();
+}
+
+public class ORU_ORDER_OBSERVATION
+        extends ilog.rules.xml.IlrXmlObject
+{
+    public java.util.Vector NTEList domain 0,* class questhl7segments.NTE;
+    public questhl7segments.OBR OBR domain 0,1;
+    public questhl7segments.ORC ORC domain 0,1;
+    public java.util.Vector ORU_OBSERVATIONList domain 0,* class questhl7segments.ORU_OBSERVATION;
+    public java.util.Vector ZORList domain 0,* class questhl7segments.ZOR;
+    public ORU_ORDER_OBSERVATION();
+}
+
+public class ORU_PATIENT
+        extends ilog.rules.xml.IlrXmlObject
+{
+    public java.util.Vector NTEList domain 0,* class questhl7segments.NTE;
+    public questhl7segments.PID PID domain 0,1;
+    public java.util.Vector ZRQList domain 0,* class questhl7segments.ZRQ;
+    public ORU_PATIENT();
+}
+
+public class ORU_PATIENT_RESULT
+        extends ilog.rules.xml.IlrXmlObject
+{
+    public java.util.Vector ORU_ORDER_OBSERVATIONList domain 0,* class questhl7segments.ORU_ORDER_OBSERVATION;
+    public questhl7segments.ORU_PATIENT ORU_PATIENT domain 0,1;
+    public ORU_PATIENT_RESULT();
+}
+
+public class PID
+        extends ilog.rules.xml.IlrXmlObject
+{
+    public string AccessionNumber domain 0,1;
+    public string AdministrativeSex domain 0,1;
+    public string Birthdate domain 0,1;
+    public string ChartId domain 0,1;
+    public string EnterpriseID domain 0,1;
+    public string MRN domain 0,1;
+    public string PIDSequence domain 0,1;
+    public string PatientAccountNum domain 0,1;
+    public string PatientID1 domain 0,1;
+    public string PatientID2 domain 0,1;
+    public PID();
+}
+
+public class ZOR
+        extends ilog.rules.xml.IlrXmlObject
+{
+    public string ZORSequenceNumber domain 0,1;
+    public ZOR();
+}
+
+public class ZRQ
+        extends ilog.rules.xml.IlrXmlObject
+{
+    public string AccessionNumber domain 0,1;
+    public string ZRQSequenceNumber domain 0,1;
+    public string zrqData_1 domain 0,1;
+    public string zrqData_10 domain 0,1;
+    public string zrqData_11 domain 0,1;
+    public string zrqData_12 domain 0,1;
+    public string zrqData_13 domain 0,1;
+    public string zrqData_14 domain 0,1;
+    public string zrqData_15 domain 0,1;
+    public string zrqData_16 domain 0,1;
+    public string zrqData_17 domain 0,1;
+    public string zrqData_18 domain 0,1;
+    public string zrqData_19 domain 0,1;
+    public string zrqData_2 domain 0,1;
+    public string zrqData_20 domain 0,1;
+    public string zrqData_21 domain 0,1;
+    public string zrqData_22 domain 0,1;
+    public string zrqData_23 domain 0,1;
+    public string zrqData_3 domain 0,1;
+    public string zrqData_4 domain 0,1;
+    public string zrqData_5 domain 0,1;
+    public string zrqData_6 domain 0,1;
+    public string zrqData_7 domain 0,1;
+    public string zrqData_8 domain 0,1;
+    public string zrqData_9 domain 0,1;
+    public ZRQ();
+}
+
+public class ZSI
+        extends ilog.rules.xml.IlrXmlObject
+{
+    public string ContainerType domain 0,1;
+    public string DepartmentIDs_1 domain 0,1;
+    public string DepartmentIDs_2 domain 0,1;
+    public string DepartmentIDs_3 domain 0,1;
+    public string DepartmentIDs_4 domain 0,1;
+    public string IntraLabManifestIndicator domain 0,1;
+    public string LabelDevice domain 0,1;
+    public string LableFormat domain 0,1;
+    public string SampleID domain 0,1;
+    public string Sendouts domain 0,1;
+    public string StorageSite domain 0,1;
+    public string UnitCodeNumber domain 0,1;
+    public ZSI();
+}
+

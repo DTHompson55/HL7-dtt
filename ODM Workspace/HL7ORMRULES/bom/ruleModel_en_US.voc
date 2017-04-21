@@ -1,0 +1,12 @@
+# Vocabulary Properties
+uuid = 66986dfb-2ea5-473f-81f6-2e4a29d3b20c
+
+# questpocanswers.Answers
+questpocanswers.Answers#concept.label = answers
+questpocanswers.Answers.AnswerList#phrase.action = set the answers of {this} to {answer}
+questpocanswers.Answers.AnswerList#phrase.navigation = {answer} of {this}
+questpocanswers.Answers.add(java.lang.String)#phrase.action = add {0} to {this}
+questpocanswers.Answers.clear()#phrase.action = clear {this}
+questpocanswers.Answers.clearReports()#phrase.action = clear the reports of {this}
+questpocanswers.Answers.setAllReportsComplete()#phrase.action = set {this} ts Complete
+questpocanswers.Answers.setPartialReportsComplete()#phrase.action = set {this} to Partially Complete

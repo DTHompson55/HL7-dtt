@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://QDP" targetNamespace="http://QDP" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <xs:complexType name="Client">
+    <xs:sequence>
+      <xs:element name="clientNmemonic" nillable="false" type="xs:string" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="name" nillable="false" type="xs:string" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="alphaName" nillable="false" type="xs:string" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="defaultChargeTo" nillable="false" type="xs:string" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="areaRouteStop" nillable="false" type="xs:string" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="autodialGroup" nillable="false" type="xs:string" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="flagAbnormals" nillable="false" type="xs:int" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="flagPartialAccepted" nillable="false" type="xs:int" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="flagRereportPartials" nillable="false" type="xs:int" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="flagNumberOfCopies" nillable="false" type="xs:int" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="flagPapReminders" nillable="false" type="xs:int" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="flagCumulative" nillable="false" type="xs:int" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="flagStatus" nillable="false" type="xs:int" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="flagPapSummary" nillable="false" type="xs:int" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="flagReportOnlyClient" nillable="false" type="xs:int" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="flagAlert" nillable="false" type="xs:int" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="flagReportDid" nillable="false" type="xs:int" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="flagImageReq" nillable="false" type="xs:int" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="flagCallPriority3" nillable="false" type="xs:int" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="flagCallTnpsToClient" nillable="false" type="xs:int" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="flagAddFaxCoverPage" nillable="false" type="xs:int" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="flagFaxMiTrailers" nillable="false" type="xs:int" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="flagAddTestReports" nillable="false" type="xs:int" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="flag18" nillable="false" type="xs:int" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="flag19" nillable="false" type="xs:int" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="flag20" nillable="false" type="xs:int" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="flagRestrictClientAccess" nillable="false" type="xs:int" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="flagStandardResultCodes" nillable="false" type="xs:int" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="flagPatientAddressOnReport" nillable="false" type="xs:int" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="flagPatientLetterOnReport" nillable="false" type="xs:int" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="flagCallTiqToClient" nillable="false" type="xs:int" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="flagSendCustomPanelId" nillable="false" type="xs:int" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="flagTissueSummary" nillable="false" type="xs:int" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="flagCopyToFinalOnly" nillable="false" type="xs:int" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="reportRoutine" nillable="false" type="xs:string" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="clientNumber" nillable="false" type="xs:string" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="masterClientNumber" nillable="false" type="xs:string" minOccurs="0" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Client" type="tns:Client"/>
+</xs:schema>

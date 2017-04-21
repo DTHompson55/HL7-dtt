@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Deployment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" ruleAppName="hl7" managingXom="true">
+  <eAnnotations source="ilog.rules.custom_properties">
+    <details key="Dep_SnapshotCreationKind" value="NEVER"/>
+    <details key="Dep_Groups" value="rtsAdministrator,rtsConfigManager"/>
+  </eAnnotations>
+  <name>cfg1</name>
+  <uuid>145552a2-f571-486f-9494-e0afa3308ea2</uuid>
+  <targets label="Sample"/>
+  <operations operationName="op1">
+    <operation href="op1.dop#6440aa82-55a8-465d-8929-1a2418da42bc"/>
+    <properties key="ruleset.debug.enabled">
+      <value><![CDATA[false]]></value>
+    </properties>
+    <properties key="ruleset.version">
+      <value><![CDATA[1.0]]></value>
+    </properties>
+    <properties key="ruleset.status">
+      <value><![CDATA[enabled]]></value>
+    </properties>
+    <properties key="com.ibm.rules.engine.bytecode.generation">
+      <value><![CDATA[true]]></value>
+    </properties>
+    <properties key="ruleset.trace.enabled">
+      <value><![CDATA[false]]></value>
+    </properties>
+  </operations>
+  <versionPolicies label="Increment minor ruleset version" ruleset="INCREMENT_MINOR" ruleapp="INCREMENT_MINOR" default="true" recurrent="true">
+    <description><![CDATA[Updates the minor version for each ruleset. Makes the new version available but retains previous versions.]]></description>
+  </versionPolicies>
+  <versionPolicies label="Let me decide ruleset versions" ruleset="MANUAL" ruleapp="MANUAL" recurrent="true">
+    <description><![CDATA[Allows you to enter your own version numbers. Used for hot fixes or updates to an earlier release.]]></description>
+  </versionPolicies>
+  <versionPolicies label="Do no not change versions" recurrent="true">
+    <description><![CDATA[Replaces the latest version of each ruleset with this release. Used for hot fixes or development.]]></description>
+  </versionPolicies>
+</com.ibm.rules.studio.model.decisionservice:Deployment>

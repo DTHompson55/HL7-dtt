@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><impactTables>
+    <ruleTable>
+        <vocElt id="qdp.Client/flagPartialAccepted/GETTER#0">
+            <rule id="2a15ea4c-9f2b-4a77-9e15-e8f2cf509b89"/>
+        </vocElt>
+        <vocElt id="qdp.Client">
+            <rule id="2a15ea4c-9f2b-4a77-9e15-e8f2cf509b89"/>
+        </vocElt>
+    </ruleTable>
+    <vocTable>
+        <rule id="2a15ea4c-9f2b-4a77-9e15-e8f2cf509b89">
+            <vocElt id="qdp.Client/flagPartialAccepted/GETTER#0"/>
+            <vocElt id="qdp.Client"/>
+        </rule>
+    </vocTable>
+    <ruleParamTable>
+        <param id="client">
+            <rule id="2a15ea4c-9f2b-4a77-9e15-e8f2cf509b89"/>
+        </param>
+        <param id="decisionType">
+            <rule id="2a15ea4c-9f2b-4a77-9e15-e8f2cf509b89"/>
+        </param>
+    </ruleParamTable>
+    <paramTable>
+        <rule id="2a15ea4c-9f2b-4a77-9e15-e8f2cf509b89">
+            <param id="client"/>
+            <param id="decisionType"/>
+        </rule>
+    </paramTable>
+    <projectTable/>
+    <variableTable>
+        <param id="b316e32a-9981-429a-a9f7-a14843e1b72f">
+            <rule id="2a15ea4c-9f2b-4a77-9e15-e8f2cf509b89"/>
+        </param>
+    </variableTable>
+    <ruleVocFileTable>
+        <vocFile file="/HL7ORMProject/bom/clientModel_en_US.voc" id="f216cab9-359e-49f5-b8a9-5de877c90234">
+            <rule id="2a15ea4c-9f2b-4a77-9e15-e8f2cf509b89"/>
+        </vocFile>
+    </ruleVocFileTable>
+    <resourceTable>
+        <resource file="/HL7ORMProject/rules/vbls.var" id="b316e32a-9981-429a-a9f7-a14843e1b72f"/>
+        <resource file="/HL7ORMProject/rules/flow.rfl" id="2a15ea4c-9f2b-4a77-9e15-e8f2cf509b89"/>
+    </resourceTable>
+</impactTables>

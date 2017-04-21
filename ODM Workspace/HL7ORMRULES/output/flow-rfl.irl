@@ -1,0 +1,135 @@
+use Java$_$Client;
+use Java$_$OBR;
+
+flowtask flow {
+  property mainflowtask = false;
+  property ilog.rules.business_name = "flow";
+  property ilog.rules.package_name = "";
+  body {
+    if ((Java_OBR.orderCodeStat.equals("S"))) {
+      goto _node_4;
+    }
+    else {
+      flow#Location;
+      flow#State;
+      flow#reflexRules;
+      if (Java_Client.acceptsPartials) {
+        _node_4 : flow#partials;
+      }
+      else {
+        flow#nonPartials;
+      }
+    }
+  }
+};
+
+ruletask flow#nonPartials {
+  property ilog.rules.business_name = "flow>nonPartials";
+  property ilog.rules.package_name = "";
+  algorithm = sequential;
+  property ilog.rules.engine.sequential.fastpath = true;
+  ordering = sorted;
+  body {
+    nonPartials.*
+  }
+};
+
+ruletask flow#partials {
+  property ilog.rules.business_name = "flow>partials";
+  property ilog.rules.package_name = "";
+  algorithm = sequential;
+  property ilog.rules.engine.sequential.fastpath = true;
+  ordering = sorted;
+  body {
+    partials.*
+  }
+};
+
+ruletask flow#reflexRules {
+  property ilog.rules.business_name = "flow>reflexRules";
+  property ilog.rules.package_name = "";
+  algorithm = sequential;
+  property ilog.rules.engine.sequential.fastpath = true;
+  ordering = sorted;
+  body {
+    reflexRules.*
+  }
+};
+
+ruletask flow#Location {
+  property ilog.rules.business_name = "flow>Location";
+  property ilog.rules.package_name = "";
+  algorithm = sequential;
+  property ilog.rules.engine.sequential.fastpath = true;
+  ordering = sorted;
+  body {
+    Location.*,
+    Location.Atlanta.*,
+    Location.Auburn_Hills.*,
+    Location.Baltimore.*,
+    Location.Bayamon.*,
+    Location.Cincinnati.*,
+    Location.Denver.*,
+    Location.Horsham.*,
+    Location.Houston.*,
+    Location.Irving.*,
+    Location.Las_Vegas.*,
+    Location.Lenexa.*,
+    Location.Lincoln.*,
+    Location.Marlborough.*,
+    Location.Mason.*,
+    Location.Miramar.*,
+    Location.Palm_Beach_Gardens.*,
+    Location.Pittsburgh.*,
+    Location.Portland.*,
+    Location.Rio_Piedras.*,
+    Location.Sacramento.*,
+    Location.San_Jose.*,
+    Location.San_Juan.*,
+    Location.Schaumburg.*,
+    Location.Seattle.*,
+    Location.St._Louis.*,
+    Location.Syosset.*,
+    Location.Tampa.*,
+    Location.Teterboro.*,
+    Location.Tucker.*,
+    Location.Wallingford.*,
+    Location.West_Hills.*,
+    Location.Wood_Dale.*
+
+  }
+};
+
+ruletask flow#State {
+  property ilog.rules.business_name = "flow>State";
+  property ilog.rules.package_name = "";
+  algorithm = sequential;
+  property ilog.rules.engine.sequential.fastpath = true;
+  ordering = sorted;
+  body {
+    State.*,
+    State.CA.*,
+    State.CO.*,
+    State.CT.*,
+    State.FL.*,
+    State.GA.*,
+    State.IL.*,
+    State.KS.*,
+    State.MA.*,
+    State.MD.*,
+    State.MI.*,
+    State.MO.*,
+    State.NE.*,
+    State.NJ.*,
+    State.NV.*,
+    State.NY.*,
+    State.OH.*,
+    State.OR.*,
+    State.PA.*,
+    State.PR.*,
+    State.TX.*,
+    State.WA.*
+
+  }
+};
+

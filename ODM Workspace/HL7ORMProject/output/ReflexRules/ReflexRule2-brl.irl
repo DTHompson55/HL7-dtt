@@ -1,0 +1,13 @@
+package ReflexRules {
+   rule ReflexRule2 {
+      property ilog.rules.business_name = "ReflexRule2";
+      property ilog.rules.package_name = "ReflexRules";
+      property status = "new";
+      when {
+         IlrContext() from ?context;
+      } then {
+         ilog.rules.brl.System.printMessage("OK");
+      }
+   }
+}
+

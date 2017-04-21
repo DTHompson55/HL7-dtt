@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><impactTables>
+    <ruleTable>
+        <vocElt id="Diagnosis">
+            <rule id="945a7c7f-dfcf-4907-b272-fb5b4d642379"/>
+        </vocElt>
+        <vocElt id="Diagnosis/Status/GETTER#0">
+            <rule id="945a7c7f-dfcf-4907-b272-fb5b4d642379"/>
+        </vocElt>
+        <vocElt id="demo.odm.ibm.com.ICDLookup/matches(java.lang.String,java.lang.String)/NAVIGATION#0">
+            <rule id="60d60d94-56b9-4ca1-a7c1-236f3bf7c044"/>
+            <rule id="945a7c7f-dfcf-4907-b272-fb5b4d642379"/>
+        </vocElt>
+        <vocElt id="DiagnosisStatus/Code/GETTER#0">
+            <rule id="945a7c7f-dfcf-4907-b272-fb5b4d642379"/>
+        </vocElt>
+        <vocElt id="ArrayOfDiagnosisDiagnosis/DiagnosisList/GETTER#0">
+            <rule id="945a7c7f-dfcf-4907-b272-fb5b4d642379"/>
+        </vocElt>
+        <vocElt id="ArrayOfDiagnosisDiagnosis">
+            <rule id="945a7c7f-dfcf-4907-b272-fb5b4d642379"/>
+        </vocElt>
+    </ruleTable>
+    <vocTable>
+        <rule id="60d60d94-56b9-4ca1-a7c1-236f3bf7c044">
+            <vocElt id="demo.odm.ibm.com.ICDLookup/matches(java.lang.String,java.lang.String)/NAVIGATION#0"/>
+        </rule>
+        <rule id="945a7c7f-dfcf-4907-b272-fb5b4d642379">
+            <vocElt id="Diagnosis/Status/GETTER#0"/>
+            <vocElt id="Diagnosis"/>
+            <vocElt id="demo.odm.ibm.com.ICDLookup/matches(java.lang.String,java.lang.String)/NAVIGATION#0"/>
+            <vocElt id="DiagnosisStatus/Code/GETTER#0"/>
+            <vocElt id="ArrayOfDiagnosisDiagnosis/DiagnosisList/GETTER#0"/>
+            <vocElt id="ArrayOfDiagnosisDiagnosis"/>
+        </rule>
+    </vocTable>
+    <ruleParamTable>
+        <param id="diagnoses">
+            <rule id="945a7c7f-dfcf-4907-b272-fb5b4d642379"/>
+        </param>
+        <param id="msg">
+            <rule id="945a7c7f-dfcf-4907-b272-fb5b4d642379"/>
+        </param>
+    </ruleParamTable>
+    <paramTable>
+        <rule id="945a7c7f-dfcf-4907-b272-fb5b4d642379">
+            <param id="diagnoses"/>
+            <param id="msg"/>
+        </rule>
+    </paramTable>
+    <projectTable/>
+    <variableTable>
+        <param id="81183632-3eb4-4b41-a6ea-c6043ee9bbe9">
+            <rule id="945a7c7f-dfcf-4907-b272-fb5b4d642379"/>
+        </param>
+    </variableTable>
+    <ruleVocFileTable>
+        <vocFile file="/SDA_Usecase2/bom/model_en_US.voc" id="58f2d15c-996e-470f-9733-8d5a86063305">
+            <rule id="945a7c7f-dfcf-4907-b272-fb5b4d642379"/>
+        </vocFile>
+        <vocFile file="/SDA_Usecase2/bom/regexModel_en_US.voc" id="b1ae8af3-bfdc-4f50-92de-ad8c5ac35d16">
+            <rule id="60d60d94-56b9-4ca1-a7c1-236f3bf7c044"/>
+        </vocFile>
+    </ruleVocFileTable>
+    <resourceTable>
+        <resource file="/SDA_Usecase2/rules/diagnosisVbls.var" id="81183632-3eb4-4b41-a6ea-c6043ee9bbe9"/>
+        <resource file="/SDA_Usecase2/rules/pkg/BAL2.brl" id="60d60d94-56b9-4ca1-a7c1-236f3bf7c044"/>
+        <resource file="/SDA_Usecase2/rules/pkg/BAL Rule.brl" id="945a7c7f-dfcf-4907-b272-fb5b4d642379"/>
+    </resourceTable>
+</impactTables>

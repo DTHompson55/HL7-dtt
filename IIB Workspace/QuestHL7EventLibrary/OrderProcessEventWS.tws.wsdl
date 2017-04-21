@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" targetNamespace="http://QDP/OrderProcessEventWS.tws" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://QDP/OrderProcessEventWS.tws" xmlns:impl1="http://QuestHL7Records" xmlns:intf="http://QDP/OrderProcessEventWS.tws" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <wsdl:documentation>
+    <wsdl:appinfo source="WMQI_APPINFO">
+      <MRWSDLAppInfo imported="true">
+        <generatedXSD location="OrderProcessEventWS.tws_InlineSchema1.xsd"/>
+        <generatedXSD location="OrderProcessEventWS.tws_InlineSchema2.xsd"/>
+        <generatedXSD location="OrderProcessEventWS.tws_InlineSchema3.xsd"/>
+        <binding hasEncoding="false" imported="true" name="OrderProcessEventWSSoapSoapBinding" originalBindingStyle="document"/>
+      </MRWSDLAppInfo>
+    </wsdl:appinfo>
+  </wsdl:documentation>
+  <wsdl:types>
+    <schema xmlns="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://QDP/OrderProcessEventWS.tws">
+<import namespace="http://QuestHL7Records" schemaLocation="OrderProcessEventWS.tws_InlineSchema3.xsd"/>
+<xsd:include schemaLocation="OrderProcessEventWS.tws_InlineSchema1.xsd"/>
+    </schema>
+    <schema xmlns="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://QuestHL7Segments" xmlns:impl1="http://QuestHL7Segments" xmlns:impl2="http://QuestHL7Records">
+<import namespace="http://QuestHL7Records">
+    <!--Add URI of the schema document for the imported namespace using 'schemaLocation' attribute.-->
+  </import>
+<import namespace="http://QDP/OrderProcessEventWS.tws">
+    <!--Add URI of the schema document for the imported namespace using 'schemaLocation' attribute.-->
+  </import>
+<xsd:include schemaLocation="OrderProcessEventWS.tws_InlineSchema2.xsd"/>
+    </schema>
+    <schema xmlns="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://QuestHL7Records" xmlns:impl1="http://QuestHL7Segments" xmlns:impl2="http://QuestHL7Records">
+<import namespace="http://QDP/OrderProcessEventWS.tws">
+    <!--Add URI of the schema document for the imported namespace using 'schemaLocation' attribute.-->
+  </import>
+<import namespace="http://QuestHL7Segments" schemaLocation="OrderProcessEventWS.tws_InlineSchema2.xsd">
+    <!--Add URI of the schema document for the imported namespace using 'schemaLocation' attribute.-->
+  </import>
+<xsd:include schemaLocation="OrderProcessEventWS.tws_InlineSchema3.xsd"/>
+    </schema>
+  </wsdl:types>
+  <wsdl:message name="processMessageResponse">
+    <wsdl:part element="impl:processMessageResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="processMessageRequest">
+    <wsdl:part element="impl:processMessage" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="OrderProcessEventWSPortType">
+    <wsdl:operation name="processMessage">
+      <wsdl:input message="impl:processMessageRequest" name="processMessageRequest">
+    </wsdl:input>
+      <wsdl:output message="impl:processMessageResponse" name="processMessageResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="OrderProcessEventWSSoapSoapBinding" type="impl:OrderProcessEventWSPortType">
+    <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="processMessage">
+      <wsdlsoap:operation soapAction="http://QDP/OrderProcessEventWS.tws/processMessage"/>
+      <wsdl:input name="processMessageRequest">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="processMessageResponse">
+        <wsdlsoap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="OrderProcessEventWS">
+    <wsdl:port binding="impl:OrderProcessEventWSSoapSoapBinding" name="OrderProcessEventWSSoap">
+      <wsdlsoap:address location="http://rcbpm3.bpm4business.com:43218/teamworks/webservices/QDP/OrderProcessEventWS.tws"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,14 @@
+package reflexRules {
+   use answers;
+   rule ReflexDebug {
+      property ilog.rules.business_name = "ReflexDebug";
+      property ilog.rules.package_name = "reflexRules";
+      property status = "new";
+      when {
+         IlrContext() from ?context;
+      } then {
+         answers.add("Executing Reflex Rule Path");
+      }
+   }
+}
+

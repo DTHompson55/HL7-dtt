@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><teamservers>
+<teamserver>
+<target dataSource="" login="rtsAdmin" url="http://localhost:9081/teamserver"/>
+<entry baseType="B2XMapping" checksum="2212175999" projectName="HL7ORMBOM" qualifiedName="JavaModel" sourceCS="1F1CC565DE85D30304947B792373E00A" targetCS="2212175999" type="B2XMapping" uuid="e311ae03-493d-43c3-9261-c2cbfa49ecb1"/>
+<entry baseType="BusinessObjectModel" checksum="2212175999" projectName="HL7ORMBOM" qualifiedName="JavaModel" sourceCS="C83DB7E65797C7D45D2D3875CFCBD338" targetCS="2212175999" type="BusinessObjectModel" uuid="a27f3ec5-603d-467c-afd8-dbcf03202f93"/>
+<entry baseType="Resource" checksum="2226261478" projectName="HL7ORMBOM" qualifiedName="xom-libraries/HL7ORMJava.zip" sourceCS="BA100607AEA532AEB945B661B31A38E1" targetCS="2226261478" type="Resource" uuid="xom-libraries/HL7ORMJava.zip"/>
+<entry baseType="RuleProjectInfo" checksum="3838566216" projectName="HL7ORMBOM" qualifiedName="HL7ORMBOM" sourceCS="9592571917A8D12324E6486D3E92E977" targetCS="3838566216" type="RuleProjectInfo" uuid="627efbae-5078-419f-84fa-43d378e95f60"/>
+<entry baseType="Vocabulary" checksum="2212175999" projectName="HL7ORMBOM" qualifiedName="JavaModel_en_US" sourceCS="48D14E9A6B27FCC531C593E3B3C1DC43" targetCS="2212175999" type="Vocabulary" uuid="243503d6-cac4-4584-a28f-f604d0084b77"/>
+</teamserver>
+</teamservers>

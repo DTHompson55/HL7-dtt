@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><impactTables>
+    <ruleTable/>
+    <vocTable/>
+    <ruleParamTable>
+        <param id="decisionType">
+            <rule id="6f4ebde5-de31-41d2-a183-2f2662cf171a"/>
+        </param>
+    </ruleParamTable>
+    <paramTable>
+        <rule id="6f4ebde5-de31-41d2-a183-2f2662cf171a">
+            <param id="decisionType"/>
+        </rule>
+    </paramTable>
+    <projectTable/>
+    <variableTable>
+        <param id="e73c6d73-3636-47ca-b3c9-4d6dd9941d94">
+            <rule id="6f4ebde5-de31-41d2-a183-2f2662cf171a"/>
+        </param>
+    </variableTable>
+    <ruleVocFileTable/>
+    <resourceTable>
+        <resource file="/Copy of HL7ORMProject/rules/flow.rfl" id="6f4ebde5-de31-41d2-a183-2f2662cf171a"/>
+        <resource file="/Copy of HL7ORMProject/rules/vbls.var" id="e73c6d73-3636-47ca-b3c9-4d6dd9941d94"/>
+    </resourceTable>
+</impactTables>

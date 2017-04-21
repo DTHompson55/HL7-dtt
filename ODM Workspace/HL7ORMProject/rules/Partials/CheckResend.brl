@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>CheckResend</name>
+  <uuid>94d375c3-1fb7-433c-8097-561aa9685942</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[definitions
+ set 'reportable' to the flag rereport partials of 'the Client';
+if
+  'the ORU' has Some Orders Ready  
+  and 'the ORU' checkFlagReReportable ( 'reportable' ) 
+then
+  add "** Partials Ready to RE-Report" to 'the Decision Answer' ;
+  add "The RE-Reportable flag is " + the flag rereport partials of 'the Client' to 'the Decision Answer' ;
+  
+  ]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

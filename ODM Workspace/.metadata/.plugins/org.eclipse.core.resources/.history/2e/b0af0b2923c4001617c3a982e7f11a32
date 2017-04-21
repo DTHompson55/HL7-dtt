@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" xmlns:ilog.rules.studio.model.query.extractor="http://ilog.rules.studio/model/query/extractor.ecore" rulesetName="IFop1" targetRuleProjectName="HL7ORMIF">
+  <name>IFop1</name>
+  <uuid>688dc580-0e63-430c-bc8f-7d3552ae6584</uuid>
+  <referencedVariables variableName="answers" variableSetName="ruleVbls" direction="OUT">
+    <variableSet href="../../HL7ORMRULES/rules/ruleVbls.var#e66c1e32-26ca-45de-a8f6-4e768a24b45f"/>
+  </referencedVariables>
+  <referencedVariables variableName="ORM" variableSetName="IFVbls" direction="IN_OUT">
+    <variableSet href="../rules/IFVbls.var#979e43ca-c661-4c3f-9471-e0ea26842895"/>
+  </referencedVariables>
+  <referencedVariables variableName="IF_ORU" variableSetName="IFVbls" direction="IN_OUT">
+    <variableSet href="../rules/IFVbls.var#979e43ca-c661-4c3f-9471-e0ea26842895"/>
+  </referencedVariables>
+  <referencedVariables variableName="decisionType" variableSetName="IFVbls">
+    <variableSet href="../rules/IFVbls.var#979e43ca-c661-4c3f-9471-e0ea26842895"/>
+  </referencedVariables>
+  <referencedVariables variableName="client" variableSetName="IFVbls">
+    <variableSet href="../rules/IFVbls.var#979e43ca-c661-4c3f-9471-e0ea26842895"/>
+  </referencedVariables>
+  <referencedVariables variableName="reportAll" variableSetName="IFVbls" direction="OUT">
+    <variableSet href="../rules/IFVbls.var#979e43ca-c661-4c3f-9471-e0ea26842895"/>
+  </referencedVariables>
+  <referencedVariables variableName="reportParials" variableSetName="IFVbls" direction="OUT">
+    <variableSet href="../rules/IFVbls.var#979e43ca-c661-4c3f-9471-e0ea26842895"/>
+  </referencedVariables>
+  <extractor xsi:type="ilog.rules.studio.model.query.extractor:QueryExtractor" name="IFop1_extractor" validator="Default Validator"/>
+  <targetRuleProject href="../../HL7ORMIF#c7bc2511-da8b-45db-aa19-b112c4399a95"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>

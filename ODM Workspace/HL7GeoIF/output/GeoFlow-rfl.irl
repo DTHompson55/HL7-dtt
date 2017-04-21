@@ -1,0 +1,35 @@
+import hl7.demo.ibm.com.ORU_Java;
+use Java_ORU;
+use stateName;
+
+use State;
+
+flowtask GeoFlow {
+  property mainflowtask = false;
+  property ilog.rules.business_name = "GeoFlow";
+  property ilog.rules.package_name = "";
+  body {
+    GeoFlow#task$_$4;
+    GeoFlow#State;
+  }
+};
+
+flowtask GeoFlow#State {
+  property ilog.rules.business_name = "GeoFlow>task_3";
+  property ilog.rules.package_name = "";
+  body {
+    State;
+  }
+};
+
+functiontask GeoFlow#task$_$4 {
+  property ilog.rules.business_name = "GeoFlow>task_4";
+  property ilog.rules.package_name = "";
+  body {
+    hl7.demo.ibm.com.ORU_Java uj = hl7.demo.ibm.com.ORU_Java.create();
+    Java_ORU = uj;
+    uj.facility = stateName;
+
+  }
+};
+

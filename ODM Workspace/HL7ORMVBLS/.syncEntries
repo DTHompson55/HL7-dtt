@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><teamservers>
+<teamserver>
+<target dataSource="" login="rtsAdmin" url="http://localhost:9081/teamserver"/>
+<entry baseType="RuleProjectInfo" checksum="1269651169" projectName="HL7ORMVBLS" qualifiedName="HL7ORMVBLS" sourceCS="CE92B91A7B00769F9AE3FAAF1DD4B847" targetCS="1269651169" type="RuleProjectInfo" uuid="2fba8b76-2606-40f6-8e20-571e55dc9c30"/>
+<entry baseType="VariableSet" checksum="1813336639" projectName="HL7ORMVBLS" qualifiedName="coreVbls" sourceCS="01AACC81E4F58E28C04CA6EE4C750279" targetCS="1813336639" type="VariableSet" uuid="f8c2db1f-fc63-47de-ae6c-f05b9568501c"/>
+</teamserver>
+</teamservers>

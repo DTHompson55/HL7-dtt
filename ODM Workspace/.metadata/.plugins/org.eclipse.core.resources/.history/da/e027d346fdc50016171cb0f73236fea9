@@ -1,0 +1,115 @@
+
+property loadGetterSetterAsProperties "true"
+property origin "xom:/HL7ORMBOM//HL7ORMJava"
+property uuid "a27f3ec5-603d-467c-afd8-dbcf03202f93"
+package hl7.demo.ibm.com;
+
+
+public class HL7_Helper
+{
+    public HL7_Helper();
+    public static string booleanToString(boolean arg);
+    public static hl7.demo.ibm.com.HL7_Helper create();
+    public static string doubleToString(double arg);
+    public string getCityFromLocation(string arg);
+    public string getEventType(string arg);
+    public string getMedicalConditionFromICD(string arg);
+    public string getStateFromLocation(string arg);
+    public static string intToString(int arg);
+    public static boolean stringToBoolean(string arg);
+    public static double stringToDouble(string arg);
+    public static int stringToInt(string arg);
+}
+
+public class ICD10
+{
+    public ICD10();
+}
+
+public class ICD9
+{
+    public ICD9();
+}
+
+public class OBR_Java
+{
+    public string BStationCode;
+    public string TIQFlag;
+    public string cancelOrderFlag;
+    public string customProfileNumber;
+    public readonly java.util.List obxList domain 0,* class hl7.demo.ibm.com.OBX_Java;
+    public string orderCodeActionCode;
+    public string orderCodeStat;
+    public string orderDate;
+    public string orderID;
+    public string orderName;
+    public string orderValue;
+    public string priorityOrException;
+    public boolean reportable;
+    public boolean rereportable;
+    public boolean sent;
+    public OBR_Java();
+    public void addObx(hl7.demo.ibm.com.OBX_Java arg);
+    public static hl7.demo.ibm.com.OBR_Java create();
+    public hl7.demo.ibm.com.OBX_Java getOBX(string arg);
+    public hl7.demo.ibm.com.OBX_Java getObxByID(string arg);
+    public hl7.demo.ibm.com.OBX_Java getObxByName(string arg);
+}
+
+public class OBX_Java
+{
+    public string OBXSequenceNumber;
+    public readonly boolean abnormal;
+    public string abnormalFlags;
+    public string accessionNumber;
+    public string control;
+    public readonly boolean high;
+    public readonly boolean low;
+    public string natureOfAbnoralFlags;
+    public readonly boolean normal;
+    public string observationDate;
+    public string observationID;
+    public string observationName;
+    public string observationRange;
+    public string observationResultStatus;
+    public string observationUnits;
+    public string observationValue;
+    public boolean pending;
+    public OBX_Java();
+    public static hl7.demo.ibm.com.OBX_Java create();
+    public void setPending(string arg);
+}
+
+public class ORM_Java
+{
+    public ORM_Java();
+}
+
+public class ORU_Java
+{
+    public boolean allReportsAreReady;
+    public string facility;
+    public string locationCity;
+    public string locationState;
+    public readonly java.util.List obrList domain 0,* class hl7.demo.ibm.com.OBR_Java;
+    public boolean someReportsAreReady;
+    public ORU_Java();
+    public static hl7.demo.ibm.com.ORU_Java create();
+    public hl7.demo.ibm.com.OBR_Java createOBR_Java(string arg1, string arg2);
+    public hl7.demo.ibm.com.OBX_Java createOBX_Java(hl7.demo.ibm.com.OBR_Java arg1, string arg2, string arg3);
+    public hl7.demo.ibm.com.OBR_Java getOBR(string arg);
+    public hl7.demo.ibm.com.OBX_Java getOBX(string arg);
+    public hl7.demo.ibm.com.OBR_Java getObrByID(string arg);
+    public hl7.demo.ibm.com.OBR_Java getObrByName(string arg);
+    public hl7.demo.ibm.com.OBX_Java getObxByID(string arg);
+    public hl7.demo.ibm.com.OBX_Java getObxByName(string arg);
+}
+
+public class TheClient
+{
+    public boolean acceptsPartials;
+    public boolean acceptsRereportables;
+    public TheClient();
+    public static hl7.demo.ibm.com.TheClient create();
+}
+

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><mappingRoot xmlns="http://www.ibm.com/2008/ccl/Mapping" domainID="com.ibm.msl.mapping.xml" domainIDExtension="mb" mainMap="true" targetNamespace="default" version="8.0.5.0" xmlns:map="default">
+    <input path="/chapter4.xsd" var="var1"/>
+    <input path="mbsharedlib://QuestHL7OrderLibrary/OrderProcessStartWS.tws_InlineSchema1.xsd" var="var"/>
+    <output path="jar:file://!com/ibm/etools/mft/map/xsds/predefined/SOAPDomainMsg.xsd"/>
+    <namespaces>
+        <namespace kind="supplement" prefix="in" uri="urn:hl7-org:v2xml"/>
+    </namespaces>
+    <generation engine="xquery"/>
+    <mappingDeclaration name="HL7Services_ORM_to_SOAP">
+        <input namespace="urn:hl7-org:v2xml" path="$var1/mb:msg(ORM_O01,assembly,DFDL,Properties)" var="ComIbmMessageAssembly_ORM_O01"/>
+        <output path="mb:msg(SOAP_Domain_Msg,assembly,SOAP,Properties)" var="ComIbmMessageAssembly_SOAP_Domain_Msg">
+            <cast path="$ComIbmMessageAssembly_SOAP_Domain_Msg/SOAP_Domain_Msg/Body/any" qualifier="{http://QDP/OrderProcessStartWS.tws}startOrder" ref="var"/>
+        </output>
+        <move>
+            <input path="$ComIbmMessageAssembly_ORM_O01/Properties"/>
+            <output path="$ComIbmMessageAssembly_SOAP_Domain_Msg/Properties"/>
+        </move>
+        <local>
+            <input path="$ComIbmMessageAssembly_ORM_O01/ORM_O01"/>
+            <output path="$ComIbmMessageAssembly_SOAP_Domain_Msg/SOAP_Domain_Msg/Body/startOrder/order"/>
+            <local>
+                <input path="MSH"/>
+                <output path="MSH"/>
+                <move>
+                    <input path="MSH.4.SendingFacility/HD.1"/>
+                    <output path="OriginatingFacility"/>
+                </move>
+                <move>
+                    <input path="MSH.6.ReceivingFacility/HD.1"/>
+                    <output path="ReceivingFacility"/>
+                </move>
+                <move>
+                    <input path="MSH.9.MessageType/MSG.1"/>
+                    <output path="MsgType_1"/>
+                </move>
+                <move>
+                    <input path="MSH.9.MessageType/MSG.2"/>
+                    <output path="MsgType_2"/>
+                </move>
+                <move>
+                    <input path="MSH.9.MessageType/MSG.3"/>
+                    <output path="MsgType_3"/>
+                </move>
+                <move>
+                    <input path="MSH.10.MessageControlID"/>
+                    <output path="ControlID"/>
+                </move>
+            </local>
+            <local>
+                <input path="ORM_O01.PATIENT"/>
+                <output path="ORM_PATIENT"/>
+                <local>
+                    <input path="PID"/>
+                    <output path="PID"/>
+                    <move>
+                        <input path="PID.1.SetIDPID"/>
+                        <output path="PIDSequence"/>
+                    </move>
+                </local>
+            </local>
+            <foreach>
+                <input path="ORM_O01.ORDER"/>
+                <output path="ORM_ORDER"/>
+                <local>
+                    <input path="ORC"/>
+                    <output path="ORC"/>
+                    <move>
+                        <input path="ORC.1.OrderControl"/>
+                        <output path="OrderControl"/>
+                    </move>
+                </local>
+                <foreach>
+                    <input path="ORM_O01.ORDER_DETAIL"/>
+                    <output path="ORM_ORDER_DETAIL"/>
+                    <local>
+                        <input path="ORM_O01.CHOICE/OBR"/>
+                        <output path="OBR"/>
+                        <move>
+                            <input path="OBR.1.SetIDOBR"/>
+                            <output path="SequenceNumber"/>
+                        </move>
+                    </local>
+                </foreach>
+            </foreach>
+        </local>
+    </mappingDeclaration>
+</mappingRoot>

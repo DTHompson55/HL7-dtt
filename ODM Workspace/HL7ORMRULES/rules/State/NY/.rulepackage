@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:RulePackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>NY</name>
+  <uuid>12f65b19-2370-4360-b2ff-16c20fa63b7b</uuid>
+</ilog.rules.studio.model.base:RulePackage>

@@ -1,0 +1,1981 @@
+include "ilog/rules/xml/binding/xsd_types.xom";
+
+package qdp;
+
+
+public class Client
+        extends ilog.rules.xml.IlrXmlObject
+        property "ilog.rules.engine.driver" "ilog.rules.xml.binding.IlrXmlClassDriver"
+        property "ilog.rules.xml.classInfo" {
+            derivation "EXTENSION",
+            model "sequence",
+            version "ilog.rules.xml.binding.IlrXmlDefaultDataDriver_7_0",
+            xmlFieldNumber "37",
+            xmlScope "global",
+            xmlType "{http://QDP}Client",
+            xsdLocation "client.xsd"
+        }
+{
+    public string alphaName domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "2",
+                    xmlKind "ELEMENT",
+                    xmlName "{http://QDP}alphaName",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string areaRouteStop domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "4",
+                    xmlKind "ELEMENT",
+                    xmlName "{http://QDP}areaRouteStop",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string autodialGroup domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "5",
+                    xmlKind "ELEMENT",
+                    xmlName "{http://QDP}autodialGroup",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string clientNmemonic domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "0",
+                    xmlKind "ELEMENT",
+                    xmlName "{http://QDP}clientNmemonic",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string clientNumber domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "35",
+                    xmlKind "ELEMENT",
+                    xmlName "{http://QDP}clientNumber",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string defaultChargeTo domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "3",
+                    xmlKind "ELEMENT",
+                    xmlName "{http://QDP}defaultChargeTo",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public int flag18 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "23",
+                    xmlKind "ELEMENT",
+                    xmlName "{http://QDP}flag18",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}int",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdInt"
+                };
+    public int flag19 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "24",
+                    xmlKind "ELEMENT",
+                    xmlName "{http://QDP}flag19",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}int",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdInt"
+                };
+    public int flag20 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "25",
+                    xmlKind "ELEMENT",
+                    xmlName "{http://QDP}flag20",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}int",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdInt"
+                };
+    public int flagAbnormals domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "6",
+                    xmlKind "ELEMENT",
+                    xmlName "{http://QDP}flagAbnormals",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}int",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdInt"
+                };
+    public int flagAddFaxCoverPage domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "20",
+                    xmlKind "ELEMENT",
+                    xmlName "{http://QDP}flagAddFaxCoverPage",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}int",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdInt"
+                };
+    public int flagAddTestReports domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "22",
+                    xmlKind "ELEMENT",
+                    xmlName "{http://QDP}flagAddTestReports",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}int",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdInt"
+                };
+    public int flagAlert domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "15",
+                    xmlKind "ELEMENT",
+                    xmlName "{http://QDP}flagAlert",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}int",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdInt"
+                };
+    public int flagCallPriority3 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "18",
+                    xmlKind "ELEMENT",
+                    xmlName "{http://QDP}flagCallPriority3",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}int",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdInt"
+                };
+    public int flagCallTiqToClient domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "30",
+                    xmlKind "ELEMENT",
+                    xmlName "{http://QDP}flagCallTiqToClient",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}int",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdInt"
+                };
+    public int flagCallTnpsToClient domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "19",
+                    xmlKind "ELEMENT",
+                    xmlName "{http://QDP}flagCallTnpsToClient",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}int",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdInt"
+                };
+    public int flagCopyToFinalOnly domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "33",
+                    xmlKind "ELEMENT",
+                    xmlName "{http://QDP}flagCopyToFinalOnly",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}int",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdInt"
+                };
+    public int flagCumulative domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "11",
+                    xmlKind "ELEMENT",
+                    xmlName "{http://QDP}flagCumulative",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}int",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdInt"
+                };
+    public int flagFaxMiTrailers domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "21",
+                    xmlKind "ELEMENT",
+                    xmlName "{http://QDP}flagFaxMiTrailers",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}int",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdInt"
+                };
+    public int flagImageReq domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "17",
+                    xmlKind "ELEMENT",
+                    xmlName "{http://QDP}flagImageReq",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}int",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdInt"
+                };
+    public int flagNumberOfCopies domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "9",
+                    xmlKind "ELEMENT",
+                    xmlName "{http://QDP}flagNumberOfCopies",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}int",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdInt"
+                };
+    public int flagPapReminders domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "10",
+                    xmlKind "ELEMENT",
+                    xmlName "{http://QDP}flagPapReminders",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}int",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdInt"
+                };
+    public int flagPapSummary domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "13",
+                    xmlKind "ELEMENT",
+                    xmlName "{http://QDP}flagPapSummary",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}int",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdInt"
+                };
+    public int flagPartialAccepted domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "7",
+                    xmlKind "ELEMENT",
+                    xmlName "{http://QDP}flagPartialAccepted",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}int",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdInt"
+                };
+    public int flagPatientAddressOnReport domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "28",
+                    xmlKind "ELEMENT",
+                    xmlName "{http://QDP}flagPatientAddressOnReport",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}int",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdInt"
+                };
+    public int flagPatientLetterOnReport domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "29",
+                    xmlKind "ELEMENT",
+                    xmlName "{http://QDP}flagPatientLetterOnReport",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}int",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdInt"
+                };
+    public int flagReportDid domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "16",
+                    xmlKind "ELEMENT",
+                    xmlName "{http://QDP}flagReportDid",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}int",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdInt"
+                };
+    public int flagReportOnlyClient domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "14",
+                    xmlKind "ELEMENT",
+                    xmlName "{http://QDP}flagReportOnlyClient",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}int",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdInt"
+                };
+    public int flagRereportPartials domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "8",
+                    xmlKind "ELEMENT",
+                    xmlName "{http://QDP}flagRereportPartials",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}int",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdInt"
+                };
+    public int flagRestrictClientAccess domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "26",
+                    xmlKind "ELEMENT",
+                    xmlName "{http://QDP}flagRestrictClientAccess",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}int",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdInt"
+                };
+    public int flagSendCustomPanelId domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "31",
+                    xmlKind "ELEMENT",
+                    xmlName "{http://QDP}flagSendCustomPanelId",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}int",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdInt"
+                };
+    public int flagStandardResultCodes domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "27",
+                    xmlKind "ELEMENT",
+                    xmlName "{http://QDP}flagStandardResultCodes",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}int",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdInt"
+                };
+    public int flagStatus domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "12",
+                    xmlKind "ELEMENT",
+                    xmlName "{http://QDP}flagStatus",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}int",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdInt"
+                };
+    public int flagTissueSummary domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "32",
+                    xmlKind "ELEMENT",
+                    xmlName "{http://QDP}flagTissueSummary",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}int",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdInt"
+                };
+    public string masterClientNumber domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "36",
+                    xmlKind "ELEMENT",
+                    xmlName "{http://QDP}masterClientNumber",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string name domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "1",
+                    xmlKind "ELEMENT",
+                    xmlName "{http://QDP}name",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string reportRoutine domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "34",
+                    xmlKind "ELEMENT",
+                    xmlName "{http://QDP}reportRoutine",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public Client();
+    public void setUnknownFlag18();
+    public void setUnknownFlag19();
+    public void setUnknownFlag20();
+    public void setUnknownFlagAbnormals();
+    public void setUnknownFlagAddFaxCoverPage();
+    public void setUnknownFlagAddTestReports();
+    public void setUnknownFlagAlert();
+    public void setUnknownFlagCallPriority3();
+    public void setUnknownFlagCallTiqToClient();
+    public void setUnknownFlagCallTnpsToClient();
+    public void setUnknownFlagCopyToFinalOnly();
+    public void setUnknownFlagCumulative();
+    public void setUnknownFlagFaxMiTrailers();
+    public void setUnknownFlagImageReq();
+    public void setUnknownFlagNumberOfCopies();
+    public void setUnknownFlagPapReminders();
+    public void setUnknownFlagPapSummary();
+    public void setUnknownFlagPartialAccepted();
+    public void setUnknownFlagPatientAddressOnReport();
+    public void setUnknownFlagPatientLetterOnReport();
+    public void setUnknownFlagReportDid();
+    public void setUnknownFlagReportOnlyClient();
+    public void setUnknownFlagRereportPartials();
+    public void setUnknownFlagRestrictClientAccess();
+    public void setUnknownFlagSendCustomPanelId();
+    public void setUnknownFlagStandardResultCodes();
+    public void setUnknownFlagStatus();
+    public void setUnknownFlagTissueSummary();
+}
+
+class IlogRulesXmlPackage
+        property "ilog.rules.xml.packageInfo" {
+            "1" {
+                xmlName "{http://QDP}Client",
+                xomType "qdp.Client"
+            },
+            version "ilog.rules.xml.binding.IlrXmlDefaultDataDriver_7_0"
+        }
+        property visible "false"
+{
+}
+
+package questhl7records;
+
+
+class IlogRulesXmlPackage
+        property "ilog.rules.xml.packageInfo" {
+            "1" {
+                xmlName "{http://QuestHL7Records}ORU",
+                xomType "questhl7records.ORU"
+            },
+            "2" {
+                xmlName "{http://QuestHL7Records}ORM",
+                xomType "questhl7records.ORM"
+            },
+            version "ilog.rules.xml.binding.IlrXmlDefaultDataDriver_7_0"
+        }
+        property visible "false"
+{
+}
+
+public class ORM
+        extends ilog.rules.xml.IlrXmlObject
+        property "ilog.rules.engine.driver" "ilog.rules.xml.binding.IlrXmlClassDriver"
+        property "ilog.rules.xml.classInfo" {
+            derivation "EXTENSION",
+            model "sequence",
+            version "ilog.rules.xml.binding.IlrXmlDefaultDataDriver_7_0",
+            xmlFieldNumber "3",
+            xmlScope "global",
+            xmlType "{http://QuestHL7Records}ORM",
+            xsdLocation "HL7_Records.xsd"
+        }
+{
+    public questhl7segments.MSH MSH
+                property "ilog.rules.xml.fieldInfo" {
+                    index "0",
+                    xmlKind "ELEMENT",
+                    xmlName "MSH",
+                    xmlType "{http://QuestHL7Segments}MSH",
+                    xomComponentType "questhl7segments.MSH"
+                };
+    public java.util.Vector ORM_ORDERList domain 1,* class questhl7segments.ORM_ORDER
+                property "ilog.rules.xml.fieldInfo" {
+                    index "2",
+                    xmlKind "ELEMENT",
+                    xmlName "ORM_ORDER",
+                    xmlType "{http://QuestHL7Segments}ORM_ORDER",
+                    xomComponentType "questhl7segments.ORM_ORDER"
+                };
+    public questhl7segments.ORM_PATIENT ORM_PATIENT domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "1",
+                    xmlKind "ELEMENT",
+                    xmlName "ORM_PATIENT",
+                    xmlType "{http://QuestHL7Segments}ORM_PATIENT",
+                    xomComponentType "questhl7segments.ORM_PATIENT"
+                };
+    public ORM();
+}
+
+public class ORU
+        extends ilog.rules.xml.IlrXmlObject
+        property "ilog.rules.engine.driver" "ilog.rules.xml.binding.IlrXmlClassDriver"
+        property "ilog.rules.xml.classInfo" {
+            derivation "EXTENSION",
+            model "sequence",
+            version "ilog.rules.xml.binding.IlrXmlDefaultDataDriver_7_0",
+            xmlFieldNumber "2",
+            xmlScope "global",
+            xmlType "{http://QuestHL7Records}ORU",
+            xsdLocation "HL7_Records.xsd"
+        }
+{
+    public questhl7segments.MSH MSH
+                property "ilog.rules.xml.fieldInfo" {
+                    index "0",
+                    xmlKind "ELEMENT",
+                    xmlName "MSH",
+                    xmlType "{http://QuestHL7Segments}MSH",
+                    xomComponentType "questhl7segments.MSH"
+                };
+    public questhl7segments.ORU_PATIENT_RESULT ORU_PATIENT_RESULT domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "1",
+                    xmlKind "ELEMENT",
+                    xmlName "ORU_PATIENT_RESULT",
+                    xmlType "{http://QuestHL7Segments}ORU_PATIENT_RESULT",
+                    xomComponentType "questhl7segments.ORU_PATIENT_RESULT"
+                };
+    public ORU();
+}
+
+package questhl7segments;
+
+
+class IlogRulesXmlPackage
+        property "ilog.rules.xml.packageInfo" {
+            version "ilog.rules.xml.binding.IlrXmlDefaultDataDriver_7_0"
+        }
+        property visible "false"
+{
+}
+
+public class MSH
+        extends ilog.rules.xml.IlrXmlObject
+        property "ilog.rules.engine.driver" "ilog.rules.xml.binding.IlrXmlClassDriver"
+        property "ilog.rules.xml.classInfo" {
+            derivation "EXTENSION",
+            model "sequence",
+            version "ilog.rules.xml.binding.IlrXmlDefaultDataDriver_7_0",
+            xmlFieldNumber "6",
+            xmlScope "global",
+            xmlType "{http://QuestHL7Segments}MSH",
+            xsdLocation "HL7_Segments.xsd"
+        }
+{
+    public string ControlID domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "4",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "ControlID",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string MsgType_1 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "1",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "MsgType_1",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string MsgType_2 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "2",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "MsgType_2",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string MsgType_3 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "3",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "MsgType_3",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string OriginatingFacility domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "0",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "OriginatingFacility",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string ReceivingFacility domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "5",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "ReceivingFacility",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public MSH();
+}
+
+public class NTE
+        extends ilog.rules.xml.IlrXmlObject
+        property "ilog.rules.engine.driver" "ilog.rules.xml.binding.IlrXmlClassDriver"
+        property "ilog.rules.xml.classInfo" {
+            derivation "EXTENSION",
+            model "sequence",
+            version "ilog.rules.xml.binding.IlrXmlDefaultDataDriver_7_0",
+            xmlFieldNumber "9",
+            xmlScope "global",
+            xmlType "{http://QuestHL7Segments}NTE",
+            xsdLocation "HL7_Segments.xsd"
+        }
+{
+    public string Comment_1 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "2",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "Comment_1",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string Comment_2 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "3",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "Comment_2",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string Comment_3 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "4",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "Comment_3",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string Comment_4 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "5",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "Comment_4",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string Comment_5 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "6",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "Comment_5",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string Comment_6 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "7",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "Comment_6",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string Comment_7 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "8",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "Comment_7",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string NTESequenceNumber domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "0",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "NTESequenceNumber",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string ReportComment domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "1",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "ReportComment",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public NTE();
+}
+
+public class OBR
+        extends ilog.rules.xml.IlrXmlObject
+        property "ilog.rules.engine.driver" "ilog.rules.xml.binding.IlrXmlClassDriver"
+        property "ilog.rules.xml.classInfo" {
+            derivation "EXTENSION",
+            model "sequence",
+            version "ilog.rules.xml.binding.IlrXmlDefaultDataDriver_7_0",
+            xmlFieldNumber "19",
+            xmlScope "global",
+            xmlType "{http://QuestHL7Segments}OBR",
+            xsdLocation "HL7_Segments.xsd"
+        }
+{
+    public string AccessionNumber domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "2",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "AccessionNumber",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string PlacerOrderNumber domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "1",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "PlacerOrderNumber",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string SequenceNumber domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "0",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "SequenceNumber",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string UnitAndOrderCodes_1 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "3",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "UnitAndOrderCodes_1",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string UnitAndOrderCodes_10 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "12",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "UnitAndOrderCodes_10",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string UnitAndOrderCodes_11 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "13",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "UnitAndOrderCodes_11",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string UnitAndOrderCodes_12 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "14",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "UnitAndOrderCodes_12",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string UnitAndOrderCodes_13 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "15",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "UnitAndOrderCodes_13",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string UnitAndOrderCodes_2 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "4",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "UnitAndOrderCodes_2",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string UnitAndOrderCodes_3 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "5",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "UnitAndOrderCodes_3",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string UnitAndOrderCodes_4 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "6",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "UnitAndOrderCodes_4",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string UnitAndOrderCodes_5 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "7",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "UnitAndOrderCodes_5",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string UnitAndOrderCodes_6 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "8",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "UnitAndOrderCodes_6",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string UnitAndOrderCodes_7 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "9",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "UnitAndOrderCodes_7",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string UnitAndOrderCodes_8 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "10",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "UnitAndOrderCodes_8",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string UnitAndOrderCodes_9 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "11",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "UnitAndOrderCodes_9",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public boolean isReReportable domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "18",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "isReReportable",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}boolean",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdBoolean"
+                };
+    public boolean isReportSent domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "17",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "isReportSent",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}boolean",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdBoolean"
+                };
+    public boolean isReportable domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "16",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "isReportable",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}boolean",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdBoolean"
+                };
+    public OBR();
+    public void setUnknownIsReReportable();
+    public void setUnknownIsReportSent();
+    public void setUnknownIsReportable();
+}
+
+public class OBX
+        extends ilog.rules.xml.IlrXmlObject
+        property "ilog.rules.engine.driver" "ilog.rules.xml.binding.IlrXmlClassDriver"
+        property "ilog.rules.xml.classInfo" {
+            derivation "EXTENSION",
+            model "sequence",
+            version "ilog.rules.xml.binding.IlrXmlDefaultDataDriver_7_0",
+            xmlFieldNumber "12",
+            xmlScope "global",
+            xmlType "{http://QuestHL7Segments}OBX",
+            xsdLocation "HL7_Segments.xsd"
+        }
+{
+    public string AbnormalFlags domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "8",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "AbnormalFlags",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string AccessionNumber domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "2",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "AccessionNumber",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string Control domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "1",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "Control",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string NatureOfAbnoralFlags domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "9",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "NatureOfAbnoralFlags",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string OBXSequenceNumber domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "0",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "OBXSequenceNumber",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string ODMStatus domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "11",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "ODMStatus",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string ObservationID domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "3",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "ObservationID",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string ObservationName domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "4",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "ObservationName",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string ObservationRange domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "7",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "ObservationRange",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string ObservationResultStatus domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "10",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "ObservationResultStatus",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string ObservationUnits domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "6",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "ObservationUnits",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string ObservationValue domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "5",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "ObservationValue",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public OBX();
+}
+
+public class ORC
+        extends ilog.rules.xml.IlrXmlObject
+        property "ilog.rules.engine.driver" "ilog.rules.xml.binding.IlrXmlClassDriver"
+        property "ilog.rules.xml.classInfo" {
+            derivation "EXTENSION",
+            model "sequence",
+            version "ilog.rules.xml.binding.IlrXmlDefaultDataDriver_7_0",
+            xmlFieldNumber "25",
+            xmlScope "global",
+            xmlType "{http://QuestHL7Segments}ORC",
+            xsdLocation "HL7_Segments.xsd"
+        }
+{
+    public string AccessionNumber domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "23",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "AccessionNumber",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string AltPatientID domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "22",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "AltPatientID",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string ChangeOrderDate_1 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "13",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "ChangeOrderDate_1",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string ChangeOrderDate_2 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "14",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "ChangeOrderDate_2",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string ClientID domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "24",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "ClientID",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string ClientMnemonic domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "18",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "ClientMnemonic",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string CollectionDate domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "17",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "CollectionDate",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string Maxilog domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "20",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "Maxilog",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string Minilog domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "19",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "Minilog",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string OrderControl domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "0",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "OrderControl",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string OrderStatus domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "1",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "OrderStatus",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string OriginiatingSiteCode domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "16",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "OriginiatingSiteCode",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string PhysicianUPIN domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "15",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "PhysicianUPIN",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string ResponseFlag domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "2",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "ResponseFlag",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string Specimens_1 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "3",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "Specimens_1",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string Specimens_10 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "12",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "Specimens_10",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string Specimens_2 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "4",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "Specimens_2",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string Specimens_3 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "5",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "Specimens_3",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string Specimens_4 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "6",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "Specimens_4",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string Specimens_5 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "7",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "Specimens_5",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string Specimens_6 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "8",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "Specimens_6",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string Specimens_7 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "9",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "Specimens_7",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string Specimens_8 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "10",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "Specimens_8",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string Specimens_9 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "11",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "Specimens_9",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string WhoLoggedItUPIN domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "21",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "WhoLoggedItUPIN",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public ORC();
+}
+
+public class ORM_ORDER
+        extends ilog.rules.xml.IlrXmlObject
+        property "ilog.rules.engine.driver" "ilog.rules.xml.binding.IlrXmlClassDriver"
+        property "ilog.rules.xml.classInfo" {
+            derivation "EXTENSION",
+            model "sequence",
+            version "ilog.rules.xml.binding.IlrXmlDefaultDataDriver_7_0",
+            xmlFieldNumber "2",
+            xmlScope "global",
+            xmlType "{http://QuestHL7Segments}ORM_ORDER",
+            xsdLocation "HL7_Segments.xsd"
+        }
+{
+    public questhl7segments.ORC ORC domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "0",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "ORC",
+                    xmlType "{http://QuestHL7Segments}ORC",
+                    xomComponentType "questhl7segments.ORC"
+                };
+    public questhl7segments.ORM_ORDER_DETAIL ORM_ORDER_DETAIL domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "1",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "ORM_ORDER_DETAIL",
+                    xmlType "{http://QuestHL7Segments}ORM_ORDER_DETAIL",
+                    xomComponentType "questhl7segments.ORM_ORDER_DETAIL"
+                };
+    public ORM_ORDER();
+}
+
+public class ORM_ORDER_DETAIL
+        extends ilog.rules.xml.IlrXmlObject
+        property "ilog.rules.engine.driver" "ilog.rules.xml.binding.IlrXmlClassDriver"
+        property "ilog.rules.xml.classInfo" {
+            derivation "EXTENSION",
+            model "sequence",
+            version "ilog.rules.xml.binding.IlrXmlDefaultDataDriver_7_0",
+            xmlFieldNumber "2",
+            xmlScope "global",
+            xmlType "{http://QuestHL7Segments}ORM_ORDER_DETAIL",
+            xsdLocation "HL7_Segments.xsd"
+        }
+{
+    public questhl7segments.OBR OBR domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "0",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "OBR",
+                    xmlType "{http://QuestHL7Segments}OBR",
+                    xomComponentType "questhl7segments.OBR"
+                };
+    public java.util.Vector ZSIList domain 0,* class questhl7segments.ZSI
+                property "ilog.rules.xml.fieldInfo" {
+                    index "1",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "ZSI",
+                    xmlType "{http://QuestHL7Segments}ZSI",
+                    xomComponentType "questhl7segments.ZSI"
+                };
+    public ORM_ORDER_DETAIL();
+}
+
+public class ORM_PATIENT
+        extends ilog.rules.xml.IlrXmlObject
+        property "ilog.rules.engine.driver" "ilog.rules.xml.binding.IlrXmlClassDriver"
+        property "ilog.rules.xml.classInfo" {
+            derivation "EXTENSION",
+            model "sequence",
+            version "ilog.rules.xml.binding.IlrXmlDefaultDataDriver_7_0",
+            xmlFieldNumber "1",
+            xmlScope "global",
+            xmlType "{http://QuestHL7Segments}ORM_PATIENT",
+            xsdLocation "HL7_Segments.xsd"
+        }
+{
+    public questhl7segments.PID PID domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "0",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "PID",
+                    xmlType "{http://QuestHL7Segments}PID",
+                    xomComponentType "questhl7segments.PID"
+                };
+    public ORM_PATIENT();
+}
+
+public class ORU_OBSERVATION
+        extends ilog.rules.xml.IlrXmlObject
+        property "ilog.rules.engine.driver" "ilog.rules.xml.binding.IlrXmlClassDriver"
+        property "ilog.rules.xml.classInfo" {
+            derivation "EXTENSION",
+            model "sequence",
+            version "ilog.rules.xml.binding.IlrXmlDefaultDataDriver_7_0",
+            xmlFieldNumber "2",
+            xmlScope "global",
+            xmlType "{http://QuestHL7Segments}ORU_OBSERVATION",
+            xsdLocation "HL7_Segments.xsd"
+        }
+{
+    public java.util.Vector NTEList domain 0,* class questhl7segments.NTE
+                property "ilog.rules.xml.fieldInfo" {
+                    index "1",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "NTE",
+                    xmlType "{http://QuestHL7Segments}NTE",
+                    xomComponentType "questhl7segments.NTE"
+                };
+    public questhl7segments.OBX OBX domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "0",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "OBX",
+                    xmlType "{http://QuestHL7Segments}OBX",
+                    xomComponentType "questhl7segments.OBX"
+                };
+    public ORU_OBSERVATION();
+}
+
+public class ORU_ORDER_OBSERVATION
+        extends ilog.rules.xml.IlrXmlObject
+        property "ilog.rules.engine.driver" "ilog.rules.xml.binding.IlrXmlClassDriver"
+        property "ilog.rules.xml.classInfo" {
+            derivation "EXTENSION",
+            model "sequence",
+            version "ilog.rules.xml.binding.IlrXmlDefaultDataDriver_7_0",
+            xmlFieldNumber "5",
+            xmlScope "global",
+            xmlType "{http://QuestHL7Segments}ORU_ORDER_OBSERVATION",
+            xsdLocation "HL7_Segments.xsd"
+        }
+{
+    public java.util.Vector NTEList domain 0,* class questhl7segments.NTE
+                property "ilog.rules.xml.fieldInfo" {
+                    index "3",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "NTE",
+                    xmlType "{http://QuestHL7Segments}NTE",
+                    xomComponentType "questhl7segments.NTE"
+                };
+    public questhl7segments.OBR OBR domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "1",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "OBR",
+                    xmlType "{http://QuestHL7Segments}OBR",
+                    xomComponentType "questhl7segments.OBR"
+                };
+    public questhl7segments.ORC ORC domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "0",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "ORC",
+                    xmlType "{http://QuestHL7Segments}ORC",
+                    xomComponentType "questhl7segments.ORC"
+                };
+    public java.util.Vector ORU_OBSERVATIONList domain 0,* class questhl7segments.ORU_OBSERVATION
+                property "ilog.rules.xml.fieldInfo" {
+                    index "4",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "ORU_OBSERVATION",
+                    xmlType "{http://QuestHL7Segments}ORU_OBSERVATION",
+                    xomComponentType "questhl7segments.ORU_OBSERVATION"
+                };
+    public java.util.Vector ZORList domain 0,* class questhl7segments.ZOR
+                property "ilog.rules.xml.fieldInfo" {
+                    index "2",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "ZOR",
+                    xmlType "{http://QuestHL7Segments}ZOR",
+                    xomComponentType "questhl7segments.ZOR"
+                };
+    public ORU_ORDER_OBSERVATION();
+}
+
+public class ORU_PATIENT
+        extends ilog.rules.xml.IlrXmlObject
+        property "ilog.rules.engine.driver" "ilog.rules.xml.binding.IlrXmlClassDriver"
+        property "ilog.rules.xml.classInfo" {
+            derivation "EXTENSION",
+            model "sequence",
+            version "ilog.rules.xml.binding.IlrXmlDefaultDataDriver_7_0",
+            xmlFieldNumber "3",
+            xmlScope "global",
+            xmlType "{http://QuestHL7Segments}ORU_PATIENT",
+            xsdLocation "HL7_Segments.xsd"
+        }
+{
+    public java.util.Vector NTEList domain 0,* class questhl7segments.NTE
+                property "ilog.rules.xml.fieldInfo" {
+                    index "1",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "NTE",
+                    xmlType "{http://QuestHL7Segments}NTE",
+                    xomComponentType "questhl7segments.NTE"
+                };
+    public questhl7segments.PID PID domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "0",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "PID",
+                    xmlType "{http://QuestHL7Segments}PID",
+                    xomComponentType "questhl7segments.PID"
+                };
+    public java.util.Vector ZRQList domain 0,* class questhl7segments.ZRQ
+                property "ilog.rules.xml.fieldInfo" {
+                    index "2",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "ZRQ",
+                    xmlType "{http://QuestHL7Segments}ZRQ",
+                    xomComponentType "questhl7segments.ZRQ"
+                };
+    public ORU_PATIENT();
+}
+
+public class ORU_PATIENT_RESULT
+        extends ilog.rules.xml.IlrXmlObject
+        property "ilog.rules.engine.driver" "ilog.rules.xml.binding.IlrXmlClassDriver"
+        property "ilog.rules.xml.classInfo" {
+            derivation "EXTENSION",
+            model "sequence",
+            version "ilog.rules.xml.binding.IlrXmlDefaultDataDriver_7_0",
+            xmlFieldNumber "2",
+            xmlScope "global",
+            xmlType "{http://QuestHL7Segments}ORU_PATIENT_RESULT",
+            xsdLocation "HL7_Segments.xsd"
+        }
+{
+    public java.util.Vector ORU_ORDER_OBSERVATIONList domain 0,* class questhl7segments.ORU_ORDER_OBSERVATION
+                property "ilog.rules.xml.fieldInfo" {
+                    index "1",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "ORU_ORDER_OBSERVATION",
+                    xmlType "{http://QuestHL7Segments}ORU_ORDER_OBSERVATION",
+                    xomComponentType "questhl7segments.ORU_ORDER_OBSERVATION"
+                };
+    public questhl7segments.ORU_PATIENT ORU_PATIENT domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "0",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "ORU_PATIENT",
+                    xmlType "{http://QuestHL7Segments}ORU_PATIENT",
+                    xomComponentType "questhl7segments.ORU_PATIENT"
+                };
+    public ORU_PATIENT_RESULT();
+}
+
+public class PID
+        extends ilog.rules.xml.IlrXmlObject
+        property "ilog.rules.engine.driver" "ilog.rules.xml.binding.IlrXmlClassDriver"
+        property "ilog.rules.xml.classInfo" {
+            derivation "EXTENSION",
+            model "sequence",
+            version "ilog.rules.xml.binding.IlrXmlDefaultDataDriver_7_0",
+            xmlFieldNumber "10",
+            xmlScope "global",
+            xmlType "{http://QuestHL7Segments}PID",
+            xsdLocation "HL7_Segments.xsd"
+        }
+{
+    public string AccessionNumber domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "3",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "AccessionNumber",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string AdministrativeSex domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "8",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "AdministrativeSex",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string Birthdate domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "9",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "Birthdate",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string ChartId domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "5",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "ChartId",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string EnterpriseID domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "6",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "EnterpriseID",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string MRN domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "4",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "MRN",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string PIDSequence domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "0",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "PIDSequence",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string PatientAccountNum domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "7",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "PatientAccountNum",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string PatientID1 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "1",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "PatientID1",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string PatientID2 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "2",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "PatientID2",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public PID();
+}
+
+public class ZOR
+        extends ilog.rules.xml.IlrXmlObject
+        property "ilog.rules.engine.driver" "ilog.rules.xml.binding.IlrXmlClassDriver"
+        property "ilog.rules.xml.classInfo" {
+            derivation "EXTENSION",
+            model "sequence",
+            version "ilog.rules.xml.binding.IlrXmlDefaultDataDriver_7_0",
+            xmlFieldNumber "1",
+            xmlScope "global",
+            xmlType "{http://QuestHL7Segments}ZOR",
+            xsdLocation "HL7_Segments.xsd"
+        }
+{
+    public string ZORSequenceNumber domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "0",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "ZORSequenceNumber",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public ZOR();
+}
+
+public class ZRQ
+        extends ilog.rules.xml.IlrXmlObject
+        property "ilog.rules.engine.driver" "ilog.rules.xml.binding.IlrXmlClassDriver"
+        property "ilog.rules.xml.classInfo" {
+            derivation "EXTENSION",
+            model "sequence",
+            version "ilog.rules.xml.binding.IlrXmlDefaultDataDriver_7_0",
+            xmlFieldNumber "25",
+            xmlScope "global",
+            xmlType "{http://QuestHL7Segments}ZRQ",
+            xsdLocation "HL7_Segments.xsd"
+        }
+{
+    public string AccessionNumber domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "1",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "AccessionNumber",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string ZRQSequenceNumber domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "0",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "ZRQSequenceNumber",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string zrqData_1 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "2",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "zrqData_1",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string zrqData_10 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "11",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "zrqData_10",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string zrqData_11 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "12",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "zrqData_11",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string zrqData_12 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "13",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "zrqData_12",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string zrqData_13 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "14",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "zrqData_13",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string zrqData_14 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "15",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "zrqData_14",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string zrqData_15 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "16",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "zrqData_15",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string zrqData_16 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "17",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "zrqData_16",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string zrqData_17 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "18",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "zrqData_17",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string zrqData_18 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "19",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "zrqData_18",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string zrqData_19 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "20",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "zrqData_19",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string zrqData_2 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "3",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "zrqData_2",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string zrqData_20 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "21",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "zrqData_20",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string zrqData_21 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "22",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "zrqData_21",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string zrqData_22 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "23",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "zrqData_22",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string zrqData_23 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "24",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "zrqData_23",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string zrqData_3 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "4",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "zrqData_3",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string zrqData_4 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "5",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "zrqData_4",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string zrqData_5 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "6",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "zrqData_5",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string zrqData_6 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "7",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "zrqData_6",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string zrqData_7 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "8",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "zrqData_7",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string zrqData_8 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "9",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "zrqData_8",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string zrqData_9 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "10",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "zrqData_9",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public ZRQ();
+}
+
+public class ZSI
+        extends ilog.rules.xml.IlrXmlObject
+        property "ilog.rules.engine.driver" "ilog.rules.xml.binding.IlrXmlClassDriver"
+        property "ilog.rules.xml.classInfo" {
+            derivation "EXTENSION",
+            model "sequence",
+            version "ilog.rules.xml.binding.IlrXmlDefaultDataDriver_7_0",
+            xmlFieldNumber "12",
+            xmlScope "global",
+            xmlType "{http://QuestHL7Segments}ZSI",
+            xsdLocation "HL7_Segments.xsd"
+        }
+{
+    public string ContainerType domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "6",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "ContainerType",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string DepartmentIDs_1 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "7",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "DepartmentIDs_1",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string DepartmentIDs_2 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "8",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "DepartmentIDs_2",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string DepartmentIDs_3 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "9",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "DepartmentIDs_3",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string DepartmentIDs_4 domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "10",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "DepartmentIDs_4",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string IntraLabManifestIndicator domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "2",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "IntraLabManifestIndicator",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string LabelDevice domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "4",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "LabelDevice",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string LableFormat domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "5",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "LableFormat",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string SampleID domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "0",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "SampleID",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string Sendouts domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "11",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "Sendouts",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string StorageSite domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "1",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "StorageSite",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string UnitCodeNumber domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "3",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "UnitCodeNumber",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public ZSI();
+}
+
+package questpocanswers;
+
+
+public class Answers
+        extends ilog.rules.xml.IlrXmlObject
+        property "ilog.rules.engine.driver" "ilog.rules.xml.binding.IlrXmlClassDriver"
+        property "ilog.rules.xml.classInfo" {
+            derivation "EXTENSION",
+            model "sequence",
+            version "ilog.rules.xml.binding.IlrXmlDefaultDataDriver_7_0",
+            xmlFieldNumber "1",
+            xmlScope "global",
+            xmlType "{http://QuestPOCAnswers}Answers",
+            xsdLocation "Answers.xsd"
+        }
+{
+    public java.util.Vector AnswerList domain 0,* class string
+                property "ilog.rules.xml.fieldInfo" {
+                    index "0",
+                    xmlKind "ELEMENT",
+                    xmlName "{http://QuestPOCAnswers}Answer",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public Answers();
+}
+
+class IlogRulesXmlPackage
+        property "ilog.rules.xml.packageInfo" {
+            "1" {
+                xmlName "{http://QuestPOCAnswers}Answers",
+                xomType "questpocanswers.Answers"
+            },
+            version "ilog.rules.xml.binding.IlrXmlDefaultDataDriver_7_0"
+        }
+        property visible "false"
+{
+}
+

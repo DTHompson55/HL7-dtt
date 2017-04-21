@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 3 elements to &apos;hl7.demo.ibm.com.OBR_Java&apos;&#x0D;&#x0A;- Original project: &apos;HL7ORMJava&apos;&#x0D;&#x0A;- Destination element: &apos;hl7.demo.ibm.com.OBR_Java&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     hl7.demo.ibm.com.ORU_Java.getOBX(...)&#x0D;&#x0A;     hl7.demo.ibm.com.ORU_Java.getObxByID(...)&#x0D;&#x0A;     hl7.demo.ibm.com.ORU_Java.getObxByName(...)" description="Copy methods" destination="/src&lt;hl7.demo.ibm.com{OBR_Java.java[OBR_Java" element1="/src&lt;hl7.demo.ibm.com{ORU_Java.java[ORU_Java~getOBX~QString;" element2="/src&lt;hl7.demo.ibm.com{ORU_Java.java[ORU_Java~getObxByID~QString;" element3="/src&lt;hl7.demo.ibm.com{ORU_Java.java[ORU_Java~getObxByName~QString;" flags="589830" id="org.eclipse.jdt.ui.copy" members="3" policy="org.eclipse.jdt.ui.copyMembers" stamp="1482086753020" version="1.0"/>
+</session>

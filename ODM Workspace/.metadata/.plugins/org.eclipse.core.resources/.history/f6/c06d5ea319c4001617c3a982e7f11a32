@@ -1,0 +1,58 @@
+package hl7.demo.ibm.com;
+import java.util.*;
+import questhl7records.*;
+import questhl7segments.*;
+
+public class ORU_Java {
+
+	public ORU oru;
+	public List<OBR_Java> obrList = new List<OBR_Java>();
+	public List<ORUORDEROBSERVATION> oooList;
+	public java.util.HashMap<String, OBX> obxMapByID   = new java.util.HashMap<String, OBX>();
+	public java.util.HashMap<String, OBX> obxMapByName = new java.util.HashMap<String, OBX>();
+	
+	public boolean someReportsAreReady;
+	public boolean allReportsAreReady;
+	
+	public ORU_Java(ORU x){
+		this.allReportsAreReady = true;
+		this.oru = x;
+		this.opr = x.getORUPATIENTRESULT();
+		this.pid = this.opr.getORUPATIENT().getPID();
+		this.oooList = this.opr.getORUORDEROBSERVATION();
+		for (int i = 0 ; i < this.oooList.size(); i++){
+			ORUORDEROBSERVATION ooo = oooList.get(i);
+			OBR obr = ooo.getOBR();
+			if (obr.getIsReportable()) someReportsAreReady = true;
+			else 
+				allReportsAreReady = false;
+			List<ORUOBSERVATION> ooList = ooo.getORUOBSERVATION();
+			for ( int j = 0 ; j < this.oooList.size(); j++){	
+				ORUOBSERVATION oo = ooList.get(j);
+				OBX obx = oo.getOBX();
+				obxMapByName.put(obx.getObservationName(), obx);
+				obxMapByID.put(obx.getObservationID(), obx);
+				List<NTE> nteList = oo.getNTE();
+				NTE nte = nteList.get(0);
+			}
+		}
+	}
+	
+	
+    public boolean isSomeReportsAreReady(){    	
+    	return this.someReportsAreReady;
+    }
+    
+    public boolean isAllReportsAreReady(){    	
+    	return this.allReportsAreReady;
+    }
+    
+	public OBX getOBX(String id){
+		OBX Obx = obxMapByID.get(id);
+		if (Obx == null)
+			Obx = obxMapByName.get(id);
+			    
+		return Obx;
+	}
+
+}

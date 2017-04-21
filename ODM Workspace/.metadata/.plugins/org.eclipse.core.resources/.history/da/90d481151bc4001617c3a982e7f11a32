@@ -1,0 +1,14 @@
+package hl7.demo.ibm.com;
+
+import java.util.*;
+
+public class OBR_Java {
+  protected List<OBX_Java> obxList = new Vector<OBX_Java>();
+
+  protected String orderName;  
+  protected String orderValue;  
+  protected boolean isReportable;
+  protected boolean isRereportable;
+  protected boolean isSent;
+
+}

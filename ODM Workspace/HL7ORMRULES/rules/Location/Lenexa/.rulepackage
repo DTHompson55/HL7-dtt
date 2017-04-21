@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:RulePackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>Lenexa</name>
+  <uuid>1082be8f-ee9a-4ee9-9981-4d8d80045a0b</uuid>
+</ilog.rules.studio.model.base:RulePackage>

@@ -1,0 +1,9 @@
+
+flowtask Location {
+  property mainflowtask = false;
+  property ilog.rules.business_name = "Location";
+  property ilog.rules.package_name = "";
+  body {
+  }
+};
+

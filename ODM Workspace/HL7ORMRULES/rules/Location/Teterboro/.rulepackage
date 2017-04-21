@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:RulePackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>Teterboro</name>
+  <uuid>6c3d9249-66ee-4b73-b024-61b33a3233e3</uuid>
+</ilog.rules.studio.model.base:RulePackage>

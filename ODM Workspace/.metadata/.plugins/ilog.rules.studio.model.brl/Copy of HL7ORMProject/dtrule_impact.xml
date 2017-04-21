@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><impactTables>
+    <ruleTable>
+        <vocElt id="questhl7records.ORU/TestResult(java.lang.String)/NAVIGATION#0">
+            <rule id="2357e011-a7b6-4e51-91d4-c46a53d24420"/>
+        </vocElt>
+        <vocElt id="questhl7records.ORU/isOKToReceivePrelim(java.lang.String)/NAVIGATION#0">
+            <rule id="2357e011-a7b6-4e51-91d4-c46a53d24420"/>
+        </vocElt>
+        <vocElt id="questhl7records.ORU/isClinicallyReady(java.lang.String)/NAVIGATION#0">
+            <rule id="2357e011-a7b6-4e51-91d4-c46a53d24420"/>
+        </vocElt>
+        <vocElt id="questhl7records.ORU/isOKtoReceivePartialTest(java.lang.String)/NAVIGATION#0">
+            <rule id="2357e011-a7b6-4e51-91d4-c46a53d24420"/>
+        </vocElt>
+        <vocElt id="questhl7records.ORU/ResultEvent()/NAVIGATION#0">
+            <rule id="2357e011-a7b6-4e51-91d4-c46a53d24420"/>
+        </vocElt>
+        <vocElt id="questhl7records.ORU/OrderStatus(java.lang.String)/NAVIGATION#0">
+            <rule id="2357e011-a7b6-4e51-91d4-c46a53d24420"/>
+        </vocElt>
+        <vocElt id="questhl7records.ORU/isOKtoReceivePartialPanal(java.lang.String)/NAVIGATION#0">
+            <rule id="2357e011-a7b6-4e51-91d4-c46a53d24420"/>
+        </vocElt>
+        <vocElt id="questhl7records.ORU">
+            <rule id="2357e011-a7b6-4e51-91d4-c46a53d24420"/>
+        </vocElt>
+    </ruleTable>
+    <vocTable>
+        <rule id="2357e011-a7b6-4e51-91d4-c46a53d24420">
+            <vocElt id="questhl7records.ORU/TestResult(java.lang.String)/NAVIGATION#0"/>
+            <vocElt id="questhl7records.ORU/isOKToReceivePrelim(java.lang.String)/NAVIGATION#0"/>
+            <vocElt id="questhl7records.ORU/isClinicallyReady(java.lang.String)/NAVIGATION#0"/>
+            <vocElt id="questhl7records.ORU/isOKtoReceivePartialTest(java.lang.String)/NAVIGATION#0"/>
+            <vocElt id="questhl7records.ORU/ResultEvent()/NAVIGATION#0"/>
+            <vocElt id="questhl7records.ORU/OrderStatus(java.lang.String)/NAVIGATION#0"/>
+            <vocElt id="questhl7records.ORU/isOKtoReceivePartialPanal(java.lang.String)/NAVIGATION#0"/>
+            <vocElt id="questhl7records.ORU"/>
+        </rule>
+    </vocTable>
+    <ruleParamTable>
+        <param id="ORU">
+            <rule id="2357e011-a7b6-4e51-91d4-c46a53d24420"/>
+        </param>
+    </ruleParamTable>
+    <paramTable>
+        <rule id="2357e011-a7b6-4e51-91d4-c46a53d24420">
+            <param id="ORU"/>
+        </rule>
+    </paramTable>
+    <projectTable/>
+    <variableTable>
+        <param id="e73c6d73-3636-47ca-b3c9-4d6dd9941d94">
+            <rule id="2357e011-a7b6-4e51-91d4-c46a53d24420"/>
+        </param>
+    </variableTable>
+    <ruleVocFileTable>
+        <vocFile file="/Copy of HL7ORMProject/bom/model_en_US.voc" id="ca5eae11-5603-4bb3-96d5-9411ddc80d5b">
+            <rule id="2357e011-a7b6-4e51-91d4-c46a53d24420"/>
+        </vocFile>
+    </ruleVocFileTable>
+    <resourceTable>
+        <resource file="/Copy of HL7ORMProject/rules/vbls.var" id="e73c6d73-3636-47ca-b3c9-4d6dd9941d94"/>
+        <resource file="/Copy of HL7ORMProject/rules/DevTest/ReportReady.dta" id="2357e011-a7b6-4e51-91d4-c46a53d24420"/>
+    </resourceTable>
+</impactTables>

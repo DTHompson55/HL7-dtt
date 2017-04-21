@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>MarkReportableResultsRule</name>
+  <uuid>2ed027bc-cd59-4244-8b20-da82247e7bd9</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[definitions
+    set 'Result' to the ORU PATIENT RESULT of 'the ORU' ;
+    set 'an Order Observation' to an ORU ORDER OBSERVATION in the ORU ORDER OBSERVATIONs of Result ;
+then
+    Mark Reportable Results of 'an Order Observation' ;
+    ]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

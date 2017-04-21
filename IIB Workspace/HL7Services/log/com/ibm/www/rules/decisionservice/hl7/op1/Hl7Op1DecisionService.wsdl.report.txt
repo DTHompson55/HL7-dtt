@@ -1,0 +1,26 @@
+
+
+Importing file: C:\temp\Hl7Op1DecisionService\Hl7Op1DecisionService.wsdl
+
+The WSDL import will proceed with bindings Hl7Op1Binding.
+Creating wsdl schema document for file:///C:/temp/Hl7Op1DecisionService/Hl7Op1DecisionService.wsdl.
+Parsing wsdl binding {http://www.ibm.com/rules/decisionservice/Hl7/Op1}Hl7Op1Binding.
+Parsing wsdl binding input Op1.
+Parsing wsdl binding output Op1.
+Parsing wsdl binding fault Op1SoapFault.
+Processing doc style for operation Op1.
+Populating WSDL schema Hl7Op1DecisionService_wsdl.xsd.
+Creating file Hl7Op1DecisionService_wsdl.xsd in the workspace.
+Creating file /HL7Demo/Hl7Op1DecisionService.xsd in the workspace.
+Creating file /HL7Demo/Hl7Op1Parameters.xsd in the workspace.
+Creating file /HL7Demo/HL7_Records.xsd in the workspace.
+Creating file /HL7Demo/HL7_Segments.xsd in the workspace.
+Copying source WSDL Hl7Op1DecisionService.wsdl to Hl7Op1DecisionService.wsdl.
+
+Elapsed time processing this message definition file: 0.783 seconds
+Number of warnings for this message definition file: 0
+
+
+Number of files processed: 1
+
+

@@ -1,0 +1,22 @@
+
+
+Importing file: C:\QuestProject\HL7-dtt\IIB Workspace\SoapTests\HL7SoapMsgs.wsdl
+
+The WSDL import will proceed with bindings HL7SoapMsgsSOAP.
+Creating wsdl schema document for file:///C:/QuestProject/HL7-dtt/IIB Workspace/SoapTests/HL7SoapMsgs.wsdl.
+Parsing wsdl binding {http://www.example.org/HL7SoapMsgs/}HL7SoapMsgsSOAP.
+Parsing wsdl binding input NewOperation.
+Parsing wsdl binding output NewOperation.
+Processing doc style for operation NewOperation.
+Populating WSDL schema HL7SoapMsgs.xsd.
+Creating file HL7SoapMsgs.xsd in the workspace.
+Creating file /HL7Services/HL7SoapSchemas.xsd in the workspace.
+Copying source WSDL HL7SoapMsgs.wsdl to HL7SoapMsgs.wsdl.
+
+Elapsed time processing this message definition file: 0.187 seconds
+Number of warnings for this message definition file: 0
+
+
+Number of files processed: 1
+
+

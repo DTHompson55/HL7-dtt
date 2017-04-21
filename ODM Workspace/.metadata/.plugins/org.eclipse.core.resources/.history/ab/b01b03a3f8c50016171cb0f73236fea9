@@ -1,0 +1,31 @@
+package hl7.demo.ibm.com;
+
+import java.util.*;
+
+public class HL7_Helper {
+
+	Map<String, String> events = new HashMap<String, String> ();
+	protected String eventsInitializer[][] = new String[][]{
+		{"TSH","5600000899"},
+		{"CBC","3100006399"},
+		{"Chemistry","2600070083"},
+		{"Microbiology","2600070083"}};
+	
+	public HL7_Helper(){
+		for (int i = 0; i < eventsInitializer.length; i++) {
+		    events.put(eventsInitializer[i][0], eventsInitializer[i][1]);
+		}
+	}
+	
+	public String getEventType(String unitCode){return "";}
+	public String getMedicalConditionFromICD(String icdCode){return "";}
+	
+	public static boolean stringToBoolean(String s){try{return Boolean.parseBoolean(s);} catch (Exception e){} return false;}
+	public static String booleanToString(boolean b){try{return String.valueOf(b);} catch (Exception e){} return "false";}
+	public static int stringToInt(String s){try{return Integer.parseInt(s);} catch (Exception e){} return 0;}
+	public static String intToString(int b){try{return String.valueOf(b);} catch (Exception e){} return "0";}
+	public static double stringToDouble(String s){try{return Double.parseDouble(s);} catch (Exception e){} return 0.0;}
+	public static String doubleToString(double b){try{return String.valueOf(b);} catch (Exception e){} return "0.0";}
+	
+	
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>CheckPartials</name>
+  <uuid>41ed36c6-3a6b-4881-992b-9f2eb20878d1</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+   some observations of 'The Report' are ready
+   and 
+   'The Client' accepts partials 
+then
+  set 'the Decision Answer' to Partially Complete ;
+  add "** Partials Ready to Report" to 'the Decision Answer' ;
+  
+  
+  ]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

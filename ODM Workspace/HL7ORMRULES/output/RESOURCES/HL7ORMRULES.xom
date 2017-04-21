@@ -1,0 +1,60 @@
+include "ilog/rules/xml/binding/xsd_types.xom";
+
+package questpocanswers;
+
+
+public class Answers
+        extends ilog.rules.xml.IlrXmlObject
+        property "ilog.rules.engine.driver" "ilog.rules.xml.binding.IlrXmlClassDriver"
+        property "ilog.rules.xml.classInfo" {
+            derivation "EXTENSION",
+            model "sequence",
+            version "ilog.rules.xml.binding.IlrXmlDefaultDataDriver_7_0",
+            xmlFieldNumber "3",
+            xmlScope "global",
+            xmlType "{http://QuestPOCAnswers}Answers",
+            xsdLocation "QuestHL7Answers.xsd"
+        }
+{
+    public java.util.Vector AnswerList domain 0,* class string
+                property "ilog.rules.xml.fieldInfo" {
+                    index "0",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "{http://QuestPOCAnswers}Answer",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string reportAll domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "1",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "{http://QuestPOCAnswers}reportAll",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public string reportPart domain 0,1
+                property "ilog.rules.xml.fieldInfo" {
+                    index "2",
+                    nillable "true",
+                    xmlKind "ELEMENT",
+                    xmlName "{http://QuestPOCAnswers}reportPart",
+                    xmlType "{http://www.w3.org/2001/XMLSchema}string",
+                    xomComponentType "ilog.rules.xml.types.xsd.XsdString"
+                };
+    public Answers();
+}
+
+class IlogRulesXmlPackage
+        property "ilog.rules.xml.packageInfo" {
+            "1" {
+                xmlName "{http://QuestPOCAnswers}Answers",
+                xomType "questpocanswers.Answers"
+            },
+            version "ilog.rules.xml.binding.IlrXmlDefaultDataDriver_7_0"
+        }
+        property visible "false"
+{
+}
+

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:RulePackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>Las Vegas</name>
+  <uuid>bcb8e0a5-5c86-4e7c-bfd5-13b84661dd3e</uuid>
+</ilog.rules.studio.model.base:RulePackage>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:RulePackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>Palm Beach Gardens</name>
+  <uuid>9d1eb2a9-67e5-44c6-9e41-7f3ea995a819</uuid>
+</ilog.rules.studio.model.base:RulePackage>

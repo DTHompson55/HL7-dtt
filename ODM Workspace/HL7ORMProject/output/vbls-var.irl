@@ -1,0 +1,9 @@
+variables {
+  questhl7records.ORM ORM;
+  questhl7records.ORU ORU;
+  java.lang.String decisionType;
+  questpocanswers.Answers decisionAnswer = new questpocanswers.Answers();
+  qdp.Client client;
+  boolean reportAll = false;
+  boolean reportPartials = false;
+}

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:RulePackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>Tampa</name>
+  <uuid>5ca41a40-95b6-4c87-b54f-4204116c3792</uuid>
+</ilog.rules.studio.model.base:RulePackage>

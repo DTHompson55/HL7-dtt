@@ -1,0 +1,72 @@
+package hl7.demo.ibm.com;
+import java.util.*;
+
+public class ORU_Java {
+
+	protected List<OBR_Java> obrList = new Vector<OBR_Java>();
+	protected java.util.HashMap<String, OBX_Java> obxMapByID   = new java.util.HashMap<String, OBX_Java>();
+	protected java.util.HashMap<String, OBX_Java> obxMapByName = new java.util.HashMap<String, OBX_Java>();
+	protected boolean someReportsAreReady;
+	protected boolean allReportsAreReady;
+	
+	public static ORU_Java create(){
+		return new ORU_Java();
+	}
+	
+	public OBR_Java createOBR_Java(){
+		OBR_Java obr = OBR_Java.create();
+		obrList.add(obr);
+		return obr;
+	}
+
+	public OBR_Java createOBX_Java(OBR_Java obr, String id, String Name){
+		OBX_Java obx = OBX_Java.create();
+		obr.addObx(obx);
+		obxMapByID.put(id, obx);
+		obxMapByName(name, obx);
+		return obr;
+	}
+
+	
+    public boolean isSomeReportsAreReady(){    	
+    	return this.someReportsAreReady;
+    }
+    
+    public boolean isAllReportsAreReady(){    	
+    	return this.allReportsAreReady;
+    }
+    
+	public OBX_Java getOBX(String id){
+		OBX_Java obx = obxMapByID.get(id);
+		if (obx == null)
+			obx = obxMapByName.get(id);
+			    
+		return obx;
+	}
+
+
+	public List<OBR_Java> getObrList() {
+		return obrList;
+	}
+
+
+	public java.util.HashMap<String, OBX_Java> getObxMapByID() {
+		return obxMapByID;
+	}
+
+
+	public java.util.HashMap<String, OBX_Java> getObxMapByName() {
+		return obxMapByName;
+	}
+
+
+	public void setSomeReportsAreReady(boolean someReportsAreReady) {
+		this.someReportsAreReady = someReportsAreReady;
+	}
+
+
+	public void setAllReportsAreReady(boolean allReportsAreReady) {
+		this.allReportsAreReady = allReportsAreReady;
+	}
+
+}

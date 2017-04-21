@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:RulePackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>Wallingford</name>
+  <uuid>d8b2ed1f-d325-4a3d-bb2d-8877162ddcb8</uuid>
+</ilog.rules.studio.model.base:RulePackage>

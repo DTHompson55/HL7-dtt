@@ -1,0 +1,16 @@
+package DevTest {
+   use decisionType;
+   use decisionAnswer;
+   rule DefaultRule2 {
+      property ilog.rules.business_name = "DefaultRule2";
+      property ilog.rules.package_name = "DevTest";
+      property status = "new";
+      when {
+         IlrContext() from ?context;
+         evaluate ((decisionType.equals("ORU")));
+      } then {
+         decisionAnswer.add("An ORU Decision");
+      }
+   }
+}
+

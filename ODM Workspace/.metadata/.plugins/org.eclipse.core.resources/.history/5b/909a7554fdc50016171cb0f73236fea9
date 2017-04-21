@@ -1,0 +1,108 @@
+# Vocabulary Properties
+hl7.demo.ibm.com.ORU_Java.createOBR_Java()#phrase.navigation = {this}.createOBR_Java()
+hl7.demo.ibm.com.ORU_Java.getObservationSet(java.lang.String)#phrase.navigation = get the Observation Set named {0} from {this}
+uuid = 243503d6-cac4-4584-a28f-f604d0084b77
+
+# hl7.demo.ibm.com.HL7_Helper
+hl7.demo.ibm.com.HL7_Helper#concept.label = HL7 helper
+
+# hl7.demo.ibm.com.ICD10
+hl7.demo.ibm.com.ICD10#concept.label = ICD10
+
+# hl7.demo.ibm.com.ICD9
+hl7.demo.ibm.com.ICD9#concept.label = ICD9
+
+# hl7.demo.ibm.com.OBR_Java
+hl7.demo.ibm.com.OBR_Java#concept.label = OBR java
+hl7.demo.ibm.com.OBR_Java.BStationCode#phrase.action = set the BStation code of {this} to {BStation code}
+hl7.demo.ibm.com.OBR_Java.BStationCode#phrase.navigation = {BStation code} of {this}
+hl7.demo.ibm.com.OBR_Java.TIQFlag#phrase.action = set the TIQFlag of {this} to {TIQFlag}
+hl7.demo.ibm.com.OBR_Java.TIQFlag#phrase.navigation = {TIQFlag} of {this}
+hl7.demo.ibm.com.OBR_Java.cancelOrderFlag#phrase.action = set the cancel order flag of {this} to {cancel order flag}
+hl7.demo.ibm.com.OBR_Java.cancelOrderFlag#phrase.navigation = {cancel order flag} of {this}
+hl7.demo.ibm.com.OBR_Java.customProfileNumber#phrase.action = set the custom profile number of {this} to {custom profile number}
+hl7.demo.ibm.com.OBR_Java.customProfileNumber#phrase.navigation = {custom profile number} of {this}
+hl7.demo.ibm.com.OBR_Java.getOBX(java.lang.String)#phrase.navigation = Observation {0} of {this}
+hl7.demo.ibm.com.OBR_Java.obxList#phrase.navigation = {obx} of {this}
+hl7.demo.ibm.com.OBR_Java.orderCodeActionCode#phrase.action = set the order code action code of {this} to {order code action code}
+hl7.demo.ibm.com.OBR_Java.orderCodeActionCode#phrase.navigation = {order code action code} of {this}
+hl7.demo.ibm.com.OBR_Java.orderCodeStat#phrase.action = set the order code stat of {this} to {order code stat}
+hl7.demo.ibm.com.OBR_Java.orderCodeStat#phrase.navigation = {order code stat} of {this}
+hl7.demo.ibm.com.OBR_Java.orderDate#phrase.action = set the order date of {this} to {order date}
+hl7.demo.ibm.com.OBR_Java.orderDate#phrase.navigation = {order date} of {this}
+hl7.demo.ibm.com.OBR_Java.orderID#phrase.action = set the order ID of {this} to {order ID}
+hl7.demo.ibm.com.OBR_Java.orderID#phrase.navigation = {order ID} of {this}
+hl7.demo.ibm.com.OBR_Java.orderName#phrase.action = set the order name of {this} to {order name}
+hl7.demo.ibm.com.OBR_Java.orderName#phrase.navigation = {order name} of {this}
+hl7.demo.ibm.com.OBR_Java.orderValue#phrase.action = set the order value of {this} to {order value}
+hl7.demo.ibm.com.OBR_Java.orderValue#phrase.navigation = {order value} of {this}
+hl7.demo.ibm.com.OBR_Java.priorityOrException#phrase.action = set the priority or exception of {this} to {priority or exception}
+hl7.demo.ibm.com.OBR_Java.priorityOrException#phrase.navigation = {priority or exception} of {this}
+hl7.demo.ibm.com.OBR_Java.reportable#phrase.action = make it {reportable} that {this} is reportable
+hl7.demo.ibm.com.OBR_Java.reportable#phrase.navigation = {this} is reportable
+hl7.demo.ibm.com.OBR_Java.rereportable#phrase.action = make it {rereportable} that {this} is rereportable
+hl7.demo.ibm.com.OBR_Java.rereportable#phrase.navigation = {this} is rereportable
+hl7.demo.ibm.com.OBR_Java.sent#phrase.action = make it {sent} that {this} is sent
+hl7.demo.ibm.com.OBR_Java.sent#phrase.navigation = {this} is sent
+
+# hl7.demo.ibm.com.OBX_Java
+hl7.demo.ibm.com.OBX_Java#concept.label = OBX java
+hl7.demo.ibm.com.OBX_Java.OBXSequenceNumber#phrase.action = set the OBXSequence number of {this} to {OBXSequence number}
+hl7.demo.ibm.com.OBX_Java.OBXSequenceNumber#phrase.navigation = {OBXSequence number} of {this}
+hl7.demo.ibm.com.OBX_Java.abnormal#phrase.navigation = The result is abnormal for {this}
+hl7.demo.ibm.com.OBX_Java.abnormalFlags#phrase.action = set the abnormal flags of {this} to {abnormal flags}
+hl7.demo.ibm.com.OBX_Java.abnormalFlags#phrase.navigation = {abnormal flags} of {this}
+hl7.demo.ibm.com.OBX_Java.accessionNumber#phrase.action = set the accession number of {this} to {accession number}
+hl7.demo.ibm.com.OBX_Java.accessionNumber#phrase.navigation = {accession number} of {this}
+hl7.demo.ibm.com.OBX_Java.control#phrase.action = set the control of {this} to {control}
+hl7.demo.ibm.com.OBX_Java.control#phrase.navigation = {control} of {this}
+hl7.demo.ibm.com.OBX_Java.high#phrase.navigation = The result is high for {this}
+hl7.demo.ibm.com.OBX_Java.low#phrase.navigation = The result is low for {this}
+hl7.demo.ibm.com.OBX_Java.natureOfAbnoralFlags#phrase.action = set the nature of abnormal flags of {this} to {nature of abnormal flags}
+hl7.demo.ibm.com.OBX_Java.natureOfAbnoralFlags#phrase.navigation = {nature of abnormal flags} of {this}
+hl7.demo.ibm.com.OBX_Java.normal#phrase.navigation = The result is normal for {this}
+hl7.demo.ibm.com.OBX_Java.observationDate#phrase.action = set the observation date of {this} to {observation date}
+hl7.demo.ibm.com.OBX_Java.observationDate#phrase.navigation = {observation date} of {this}
+hl7.demo.ibm.com.OBX_Java.observationID#phrase.action = set the observation ID of {this} to {observation ID}
+hl7.demo.ibm.com.OBX_Java.observationID#phrase.navigation = {observation ID} of {this}
+hl7.demo.ibm.com.OBX_Java.observationName#phrase.action = set the observation name of {this} to {observation name}
+hl7.demo.ibm.com.OBX_Java.observationName#phrase.navigation = {observation name} of {this}
+hl7.demo.ibm.com.OBX_Java.observationRange#phrase.action = set the observation range of {this} to {observation range}
+hl7.demo.ibm.com.OBX_Java.observationRange#phrase.navigation = {observation range} of {this}
+hl7.demo.ibm.com.OBX_Java.observationResultStatus#phrase.action = set the observation result status of {this} to {observation result status}
+hl7.demo.ibm.com.OBX_Java.observationResultStatus#phrase.navigation = {observation result status} of {this}
+hl7.demo.ibm.com.OBX_Java.observationUnits#phrase.action = set the observation units of {this} to {observation units}
+hl7.demo.ibm.com.OBX_Java.observationUnits#phrase.navigation = {observation units} of {this}
+hl7.demo.ibm.com.OBX_Java.observationValue#phrase.action = set the observation value of {this} to {observation value}
+hl7.demo.ibm.com.OBX_Java.observationValue#phrase.navigation = {observation value} of {this}
+hl7.demo.ibm.com.OBX_Java.pending#phrase.action = make it {pending} that {this} is pending
+hl7.demo.ibm.com.OBX_Java.pending#phrase.navigation = {this} is pending
+hl7.demo.ibm.com.OBX_Java.setPending(java.lang.String)#phrase.action = set the pending of {this} to {0}
+
+# hl7.demo.ibm.com.ORM_Java
+hl7.demo.ibm.com.ORM_Java#concept.label = ORM java
+
+# hl7.demo.ibm.com.ORU_Java
+hl7.demo.ibm.com.ORU_Java#concept.label = ORU java
+hl7.demo.ibm.com.ORU_Java.allReportsAreReady#phrase.action = make it {all reports are ready} that {this} is all reports are ready
+hl7.demo.ibm.com.ORU_Java.allReportsAreReady#phrase.navigation = all observations of {this} are ready
+hl7.demo.ibm.com.ORU_Java.create()#phrase.navigation = ORU java.create()
+hl7.demo.ibm.com.ORU_Java.createOBX_Java(hl7.demo.ibm.com.OBR_Java,java.lang.String,java.lang.String)#phrase.navigation = {this}.createOBX_Java({0}, {1}, {2})
+hl7.demo.ibm.com.ORU_Java.facility#phrase.action = set the facility of {this} to {facility}
+hl7.demo.ibm.com.ORU_Java.facility#phrase.navigation = {facility} of {this}
+hl7.demo.ibm.com.ORU_Java.getOBX(java.lang.String)#phrase.navigation = Observation {0} of {this}
+hl7.demo.ibm.com.ORU_Java.getObrByName(java.lang.String)#phrase.navigation = the Observation Set named {0} in {this}
+hl7.demo.ibm.com.ORU_Java.locationCity#phrase.navigation = {location city} of {this}
+hl7.demo.ibm.com.ORU_Java.locationState#phrase.action = set the location state of {this} to {location state}
+hl7.demo.ibm.com.ORU_Java.locationState#phrase.navigation = {location state} of {this}
+hl7.demo.ibm.com.ORU_Java.obrList#phrase.navigation = {obr} of {this}
+hl7.demo.ibm.com.ORU_Java.someReportsAreReady#phrase.action = make it {some reports are ready} that {this} is some reports are ready
+hl7.demo.ibm.com.ORU_Java.someReportsAreReady#phrase.navigation = some observations of {this} are ready
+
+# hl7.demo.ibm.com.TheClient
+hl7.demo.ibm.com.TheClient#concept.label = the client
+hl7.demo.ibm.com.TheClient.acceptsPartials#phrase.action = set {this} accepts partials to {accepts partials}
+hl7.demo.ibm.com.TheClient.acceptsPartials#phrase.navigation = {this} accepts partials
+hl7.demo.ibm.com.TheClient.acceptsRereportables#phrase.action = set {this} accepts rereportables to {accepts rereportables} 
+hl7.demo.ibm.com.TheClient.acceptsRereportables#phrase.navigation = {this}  accepts rereportables
+hl7.demo.ibm.com.TheClient.create()#phrase.navigation = the client.create()

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><teamservers>
+<teamserver>
+<target dataSource="" login="rtsAdmin" url="http://localhost:9081/teamserver"/>
+<entry baseType="BusinessObjectModel" checksum="1296452025" projectName="HL7ORMIF" qualifiedName="Client_IF_Model" sourceCS="81E3D731F540BEE9EEDE0A675D7577CA" targetCS="1296452025" type="BusinessObjectModel" uuid="d77b9017-abd8-446d-ac06-85638cbe9a17"/>
+<entry baseType="BusinessObjectModel" checksum="3244384230" projectName="HL7ORMIF" qualifiedName="IF_Model" sourceCS="6F32B9B5420FC32569295EE5A30559A5" targetCS="3244384230" type="BusinessObjectModel" uuid="52b3b31b-b145-4c7c-9ad4-63af74c4ceab"/>
+<entry baseType="DecisionOperation" checksum="3071468275" projectName="HL7ORMIF" qualifiedName="IFop1" sourceCS="6DA62B639CB26C202CF62F46D9CC3FF6" targetCS="3071468275" type="DecisionOperation" uuid="688dc580-0e63-430c-bc8f-7d3552ae6584"/>
+<entry baseType="DeploymentConfiguration" checksum="290766717" projectName="HL7ORMIF" qualifiedName="cfg1" sourceCS="A5471912F9A74F151C20EF00C65EEA2E" targetCS="290766717" type="DeploymentConfiguration" uuid="dcaa6b03-b8b1-4e90-83f8-ccf4a9bc5c64"/>
+<entry baseType="Resource" checksum="4029833847" projectName="HL7ORMIF" qualifiedName="client.xsd" sourceCS="A8446BC268D64D366B5A8DC3421116C6" targetCS="4029833847" type="Resource" uuid="client.xsd"/>
+<entry baseType="Resource" checksum="1190342976" projectName="HL7ORMIF" qualifiedName="HL7_Records.xsd" sourceCS="E7ACF43D5102AB97C6B2BC7B35EA1617" targetCS="1190342976" type="Resource" uuid="HL7_Records.xsd"/>
+<entry baseType="Resource" checksum="3133627209" projectName="HL7ORMIF" qualifiedName="HL7_Segments.xsd" sourceCS="45B7E0AC61326A1337865006BB09A82B" targetCS="3133627209" type="Resource" uuid="HL7_Segments.xsd"/>
+<entry baseType="Ruleflow" checksum="3391270063" projectName="HL7ORMIF" qualifiedName="IF_Flow" sourceCS="093BDB451E43113A0AC858EA3195C028" targetCS="3391270063" type="Ruleflow" uuid="357648ba-adc7-422a-86df-9b6ae891ce07"/>
+<entry baseType="RuleProjectInfo" checksum="3383768201" projectName="HL7ORMIF" qualifiedName="HL7ORMIF" sourceCS="ECF97054FE9F07270AE0359EE259E516" targetCS="3383768201" type="RuleProjectInfo" uuid="c7bc2511-da8b-45db-aa19-b112c4399a95"/>
+<entry baseType="VariableSet" checksum="3242829913" projectName="HL7ORMIF" qualifiedName="IFVbls" sourceCS="795B323C016F4CA8B77F9923EB2314E8" targetCS="3242829913" type="VariableSet" uuid="979e43ca-c661-4c3f-9471-e0ea26842895"/>
+<entry baseType="Vocabulary" checksum="1296452025" projectName="HL7ORMIF" qualifiedName="Client_IF_Model_en_US" sourceCS="68C84822E10A157BED8981B1071A12AC" targetCS="1296452025" type="Vocabulary" uuid="d60dc89e-98dd-43ac-b228-29253cdfcb5f"/>
+<entry baseType="Vocabulary" checksum="3244384230" projectName="HL7ORMIF" qualifiedName="IF_Model_en_US" sourceCS="B4E34F39428355806E8B6532C3B21517" targetCS="3244384230" type="Vocabulary" uuid="e74ed856-7c87-4e96-bf29-059b5070ef36"/>
+</teamserver>
+</teamservers>

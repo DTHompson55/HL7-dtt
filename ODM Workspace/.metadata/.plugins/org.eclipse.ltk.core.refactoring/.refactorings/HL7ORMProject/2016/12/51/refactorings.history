@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 2 elements to &apos;HL7ORMJava/src&apos;&#x0D;&#x0A;- Original project: &apos;HL7ORMProject&apos;&#x0D;&#x0A;- Destination element: &apos;HL7ORMJava/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     questhl7records&#x0D;&#x0A;     questhl7segments&#x0D;&#x0A;- Update references to refactored element" description="Move folders" destination="=HL7ORMJava/src" element1="questhl7records" element2="questhl7segments" files="0" flags="589830" folders="2" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1481918936677" units="0" version="1.0"/>
+</session>

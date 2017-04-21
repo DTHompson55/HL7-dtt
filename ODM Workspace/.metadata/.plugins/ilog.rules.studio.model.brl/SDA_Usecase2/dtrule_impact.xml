@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><impactTables>
+    <ruleTable>
+        <vocElt id="Diagnosis">
+            <rule id="e579cce1-92cc-483b-b8df-f7f43730ea1e"/>
+        </vocElt>
+        <vocElt id="Diagnosis/Status/GETTER#0">
+            <rule id="e579cce1-92cc-483b-b8df-f7f43730ea1e"/>
+        </vocElt>
+        <vocElt id="demo.odm.ibm.com.ICDLookup/matches(java.lang.String,java.lang.String)/NAVIGATION#0">
+            <rule id="e579cce1-92cc-483b-b8df-f7f43730ea1e"/>
+        </vocElt>
+        <vocElt id="DiagnosisStatus/Code/GETTER#0">
+            <rule id="e579cce1-92cc-483b-b8df-f7f43730ea1e"/>
+        </vocElt>
+        <vocElt id="demo.odm.ibm.com.ICDLookup/add(int)/ACTION#0">
+            <rule id="e579cce1-92cc-483b-b8df-f7f43730ea1e"/>
+        </vocElt>
+        <vocElt id="ArrayOfDiagnosisDiagnosis/DiagnosisList/GETTER#0">
+            <rule id="e579cce1-92cc-483b-b8df-f7f43730ea1e"/>
+        </vocElt>
+        <vocElt id="ArrayOfDiagnosisDiagnosis">
+            <rule id="e579cce1-92cc-483b-b8df-f7f43730ea1e"/>
+        </vocElt>
+    </ruleTable>
+    <vocTable>
+        <rule id="e579cce1-92cc-483b-b8df-f7f43730ea1e">
+            <vocElt id="Diagnosis/Status/GETTER#0"/>
+            <vocElt id="Diagnosis"/>
+            <vocElt id="demo.odm.ibm.com.ICDLookup/matches(java.lang.String,java.lang.String)/NAVIGATION#0"/>
+            <vocElt id="DiagnosisStatus/Code/GETTER#0"/>
+            <vocElt id="demo.odm.ibm.com.ICDLookup/add(int)/ACTION#0"/>
+            <vocElt id="ArrayOfDiagnosisDiagnosis/DiagnosisList/GETTER#0"/>
+            <vocElt id="ArrayOfDiagnosisDiagnosis"/>
+        </rule>
+    </vocTable>
+    <ruleParamTable>
+        <param id="diagnoses">
+            <rule id="e579cce1-92cc-483b-b8df-f7f43730ea1e"/>
+        </param>
+    </ruleParamTable>
+    <paramTable>
+        <rule id="e579cce1-92cc-483b-b8df-f7f43730ea1e">
+            <param id="diagnoses"/>
+        </rule>
+    </paramTable>
+    <projectTable/>
+    <variableTable>
+        <param id="81183632-3eb4-4b41-a6ea-c6043ee9bbe9">
+            <rule id="e579cce1-92cc-483b-b8df-f7f43730ea1e"/>
+        </param>
+    </variableTable>
+    <ruleVocFileTable>
+        <vocFile file="/SDA_Usecase2/bom/model_en_US.voc" id="58f2d15c-996e-470f-9733-8d5a86063305">
+            <rule id="e579cce1-92cc-483b-b8df-f7f43730ea1e"/>
+        </vocFile>
+        <vocFile file="/SDA_Usecase2/bom/regexModel_en_US.voc" id="b1ae8af3-bfdc-4f50-92de-ad8c5ac35d16">
+            <rule id="e579cce1-92cc-483b-b8df-f7f43730ea1e"/>
+        </vocFile>
+    </ruleVocFileTable>
+    <resourceTable>
+        <resource file="/SDA_Usecase2/rules/diagnosisVbls.var" id="81183632-3eb4-4b41-a6ea-c6043ee9bbe9"/>
+        <resource file="/SDA_Usecase2/rules/pkg/CalculateCoMorbidity.dta" id="e579cce1-92cc-483b-b8df-f7f43730ea1e"/>
+    </resourceTable>
+</impactTables>

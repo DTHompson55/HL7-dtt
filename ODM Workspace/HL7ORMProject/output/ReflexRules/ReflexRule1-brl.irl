@@ -1,0 +1,19 @@
+package ReflexRules {
+   use ORU;
+   use decisionAnswer;
+   rule ReflexRule1 {
+      property ilog.rules.business_name = "ReflexRule1";
+      property ilog.rules.package_name = "ReflexRules";
+      property status = "new";
+      when {
+         questhl7records.ORU() from ORU;
+         evaluate (((ORU.getOBX("WHITE BLOOD CELL COUNT").isHigh) && (ORU.getOBX("25003000").isLow)));
+      } then {
+         decisionAnswer.add("** Order Reflex Test #1 based on high white blood cell count, and low Cholesterol");
+      } else {
+         decisionAnswer.add(("No Reflex Test #1 WBC Count value " + ORU.getOBX("WHITE BLOOD CELL COUNT").ObservationValue));
+         decisionAnswer.add(("No Reflex Test #1 25003000 value " + ORU.getOBX("25003000").ObservationValue));
+      }
+   }
+}
+

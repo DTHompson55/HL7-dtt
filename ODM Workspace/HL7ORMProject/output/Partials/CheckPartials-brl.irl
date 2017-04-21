@@ -1,0 +1,22 @@
+package Partials {
+   use ORU;
+   use client;
+   use decisionAnswer;
+   use reportPartials;
+   rule CheckPartials {
+      property ilog.rules.business_name = "CheckPartials";
+      property ilog.rules.package_name = "Partials";
+      property status = "new";
+      when {
+         questhl7records.ORU() from ORU;
+         qdp.Client() from client;
+         evaluate ((ORU.hasSomeOrdersReady()
+         	&& client.flagPartialAccepted != 0));
+      } then {
+         decisionAnswer.add("** Partials Ready to Report");
+         reportPartials = true;
+         ?context.updateContext();
+      }
+   }
+}
+

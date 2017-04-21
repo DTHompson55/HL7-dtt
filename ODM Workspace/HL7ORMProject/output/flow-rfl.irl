@@ -1,0 +1,80 @@
+use client;
+use decisionType;
+
+flowtask flow {
+  property mainflowtask = false;
+  property ilog.rules.business_name = "flow";
+  property ilog.rules.package_name = "";
+  body {
+    flow#Init;
+    if ((decisionType.equals("DEVTEST"))) {
+      flow#DevTest;
+      _node_9 : flow#ReflexRules;
+      if (client.flagPartialAccepted == 1) {
+        flow#Partials;
+      }
+      else {
+        flow#Non$45$Partials;
+      }
+    }
+    else {
+      goto _node_9;
+    }
+  }
+};
+
+ruletask flow#Init {
+  property ilog.rules.business_name = "flow>Init";
+  property ilog.rules.package_name = "";
+  algorithm = sequential;
+  property ilog.rules.engine.sequential.fastpath = true;
+  ordering = sorted;
+  body {
+    Init.*
+  }
+};
+
+ruletask flow#Partials {
+  property ilog.rules.business_name = "flow>Partials";
+  property ilog.rules.package_name = "";
+  algorithm = sequential;
+  property ilog.rules.engine.sequential.fastpath = true;
+  ordering = sorted;
+  body {
+    Partials.*
+  }
+};
+
+ruletask flow#Non$45$Partials {
+  property ilog.rules.business_name = "flow>Non-Partials";
+  property ilog.rules.package_name = "";
+  algorithm = sequential;
+  property ilog.rules.engine.sequential.fastpath = true;
+  ordering = sorted;
+  body {
+    Non$45$Partials.*
+  }
+};
+
+ruletask flow#ReflexRules {
+  property ilog.rules.business_name = "flow>ReflexRules";
+  property ilog.rules.package_name = "";
+  algorithm = sequential;
+  property ilog.rules.engine.sequential.fastpath = true;
+  ordering = sorted;
+  body {
+    ReflexRules.*
+  }
+};
+
+ruletask flow#DevTest {
+  property ilog.rules.business_name = "flow>DevTest";
+  property ilog.rules.package_name = "";
+  algorithm = sequential;
+  property ilog.rules.engine.sequential.fastpath = true;
+  ordering = sorted;
+  body {
+    DevTest.*
+  }
+};
+

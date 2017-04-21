@@ -1,0 +1,20 @@
+package nonPartials {
+   use Java_ORU;
+   use answers;
+   rule AllReportsReady {
+      property ilog.rules.business_name = "AllReportsReady";
+      property ilog.rules.package_name = "nonPartials";
+      property status = "new";
+      when {
+         hl7.demo.ibm.com.ORU_Java() from Java_ORU;
+         evaluate (Java_ORU.allReportsAreReady);
+      } then {
+         answers.add("** All Observations are Ready to Report");
+         answers.setAllReportsComplete();
+      } else {
+         answers.clear();
+         answers.add("** Not All Observations are Ready, do not report");
+      }
+   }
+}
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><teamservers>
+<teamserver>
+<target dataSource="" login="rtsAdmin" url="http://localhost:9081/teamserver"/>
+<entry baseType="B2XMapping" checksum="3070033138" projectName="HL7ORMRULES" qualifiedName="ruleModel" sourceCS="C91E487848698E41559BC847448AB44A" targetCS="3070033138" type="B2XMapping" uuid="b4553c6f-2e5f-4f36-a4d4-038c69328135"/>
+<entry baseType="BRLRule" checksum="2454531826" projectName="HL7ORMRULES" qualifiedName="devTest.DefaultRule 3" sourceCS="AEA37D48818313B9D0055DA59C92EC38" targetCS="2454531826" type="BRLRule" uuid="232a7baf-d4fc-417f-8e97-460e99cdd331"/>
+<entry baseType="BRLRule" checksum="3090616304" projectName="HL7ORMRULES" qualifiedName="nonPartials.AllReportsReady" sourceCS="EE492EF5EA95246E8975EA6B83D01DB8" targetCS="3090616304" type="BRLRule" uuid="7aa372b8-695a-4b97-a50d-71b019538df5"/>
+<entry baseType="BRLRule" checksum="169463249" projectName="HL7ORMRULES" qualifiedName="partials.CheckPartials" sourceCS="296A87EAFE76D0A26C276999ACCDED28" targetCS="169463249" type="BRLRule" uuid="41ed36c6-3a6b-4881-992b-9f2eb20878d1"/>
+<entry baseType="BRLRule" checksum="1209541940" projectName="HL7ORMRULES" qualifiedName="partials.CheckResend" sourceCS="1BB83A5C88B8933BC814D0273093128A" targetCS="1209541940" type="BRLRule" uuid="b8a25558-9045-43e4-9afe-21caa2d30ee3"/>
+<entry baseType="BRLRule" checksum="867748353" projectName="HL7ORMRULES" qualifiedName="reflexRules.ReflexDebug" sourceCS="E4C5D62351F16157D1530E28A55CD10D" targetCS="867748353" type="BRLRule" uuid="7fc34a8f-9830-4c7c-9899-01c1e9e113d0"/>
+<entry baseType="BRLRule" checksum="1314206758" projectName="HL7ORMRULES" qualifiedName="reflexRules.ReflexRule1" sourceCS="3A774D169C8D75C27490CDCCF6C6C662" targetCS="1314206758" type="BRLRule" uuid="e3abffbe-2a15-48f9-a834-4fa1f5e36b9f"/>
+<entry baseType="BRLRule" checksum="3613156764" projectName="HL7ORMRULES" qualifiedName="reflexRules.ReflexRule2" sourceCS="0277D70A82E7045739DC2C9D23033C5F" targetCS="3613156764" type="BRLRule" uuid="a7cbea2a-a6a8-45b1-a582-36552d58abb3"/>
+<entry baseType="BusinessObjectModel" checksum="3070033138" projectName="HL7ORMRULES" qualifiedName="ruleModel" sourceCS="6DE4591FB5BE3C88E1B68AF052D92495" targetCS="3070033138" type="BusinessObjectModel" uuid="4a8f8b57-e203-418a-b270-788d593a7409"/>
+<entry baseType="Resource" checksum="2387267320" projectName="HL7ORMRULES" qualifiedName="QuestHL7Answers.xsd" sourceCS="F83ACCF05CF53BCE906925B636C4CD1F" targetCS="2387267320" type="Resource" uuid="QuestHL7Answers.xsd"/>
+<entry baseType="Ruleflow" checksum="2088477748" projectName="HL7ORMRULES" qualifiedName="flow" sourceCS="0C611FE75997BA6E3DE2EA879FF93F3B" targetCS="2088477748" type="Ruleflow" uuid="090d12c6-5a41-4520-84bb-0b0ea9f2f011"/>
+<entry baseType="RulePackageInfo" checksum="2736678498" projectName="HL7ORMRULES" qualifiedName="devTest" sourceCS="16BB49E972D170686FC2FFA3E8F21A5C" targetCS="2736678498" type="RulePackageInfo" uuid="aa852f8e-d381-4862-83a3-3251a69727a0"/>
+<entry baseType="RulePackageInfo" checksum="823940688" projectName="HL7ORMRULES" qualifiedName="nonPartials" sourceCS="50949477E24498471272995FAE524E07" targetCS="823940688" type="RulePackageInfo" uuid="b43675c0-7690-4a4c-9f05-537a15a0475b"/>
+<entry baseType="RulePackageInfo" checksum="965801782" projectName="HL7ORMRULES" qualifiedName="partials" sourceCS="179605C4F3946D55A8CD9AAA69E9BE62" targetCS="965801782" type="RulePackageInfo" uuid="6d85fdd1-9537-472d-a351-6da258c85108"/>
+<entry baseType="RulePackageInfo" checksum="870869331" projectName="HL7ORMRULES" qualifiedName="reflexRules" sourceCS="B4D831B4A0A409A021F21B23B2BDA13E" targetCS="870869331" type="RulePackageInfo" uuid="01bd8183-059a-4cc1-8f73-e4d09d7ceee8"/>
+<entry baseType="RuleProjectInfo" checksum="1325337916" projectName="HL7ORMRULES" qualifiedName="HL7ORMRULES" sourceCS="CCDC7A2718043C08AEC9F5B08E5753CD" targetCS="1325337916" type="RuleProjectInfo" uuid="7a54e543-bced-4c5b-a50d-c3df016f758a"/>
+<entry baseType="VariableSet" checksum="645317601" projectName="HL7ORMRULES" qualifiedName="ruleVbls" sourceCS="CA4DB9D7981F7FB04AB3C95B01B87557" targetCS="645317601" type="VariableSet" uuid="e66c1e32-26ca-45de-a8f6-4e768a24b45f"/>
+<entry baseType="Vocabulary" checksum="3070033138" projectName="HL7ORMRULES" qualifiedName="ruleModel_en_US" sourceCS="A69CB941ECB7045F825347E6D8ABD3E7" targetCS="3070033138" type="Vocabulary" uuid="66986dfb-2ea5-473f-81f6-2e4a29d3b20c"/>
+</teamserver>
+</teamservers>

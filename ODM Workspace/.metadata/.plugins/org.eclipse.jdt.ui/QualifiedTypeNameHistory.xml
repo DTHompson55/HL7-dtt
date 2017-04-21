@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="demo.odm.ibm.com.ICDLookup"/>
+<fullyQualifiedTypeName name="java.util.Vector"/>
+<fullyQualifiedTypeName name="questhl7segments.ORUPATIENTRESULT"/>
+<fullyQualifiedTypeName name="questhl7segments.ORUORDEROBSERVATION"/>
+<fullyQualifiedTypeName name="questhl7segments.ORUOBSERVATION"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.io.ObjectInputStream.GetField"/>
+<fullyQualifiedTypeName name="java.lang.Double"/>
+<fullyQualifiedTypeName name="hl7.demo.ibm.com.HL7_Helper"/>
+</qualifiedTypeNameHistroy>

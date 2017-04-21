@@ -1,0 +1,70 @@
+
+property loadGetterSetterAsProperties "true"
+property origin "xom:/HL7ORMBOM//HL7ORMJava"
+property uuid "61b9366f-7574-4869-a273-a3c1c4513caf"
+package hl7.demo.ibm.com;
+
+
+public class HL7_Helper
+{
+
+    public class NV
+    {
+    }
+    public java.util.Vector messages domain 0,* class string
+                property deprecated "true";
+    public HL7_Helper();
+    public string getEventType(string arg);
+    public string getMedicalConditionFromICD(string arg);
+}
+
+public class ICD10
+{
+    public ICD10();
+}
+
+public class ICD9
+{
+    public ICD9();
+}
+
+public class OBX_Java
+{
+    public string ObservationRange
+                property deprecated "true";
+    public string ObservationValue
+                property deprecated "true";
+    public readonly boolean high;
+    public readonly boolean low;
+    public readonly boolean normal;
+}
+
+public class ORM_Java
+{
+    public ORM_Java();
+}
+
+public class ORU_Java
+{
+    public boolean allReportsAreReady;
+    public java.util.HashMap obxMapByID;
+    public java.util.HashMap obxMapByName;
+    public java.util.List oooList domain 0,* class questhl7segments.ORUORDEROBSERVATION
+                property deprecated "true";
+    public questhl7segments.ORUPATIENTRESULT opr
+                property deprecated "true";
+    public questhl7records.ORU oru
+                property deprecated "true";
+    public questhl7segments.PID pid
+                property deprecated "true";
+    public boolean someReportsAreReady;
+    public questhl7segments.OBX getOBX(string arg);
+}
+
+public class TheClient
+{
+    public boolean acceptsPartials;
+    public boolean acceptsRereportables;
+    public TheClient();
+}
+

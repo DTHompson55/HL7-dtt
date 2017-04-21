@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>ReflexRule1</name>
+  <uuid>e3abffbe-2a15-48f9-a834-4fa1f5e36b9f</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if
+    all of the following conditions are true :
+    
+            - The result is high for Observation "WHITE BLOOD CELL COUNT" of 'The Report'
+            - Result is low for Observation "25003000" of 'The Report' ,
+then
+    add "** Order Reflex Test #1 based on high white blood cell count, and low Cholesterol" to 'the Decision Answer' ;
+else
+    add "No Reflex Test #1 WBC Count value " + the observation value of Observation "WHITE BLOOD CELL COUNT" of 'The Report' to 'the Decision Answer' ;    
+    add "No Reflex Test #1 25003000 value " + the observation value of Observation "25003000" of 'The Report' to 'the Decision Answer' ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

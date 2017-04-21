@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:VariableSet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>IFVbls</name>
+  <uuid>979e43ca-c661-4c3f-9471-e0ea26842895</uuid>
+  <variables name="IF_ORU" type="questhl7records.ORU" initialValue="" verbalization="the IF_ORU"/>
+  <variables name="client" type="qdp.Client" initialValue="" verbalization="the IF_Client"/>
+  <variables name="decisionType" type="java.lang.String" initialValue="" verbalization="the Decision Type"/>
+  <variables name="ORM" type="questhl7records.ORM" initialValue="" verbalization="the IF_ORM"/>
+  <variables name="reportAll" type="boolean" initialValue="" verbalization="Report All"/>
+  <variables name="reportParials" type="boolean" initialValue="" verbalization="Report Partials"/>
+</ilog.rules.studio.model.base:VariableSet>

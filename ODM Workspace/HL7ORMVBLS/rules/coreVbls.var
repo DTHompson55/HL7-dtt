@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:VariableSet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>coreVbls</name>
+  <uuid>f8c2db1f-fc63-47de-ae6c-f05b9568501c</uuid>
+  <variables name="Java_ORU" type="hl7.demo.ibm.com.ORU_Java" initialValue="" verbalization="The Report"/>
+  <variables name="Java_Client" type="hl7.demo.ibm.com.TheClient" initialValue="" verbalization="The Client"/>
+  <variables name="Java_OBR" type="hl7.demo.ibm.com.OBR_Java" initialValue="" verbalization="obr_java"/>
+  <variables name="Java_OBX" type="hl7.demo.ibm.com.OBX_Java" initialValue="" verbalization="obx_java"/>
+  <variables name="HL7_Util" type="hl7.demo.ibm.com.HL7_Helper" initialValue="" verbalization="helper_hl7"/>
+  <variables name="Java_ORM" type="hl7.demo.ibm.com.ORM_Java" initialValue="" verbalization="The Order"/>
+</ilog.rules.studio.model.base:VariableSet>

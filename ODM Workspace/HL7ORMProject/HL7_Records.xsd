@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema 
+  targetNamespace="http://QuestHL7Records"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:tns="http://QuestHL7Records"
+  xmlns:seg="http://QuestHL7Segments" >
+
+<xsd:import namespace="http://QuestHL7Segments" schemaLocation="HL7_Segments.xsd" />
+
+<xsd:element name="ORM" type="tns:ORM" />
+
+  <xsd:complexType name="ORM">
+    <xsd:sequence>
+      <xsd:element minOccurs="1" name="MSH" type="seg:MSH"  maxOccurs="1"></xsd:element>
+      <!--  there are no NTE segments in the sample data -->
+      <xsd:element minOccurs="0" name="ORM_PATIENT"  type="seg:ORM_PATIENT" maxOccurs="1"></xsd:element>
+      <xsd:element minOccurs="1" name="ORM_ORDER"    type="seg:ORM_ORDER" maxOccurs="unbounded"></xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+
+<xsd:element name="ORU" type="tns:ORU" />
+
+  <xsd:complexType name="ORU">
+    <xsd:sequence>
+      <xsd:element minOccurs="1" name="MSH" type="seg:MSH"  maxOccurs="1"></xsd:element>
+      <!--  there are no NTE segments in the sample data -->
+      <xsd:element minOccurs="0" name="ORU_PATIENT_RESULT"  type="seg:ORU_PATIENT_RESULT" maxOccurs="1" /> 
+    </xsd:sequence>
+  </xsd:complexType>
+  
+</xsd:schema>

@@ -1,0 +1,19 @@
+package partials {
+   use Java_ORU;
+   use Java_Client;
+   use answers;
+   rule CheckResend {
+      property ilog.rules.business_name = "CheckResend";
+      property ilog.rules.package_name = "partials";
+      property status = "new";
+      when {
+         hl7.demo.ibm.com.ORU_Java() from Java_ORU;
+         hl7.demo.ibm.com.TheClient() from Java_Client;
+         evaluate ((Java_ORU.someReportsAreReady
+         	&& Java_Client.acceptsRereportables));
+      } then {
+         answers.add("** Partials Ready to RE-Report");
+      }
+   }
+}
+

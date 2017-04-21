@@ -1,0 +1,8 @@
+package hl7.demo.ibm.com;
+
+public class ORM_Java {
+	
+	public static ORM_Java create() {return new ORM_Java();}
+	public String generateOrder() {return ""};
+
+}

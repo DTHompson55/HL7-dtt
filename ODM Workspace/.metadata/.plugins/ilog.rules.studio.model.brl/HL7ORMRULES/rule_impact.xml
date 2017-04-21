@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?><impactTables>
+    <ruleTable>
+        <vocElt id="hl7.demo.ibm.com.OBX_Java/abnormal/PREDICATE#0">
+            <rule id="a7cbea2a-a6a8-45b1-a582-36552d58abb3"/>
+        </vocElt>
+        <vocElt id="hl7.demo.ibm.com.ORU_Java/getObrByName(java.lang.String)/NAVIGATION#0">
+            <rule id="a7cbea2a-a6a8-45b1-a582-36552d58abb3"/>
+        </vocElt>
+        <vocElt id="hl7.demo.ibm.com.TheClient/acceptsRereportables/PREDICATE#0">
+            <rule id="b8a25558-9045-43e4-9afe-21caa2d30ee3"/>
+        </vocElt>
+        <vocElt id="hl7.demo.ibm.com.ORU_Java">
+            <rule id="e3abffbe-2a15-48f9-a834-4fa1f5e36b9f"/>
+            <rule id="b8a25558-9045-43e4-9afe-21caa2d30ee3"/>
+            <rule id="a7cbea2a-a6a8-45b1-a582-36552d58abb3"/>
+            <rule id="7aa372b8-695a-4b97-a50d-71b019538df5"/>
+            <rule id="41ed36c6-3a6b-4881-992b-9f2eb20878d1"/>
+        </vocElt>
+        <vocElt id="hl7.demo.ibm.com.OBX_Java/low/PREDICATE#0">
+            <rule id="e3abffbe-2a15-48f9-a834-4fa1f5e36b9f"/>
+            <rule id="a7cbea2a-a6a8-45b1-a582-36552d58abb3"/>
+        </vocElt>
+        <vocElt id="questpocanswers.Answers/add(java.lang.String)/ACTION#0">
+            <rule id="e3abffbe-2a15-48f9-a834-4fa1f5e36b9f"/>
+            <rule id="b8a25558-9045-43e4-9afe-21caa2d30ee3"/>
+            <rule id="a7cbea2a-a6a8-45b1-a582-36552d58abb3"/>
+            <rule id="7aa372b8-695a-4b97-a50d-71b019538df5"/>
+            <rule id="232a7baf-d4fc-417f-8e97-460e99cdd331"/>
+            <rule id="7fc34a8f-9830-4c7c-9899-01c1e9e113d0"/>
+            <rule id="41ed36c6-3a6b-4881-992b-9f2eb20878d1"/>
+        </vocElt>
+        <vocElt id="hl7.demo.ibm.com.OBX_Java/observationValue/GETTER#0">
+            <rule id="e3abffbe-2a15-48f9-a834-4fa1f5e36b9f"/>
+            <rule id="a7cbea2a-a6a8-45b1-a582-36552d58abb3"/>
+        </vocElt>
+        <vocElt id="questpocanswers.Answers/setPartialReportsComplete()/ACTION#0">
+            <rule id="41ed36c6-3a6b-4881-992b-9f2eb20878d1"/>
+        </vocElt>
+        <vocElt id="questpocanswers.Answers/clear()/ACTION#0">
+            <rule id="7aa372b8-695a-4b97-a50d-71b019538df5"/>
+        </vocElt>
+        <vocElt id="hl7.demo.ibm.com.TheClient/acceptsPartials/PREDICATE#0">
+            <rule id="41ed36c6-3a6b-4881-992b-9f2eb20878d1"/>
+        </vocElt>
+        <vocElt id="hl7.demo.ibm.com.ORU_Java/someReportsAreReady/PREDICATE#0">
+            <rule id="b8a25558-9045-43e4-9afe-21caa2d30ee3"/>
+            <rule id="41ed36c6-3a6b-4881-992b-9f2eb20878d1"/>
+        </vocElt>
+        <vocElt id="hl7.demo.ibm.com.ORU_Java/allReportsAreReady/PREDICATE#0">
+            <rule id="7aa372b8-695a-4b97-a50d-71b019538df5"/>
+        </vocElt>
+        <vocElt id="questpocanswers.Answers">
+            <rule id="e3abffbe-2a15-48f9-a834-4fa1f5e36b9f"/>
+            <rule id="b8a25558-9045-43e4-9afe-21caa2d30ee3"/>
+            <rule id="a7cbea2a-a6a8-45b1-a582-36552d58abb3"/>
+            <rule id="7aa372b8-695a-4b97-a50d-71b019538df5"/>
+            <rule id="232a7baf-d4fc-417f-8e97-460e99cdd331"/>
+            <rule id="7fc34a8f-9830-4c7c-9899-01c1e9e113d0"/>
+            <rule id="41ed36c6-3a6b-4881-992b-9f2eb20878d1"/>
+        </vocElt>
+        <vocElt id="questpocanswers.Answers/setAllReportsComplete()/ACTION#0">
+            <rule id="7aa372b8-695a-4b97-a50d-71b019538df5"/>
+        </vocElt>
+        <vocElt id="hl7.demo.ibm.com.OBX_Java/high/PREDICATE#0">
+            <rule id="e3abffbe-2a15-48f9-a834-4fa1f5e36b9f"/>
+            <rule id="a7cbea2a-a6a8-45b1-a582-36552d58abb3"/>
+        </vocElt>
+        <vocElt id="hl7.demo.ibm.com.OBR_Java/getOBX(java.lang.String)/NAVIGATION#0">
+            <rule id="a7cbea2a-a6a8-45b1-a582-36552d58abb3"/>
+        </vocElt>
+        <vocElt id="hl7.demo.ibm.com.ORU_Java/getOBX(java.lang.String)/NAVIGATION#0">
+            <rule id="e3abffbe-2a15-48f9-a834-4fa1f5e36b9f"/>
+            <rule id="a7cbea2a-a6a8-45b1-a582-36552d58abb3"/>
+        </vocElt>
+        <vocElt id="hl7.demo.ibm.com.TheClient">
+            <rule id="b8a25558-9045-43e4-9afe-21caa2d30ee3"/>
+            <rule id="41ed36c6-3a6b-4881-992b-9f2eb20878d1"/>
+        </vocElt>
+    </ruleTable>
+    <vocTable>
+        <rule id="e3abffbe-2a15-48f9-a834-4fa1f5e36b9f">
+            <vocElt id="questpocanswers.Answers"/>
+            <vocElt id="hl7.demo.ibm.com.OBX_Java/observationValue/GETTER#0"/>
+            <vocElt id="questpocanswers.Answers/add(java.lang.String)/ACTION#0"/>
+            <vocElt id="hl7.demo.ibm.com.OBX_Java/low/PREDICATE#0"/>
+            <vocElt id="hl7.demo.ibm.com.ORU_Java"/>
+            <vocElt id="hl7.demo.ibm.com.OBX_Java/high/PREDICATE#0"/>
+            <vocElt id="hl7.demo.ibm.com.ORU_Java/getOBX(java.lang.String)/NAVIGATION#0"/>
+        </rule>
+        <rule id="b8a25558-9045-43e4-9afe-21caa2d30ee3">
+            <vocElt id="hl7.demo.ibm.com.ORU_Java/someReportsAreReady/PREDICATE#0"/>
+            <vocElt id="questpocanswers.Answers"/>
+            <vocElt id="hl7.demo.ibm.com.TheClient/acceptsRereportables/PREDICATE#0"/>
+            <vocElt id="questpocanswers.Answers/add(java.lang.String)/ACTION#0"/>
+            <vocElt id="hl7.demo.ibm.com.ORU_Java"/>
+            <vocElt id="hl7.demo.ibm.com.TheClient"/>
+        </rule>
+        <rule id="a7cbea2a-a6a8-45b1-a582-36552d58abb3">
+            <vocElt id="hl7.demo.ibm.com.OBX_Java/abnormal/PREDICATE#0"/>
+            <vocElt id="questpocanswers.Answers"/>
+            <vocElt id="hl7.demo.ibm.com.ORU_Java/getObrByName(java.lang.String)/NAVIGATION#0"/>
+            <vocElt id="hl7.demo.ibm.com.OBX_Java/observationValue/GETTER#0"/>
+            <vocElt id="questpocanswers.Answers/add(java.lang.String)/ACTION#0"/>
+            <vocElt id="hl7.demo.ibm.com.OBX_Java/low/PREDICATE#0"/>
+            <vocElt id="hl7.demo.ibm.com.ORU_Java"/>
+            <vocElt id="hl7.demo.ibm.com.OBX_Java/high/PREDICATE#0"/>
+            <vocElt id="hl7.demo.ibm.com.OBR_Java/getOBX(java.lang.String)/NAVIGATION#0"/>
+            <vocElt id="hl7.demo.ibm.com.ORU_Java/getOBX(java.lang.String)/NAVIGATION#0"/>
+        </rule>
+        <rule id="7aa372b8-695a-4b97-a50d-71b019538df5">
+            <vocElt id="hl7.demo.ibm.com.ORU_Java/allReportsAreReady/PREDICATE#0"/>
+            <vocElt id="questpocanswers.Answers"/>
+            <vocElt id="questpocanswers.Answers/add(java.lang.String)/ACTION#0"/>
+            <vocElt id="hl7.demo.ibm.com.ORU_Java"/>
+            <vocElt id="questpocanswers.Answers/setAllReportsComplete()/ACTION#0"/>
+            <vocElt id="questpocanswers.Answers/clear()/ACTION#0"/>
+        </rule>
+        <rule id="232a7baf-d4fc-417f-8e97-460e99cdd331">
+            <vocElt id="questpocanswers.Answers"/>
+            <vocElt id="questpocanswers.Answers/add(java.lang.String)/ACTION#0"/>
+        </rule>
+        <rule id="7fc34a8f-9830-4c7c-9899-01c1e9e113d0">
+            <vocElt id="questpocanswers.Answers"/>
+            <vocElt id="questpocanswers.Answers/add(java.lang.String)/ACTION#0"/>
+        </rule>
+        <rule id="41ed36c6-3a6b-4881-992b-9f2eb20878d1">
+            <vocElt id="hl7.demo.ibm.com.TheClient/acceptsPartials/PREDICATE#0"/>
+            <vocElt id="hl7.demo.ibm.com.ORU_Java/someReportsAreReady/PREDICATE#0"/>
+            <vocElt id="questpocanswers.Answers"/>
+            <vocElt id="questpocanswers.Answers/add(java.lang.String)/ACTION#0"/>
+            <vocElt id="hl7.demo.ibm.com.ORU_Java"/>
+            <vocElt id="questpocanswers.Answers/setPartialReportsComplete()/ACTION#0"/>
+            <vocElt id="hl7.demo.ibm.com.TheClient"/>
+        </rule>
+    </vocTable>
+    <ruleParamTable>
+        <param id="answers">
+            <rule id="e3abffbe-2a15-48f9-a834-4fa1f5e36b9f"/>
+            <rule id="b8a25558-9045-43e4-9afe-21caa2d30ee3"/>
+            <rule id="a7cbea2a-a6a8-45b1-a582-36552d58abb3"/>
+            <rule id="7aa372b8-695a-4b97-a50d-71b019538df5"/>
+            <rule id="232a7baf-d4fc-417f-8e97-460e99cdd331"/>
+            <rule id="7fc34a8f-9830-4c7c-9899-01c1e9e113d0"/>
+            <rule id="41ed36c6-3a6b-4881-992b-9f2eb20878d1"/>
+        </param>
+        <param id="Java_Client">
+            <rule id="b8a25558-9045-43e4-9afe-21caa2d30ee3"/>
+            <rule id="41ed36c6-3a6b-4881-992b-9f2eb20878d1"/>
+        </param>
+        <param id="Java_ORU">
+            <rule id="e3abffbe-2a15-48f9-a834-4fa1f5e36b9f"/>
+            <rule id="b8a25558-9045-43e4-9afe-21caa2d30ee3"/>
+            <rule id="a7cbea2a-a6a8-45b1-a582-36552d58abb3"/>
+            <rule id="7aa372b8-695a-4b97-a50d-71b019538df5"/>
+            <rule id="41ed36c6-3a6b-4881-992b-9f2eb20878d1"/>
+        </param>
+    </ruleParamTable>
+    <paramTable>
+        <rule id="e3abffbe-2a15-48f9-a834-4fa1f5e36b9f">
+            <param id="answers"/>
+            <param id="Java_ORU"/>
+        </rule>
+        <rule id="b8a25558-9045-43e4-9afe-21caa2d30ee3">
+            <param id="answers"/>
+            <param id="Java_Client"/>
+            <param id="Java_ORU"/>
+        </rule>
+        <rule id="a7cbea2a-a6a8-45b1-a582-36552d58abb3">
+            <param id="answers"/>
+            <param id="Java_ORU"/>
+        </rule>
+        <rule id="7aa372b8-695a-4b97-a50d-71b019538df5">
+            <param id="answers"/>
+            <param id="Java_ORU"/>
+        </rule>
+        <rule id="232a7baf-d4fc-417f-8e97-460e99cdd331">
+            <param id="answers"/>
+        </rule>
+        <rule id="7fc34a8f-9830-4c7c-9899-01c1e9e113d0">
+            <param id="answers"/>
+        </rule>
+        <rule id="41ed36c6-3a6b-4881-992b-9f2eb20878d1">
+            <param id="answers"/>
+            <param id="Java_Client"/>
+            <param id="Java_ORU"/>
+        </rule>
+    </paramTable>
+    <projectTable/>
+    <variableTable>
+        <param id="f8c2db1f-fc63-47de-ae6c-f05b9568501c">
+            <rule id="e3abffbe-2a15-48f9-a834-4fa1f5e36b9f"/>
+            <rule id="b8a25558-9045-43e4-9afe-21caa2d30ee3"/>
+            <rule id="a7cbea2a-a6a8-45b1-a582-36552d58abb3"/>
+            <rule id="7aa372b8-695a-4b97-a50d-71b019538df5"/>
+            <rule id="41ed36c6-3a6b-4881-992b-9f2eb20878d1"/>
+        </param>
+        <param id="e66c1e32-26ca-45de-a8f6-4e768a24b45f">
+            <rule id="e3abffbe-2a15-48f9-a834-4fa1f5e36b9f"/>
+            <rule id="b8a25558-9045-43e4-9afe-21caa2d30ee3"/>
+            <rule id="a7cbea2a-a6a8-45b1-a582-36552d58abb3"/>
+            <rule id="7aa372b8-695a-4b97-a50d-71b019538df5"/>
+            <rule id="232a7baf-d4fc-417f-8e97-460e99cdd331"/>
+            <rule id="7fc34a8f-9830-4c7c-9899-01c1e9e113d0"/>
+            <rule id="41ed36c6-3a6b-4881-992b-9f2eb20878d1"/>
+        </param>
+    </variableTable>
+    <ruleVocFileTable>
+        <vocFile file="/HL7ORMBOM/bom/JavaModel_en_US.voc" id="243503d6-cac4-4584-a28f-f604d0084b77">
+            <rule id="e3abffbe-2a15-48f9-a834-4fa1f5e36b9f"/>
+            <rule id="b8a25558-9045-43e4-9afe-21caa2d30ee3"/>
+            <rule id="a7cbea2a-a6a8-45b1-a582-36552d58abb3"/>
+            <rule id="7aa372b8-695a-4b97-a50d-71b019538df5"/>
+            <rule id="41ed36c6-3a6b-4881-992b-9f2eb20878d1"/>
+        </vocFile>
+        <vocFile file="/HL7ORMRULES/bom/ruleModel_en_US.voc" id="66986dfb-2ea5-473f-81f6-2e4a29d3b20c">
+            <rule id="232a7baf-d4fc-417f-8e97-460e99cdd331"/>
+            <rule id="7fc34a8f-9830-4c7c-9899-01c1e9e113d0"/>
+        </vocFile>
+    </ruleVocFileTable>
+    <resourceTable>
+        <resource file="/HL7ORMRULES/rules/reflexRules/ReflexRule1.brl" id="e3abffbe-2a15-48f9-a834-4fa1f5e36b9f"/>
+        <resource file="/HL7ORMRULES/rules/devTest/DefaultRule 3.brl" id="232a7baf-d4fc-417f-8e97-460e99cdd331"/>
+        <resource file="/HL7ORMRULES/rules/nonPartials/AllReportsReady.brl" id="7aa372b8-695a-4b97-a50d-71b019538df5"/>
+        <resource file="/HL7ORMRULES/rules/reflexRules/ReflexDebug.brl" id="7fc34a8f-9830-4c7c-9899-01c1e9e113d0"/>
+        <resource file="/HL7ORMRULES/rules/partials/CheckResend.brl" id="b8a25558-9045-43e4-9afe-21caa2d30ee3"/>
+        <resource file="/HL7ORMRULES/rules/reflexRules/ReflexRule2.brl" id="a7cbea2a-a6a8-45b1-a582-36552d58abb3"/>
+        <resource file="/HL7ORMRULES/rules/partials/CheckPartials.brl" id="41ed36c6-3a6b-4881-992b-9f2eb20878d1"/>
+    </resourceTable>
+</impactTables>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><mappingRoot xmlns="http://www.ibm.com/2008/ccl/Mapping" domainID="com.ibm.msl.mapping.xml" domainIDExtension="mb" mainMap="true" targetNamespace="default" version="8.0.5.0" xmlns:map="default">
+    <input path="/HL7SoapSchemas.xsd"/>
+    <output path="/HL7SoapSchemas.xsd"/>
+    <namespaces>
+        <namespace kind="supplement" prefix="io" uri="http:///HL7Services/HL7SoapSchemas.xsd"/>
+    </namespaces>
+    <generation engine="xquery"/>
+    <mappingDeclaration name="HL7SoapMsgs_Response_Mapping">
+        <input namespace="http:///HL7Services/HL7SoapSchemas.xsd" path="mb:msg(HL7RespType,assembly,XMLNSC,Properties)" var="ComIbmMessageAssembly_HL7RespType"/>
+        <output namespace="http:///HL7Services/HL7SoapSchemas.xsd" path="mb:msg(HL7RespType,assembly,XMLNSC,Properties)" var="ComIbmMessageAssembly_HL7RespType1"/>
+        <move>
+            <input path="$ComIbmMessageAssembly_HL7RespType/Properties"/>
+            <output path="$ComIbmMessageAssembly_HL7RespType1/Properties"/>
+        </move>
+        <assign value="ORM Record Accepted by IIB Soap Front End">
+            <output path="$ComIbmMessageAssembly_HL7RespType1/HL7RespType/RespBody"/>
+        </assign>
+    </mappingDeclaration>
+</mappingRoot>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>ReflexRule2</name>
+  <uuid>d068dbca-46e5-4ed4-88fe-0ede86ff5ba2</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[definitions
+    set 'the observation set' to the Observation Set named "CBC (INCLUDES DIFF/PLT)" in 'The Report' ;
+if
+    'the observation set' is not null and 
+    all of the following conditions are true :
+            - The result is high for Observation "30000000" of 'the observation set'
+            - results are low for observation "RED BLOOD CELL COUNT" of 'the observation set'
+            - results are normal for observation "HEMOGLOBIN" of 'the observation set' ,
+then
+    add "** Order Reflex Test #2 based on CBC hi, low, normal wbc,rbc,hemo " to 'the Decision Answer' ;
+else
+    add "No Reflex Test #2 RBC " + the observation value of Observation "RED BLOOD CELL COUNT" of 'the ORU' to 'the Decision Answer' ;
+    add "No Reflex Test #2 30000000 " + the observation value of Observation "30000000" of 'the ORU' to 'the Decision Answer' ;
+    add "No Reflex Test #2 HEMO " + the observation value of Observation "HEMOGLOBIN" of 'the ORU' to 'the Decision Answer' ;    ]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

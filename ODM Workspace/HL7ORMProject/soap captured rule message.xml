@@ -1,0 +1,816 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <soapenv:Body>
+      <ns5:Op1Request xmlns:ns5="http://www.ibm.com/rules/decisionservice/Hl7/Op1">
+         <ns5:DecisionID>1</ns5:DecisionID>
+         <ns0:ORM xmlns:ns0="http://www.ibm.com/rules/decisionservice/Hl7/Op1/param">
+            <ns1:ORM xmlns:ns1="http://QuestHL7Records">
+               <MSH>
+                  <OriginatingFacility xsi:nil="true"/>
+                  <MsgType_1>ORM</MsgType_1>
+                  <MsgType_2>A</MsgType_2>
+                  <MsgType_3>M</MsgType_3>
+                  <ControlID>1^U^3101483</ControlID>
+                  <ReceivingFacility>AT</ReceivingFacility>
+               </MSH>
+               <ORM_PATIENT>
+                  <PID>
+                     <PIDSequence>1</PIDSequence>
+                     <PatientID1>123</PatientID1>
+                     <PatientID2>RB999998A</PatientID2>
+                     <AccessionNumber>RB999998A</AccessionNumber>
+                     <MRN xsi:nil="true"/>
+                     <ChartId xsi:nil="true"/>
+                     <EnterpriseID xsi:nil="true"/>
+                     <PatientAccountNum>123</PatientAccountNum>
+                     <AdministrativeSex xsi:nil="true"/>
+                     <Birthdate xsi:nil="true"/>
+                  </PID>
+               </ORM_PATIENT>
+               <ORM_ORDER>
+                  <ORC>
+                     <OrderControl>NW</OrderControl>
+                     <OrderStatus xsi:nil="true"/>
+                     <ResponseFlag xsi:nil="true"/>
+                     <Specimens_1 xsi:nil="true"/>
+                     <Specimens_2 xsi:nil="true"/>
+                     <Specimens_3 xsi:nil="true"/>
+                     <Specimens_4 xsi:nil="true"/>
+                     <Specimens_5 xsi:nil="true"/>
+                     <Specimens_6 xsi:nil="true"/>
+                     <Specimens_7 xsi:nil="true"/>
+                     <Specimens_8 xsi:nil="true"/>
+                     <Specimens_9 xsi:nil="true"/>
+                     <Specimens_10 xsi:nil="true"/>
+                     <ChangeOrderDate_1 xsi:nil="true"/>
+                     <ChangeOrderDate_2 xsi:nil="true"/>
+                     <PhysicianUPIN>HQTEST</PhysicianUPIN>
+                     <OriginiatingSiteCode xsi:nil="true"/>
+                     <CollectionDate xsi:nil="true"/>
+                     <ClientMnemonic xsi:nil="true"/>
+                     <Minilog xsi:nil="true"/>
+                     <Maxilog xsi:nil="true"/>
+                     <WhoLoggedItUPIN>HQDB03</WhoLoggedItUPIN>
+                     <AltPatientID xsi:nil="true"/>
+                     <AccessionNumber xsi:nil="true"/>
+                     <ClientID xsi:nil="true"/>
+                  </ORC>
+                  <ORM_ORDER_DETAIL>
+                     <OBR>
+                        <SequenceNumber>1</SequenceNumber>
+                        <PlacerOrderNumber xsi:nil="true"/>
+                        <AccessionNumber>RB999998A</AccessionNumber>
+                        <UnitAndOrderCodes_1>899SB=</UnitAndOrderCodes_1>
+                        <UnitAndOrderCodes_2/>
+                        <UnitAndOrderCodes_3>99QDI</UnitAndOrderCodes_3>
+                        <UnitAndOrderCodes_4>5600000899</UnitAndOrderCodes_4>
+                        <UnitAndOrderCodes_5>899SB=</UnitAndOrderCodes_5>
+                        <UnitAndOrderCodes_6 xsi:nil="true"/>
+                        <UnitAndOrderCodes_7 xsi:nil="true"/>
+                        <UnitAndOrderCodes_8 xsi:nil="true"/>
+                        <UnitAndOrderCodes_9 xsi:nil="true"/>
+                        <UnitAndOrderCodes_10 xsi:nil="true"/>
+                        <UnitAndOrderCodes_11 xsi:nil="true"/>
+                        <UnitAndOrderCodes_12 xsi:nil="true"/>
+                        <UnitAndOrderCodes_13 xsi:nil="true"/>
+                     </OBR>
+                     <ZSI>
+                        <SampleID>01</SampleID>
+                        <StorageSite xsi:nil="true"/>
+                        <IntraLabManifestIndicator>899SB=</IntraLabManifestIndicator>
+                        <UnitCodeNumber>5600000899</UnitCodeNumber>
+                        <LabelDevice>1^1</LabelDevice>
+                        <LableFormat>SPECLBL</LableFormat>
+                        <ContainerType>IC</ContainerType>
+                        <DepartmentIDs_1 xsi:nil="true"/>
+                        <DepartmentIDs_2 xsi:nil="true"/>
+                        <DepartmentIDs_3 xsi:nil="true"/>
+                        <DepartmentIDs_4 xsi:nil="true"/>
+                        <Sendouts/>
+                     </ZSI>
+                  </ORM_ORDER_DETAIL>
+               </ORM_ORDER>
+            </ns1:ORM>
+         </ns0:ORM>
+         <ns0:ORU xmlns:ns0="http://www.ibm.com/rules/decisionservice/Hl7/Op1/param">
+            <ns1:ORU xmlns:ns1="http://QuestHL7Records">
+               <MSH>
+                  <OriginatingFacility>TAT</OriginatingFacility>
+                  <MsgType_1>ORU</MsgType_1>
+                  <MsgType_2>R01</MsgType_2>
+                  <MsgType_3/>
+                  <ControlID/>
+                  <ReceivingFacility>TAT</ReceivingFacility>
+               </MSH>
+               <ORU_PATIENT_RESULT>
+                  <ORU_PATIENT>
+                     <PID>
+                        <PIDSequence>123</PIDSequence>
+                        <PatientID1>RB999998A</PatientID1>
+                        <PatientID2/>
+                        <AccessionNumber>RB999998A</AccessionNumber>
+                        <MRN xsi:nil="true"/>
+                        <ChartId xsi:nil="true"/>
+                        <EnterpriseID xsi:nil="true"/>
+                        <PatientAccountNum xsi:nil="true"/>
+                        <AdministrativeSex>F</AdministrativeSex>
+                        <Birthdate>19610101</Birthdate>
+                     </PID>
+                     <NTE>
+                        <NTESequenceNumber>1</NTESequenceNumber>
+                        <ReportComment>COPYTO^WILD^1</ReportComment>
+                        <Comment_1>TEST AUTODIAL CLIENT (HQ)</Comment_1>
+                        <Comment_2 xsi:nil="true"/>
+                        <Comment_3 xsi:nil="true"/>
+                        <Comment_4 xsi:nil="true"/>
+                        <Comment_5 xsi:nil="true"/>
+                        <Comment_6 xsi:nil="true"/>
+                        <Comment_7 xsi:nil="true"/>
+                     </NTE>
+                     <ZRQ>
+                        <ZRQSequenceNumber>1</ZRQSequenceNumber>
+                        <AccessionNumber xsi:nil="true"/>
+                        <zrqData_1 xsi:nil="true"/>
+                        <zrqData_2 xsi:nil="true"/>
+                        <zrqData_3 xsi:nil="true"/>
+                        <zrqData_4 xsi:nil="true"/>
+                        <zrqData_5 xsi:nil="true"/>
+                        <zrqData_6 xsi:nil="true"/>
+                        <zrqData_7 xsi:nil="true"/>
+                        <zrqData_8 xsi:nil="true"/>
+                        <zrqData_9 xsi:nil="true"/>
+                        <zrqData_10 xsi:nil="true"/>
+                        <zrqData_11 xsi:nil="true"/>
+                        <zrqData_12 xsi:nil="true"/>
+                        <zrqData_13 xsi:nil="true"/>
+                        <zrqData_14 xsi:nil="true"/>
+                        <zrqData_15 xsi:nil="true"/>
+                        <zrqData_16 xsi:nil="true"/>
+                        <zrqData_17 xsi:nil="true"/>
+                        <zrqData_18 xsi:nil="true"/>
+                        <zrqData_19 xsi:nil="true"/>
+                        <zrqData_20 xsi:nil="true"/>
+                        <zrqData_21 xsi:nil="true"/>
+                        <zrqData_22 xsi:nil="true"/>
+                        <zrqData_23 xsi:nil="true"/>
+                     </ZRQ>
+                  </ORU_PATIENT>
+                  <ORU_ORDER_OBSERVATION>
+                     <ORC>
+                        <OrderControl>RE</OrderControl>
+                        <OrderStatus>0155848</OrderStatus>
+                        <ResponseFlag xsi:nil="true"/>
+                        <Specimens_1 xsi:nil="true"/>
+                        <Specimens_2 xsi:nil="true"/>
+                        <Specimens_3 xsi:nil="true"/>
+                        <Specimens_4 xsi:nil="true"/>
+                        <Specimens_5 xsi:nil="true"/>
+                        <Specimens_6 xsi:nil="true"/>
+                        <Specimens_7 xsi:nil="true"/>
+                        <Specimens_8 xsi:nil="true"/>
+                        <Specimens_9 xsi:nil="true"/>
+                        <Specimens_10 xsi:nil="true"/>
+                        <ChangeOrderDate_1>20160706135500</ChangeOrderDate_1>
+                        <ChangeOrderDate_2 xsi:nil="true"/>
+                        <PhysicianUPIN>WELBY</PhysicianUPIN>
+                        <OriginiatingSiteCode xsi:nil="true"/>
+                        <CollectionDate xsi:nil="true"/>
+                        <ClientMnemonic xsi:nil="true"/>
+                        <Minilog xsi:nil="true"/>
+                        <Maxilog xsi:nil="true"/>
+                        <WhoLoggedItUPIN xsi:nil="true"/>
+                        <AltPatientID xsi:nil="true"/>
+                        <AccessionNumber xsi:nil="true"/>
+                        <ClientID xsi:nil="true"/>
+                     </ORC>
+                     <OBR>
+                        <SequenceNumber>1</SequenceNumber>
+                        <PlacerOrderNumber>0155848</PlacerOrderNumber>
+                        <AccessionNumber>RB999998A</AccessionNumber>
+                        <UnitAndOrderCodes_1>7600SB=</UnitAndOrderCodes_1>
+                        <UnitAndOrderCodes_2>2000007600</UnitAndOrderCodes_2>
+                        <UnitAndOrderCodes_3>LIPID PANEL</UnitAndOrderCodes_3>
+                        <UnitAndOrderCodes_4 xsi:nil="true"/>
+                        <UnitAndOrderCodes_5 xsi:nil="true"/>
+                        <UnitAndOrderCodes_6 xsi:nil="true"/>
+                        <UnitAndOrderCodes_7 xsi:nil="true"/>
+                        <UnitAndOrderCodes_8 xsi:nil="true"/>
+                        <UnitAndOrderCodes_9 xsi:nil="true"/>
+                        <UnitAndOrderCodes_10 xsi:nil="true"/>
+                        <UnitAndOrderCodes_11 xsi:nil="true"/>
+                        <UnitAndOrderCodes_12 xsi:nil="true"/>
+                        <UnitAndOrderCodes_13 xsi:nil="true"/>
+                     </OBR>
+                     <ZOR>
+                        <ZORSequenceNumber>1</ZORSequenceNumber>
+                     </ZOR>
+                     <NTE xsi:nil="true"/>
+                     <ORU_OBSERVATION xsi:nil="true"/>
+                  </ORU_ORDER_OBSERVATION>
+                  <ORU_ORDER_OBSERVATION>
+                     <ORC xsi:nil="true"/>
+                     <OBR>
+                        <SequenceNumber>2</SequenceNumber>
+                        <PlacerOrderNumber/>
+                        <AccessionNumber>RB999998A</AccessionNumber>
+                        <UnitAndOrderCodes_1>7600SB=</UnitAndOrderCodes_1>
+                        <UnitAndOrderCodes_2>2600000334</UnitAndOrderCodes_2>
+                        <UnitAndOrderCodes_3>CHOLESTEROL, TOTAL</UnitAndOrderCodes_3>
+                        <UnitAndOrderCodes_4 xsi:nil="true"/>
+                        <UnitAndOrderCodes_5 xsi:nil="true"/>
+                        <UnitAndOrderCodes_6 xsi:nil="true"/>
+                        <UnitAndOrderCodes_7 xsi:nil="true"/>
+                        <UnitAndOrderCodes_8 xsi:nil="true"/>
+                        <UnitAndOrderCodes_9 xsi:nil="true"/>
+                        <UnitAndOrderCodes_10 xsi:nil="true"/>
+                        <UnitAndOrderCodes_11 xsi:nil="true"/>
+                        <UnitAndOrderCodes_12 xsi:nil="true"/>
+                        <UnitAndOrderCodes_13 xsi:nil="true"/>
+                     </OBR>
+                     <ZOR>
+                        <ZORSequenceNumber>1</ZORSequenceNumber>
+                     </ZOR>
+                     <NTE>
+                        <NTESequenceNumber>1</NTESequenceNumber>
+                        <ReportComment>ST^PND^0</ReportComment>
+                        <Comment_1>PENDING</Comment_1>
+                        <Comment_2 xsi:nil="true"/>
+                        <Comment_3 xsi:nil="true"/>
+                        <Comment_4 xsi:nil="true"/>
+                        <Comment_5 xsi:nil="true"/>
+                        <Comment_6 xsi:nil="true"/>
+                        <Comment_7 xsi:nil="true"/>
+                     </NTE>
+                     <ORU_OBSERVATION xsi:nil="true"/>
+                  </ORU_ORDER_OBSERVATION>
+                  <ORU_ORDER_OBSERVATION>
+                     <ORC xsi:nil="true"/>
+                     <OBR>
+                        <SequenceNumber>3</SequenceNumber>
+                        <PlacerOrderNumber/>
+                        <AccessionNumber>RB999998A</AccessionNumber>
+                        <UnitAndOrderCodes_1>7600SB=</UnitAndOrderCodes_1>
+                        <UnitAndOrderCodes_2>5100000608</UnitAndOrderCodes_2>
+                        <UnitAndOrderCodes_3>HDL CHOLESTEROL</UnitAndOrderCodes_3>
+                        <UnitAndOrderCodes_4 xsi:nil="true"/>
+                        <UnitAndOrderCodes_5 xsi:nil="true"/>
+                        <UnitAndOrderCodes_6 xsi:nil="true"/>
+                        <UnitAndOrderCodes_7 xsi:nil="true"/>
+                        <UnitAndOrderCodes_8 xsi:nil="true"/>
+                        <UnitAndOrderCodes_9 xsi:nil="true"/>
+                        <UnitAndOrderCodes_10 xsi:nil="true"/>
+                        <UnitAndOrderCodes_11 xsi:nil="true"/>
+                        <UnitAndOrderCodes_12 xsi:nil="true"/>
+                        <UnitAndOrderCodes_13 xsi:nil="true"/>
+                     </OBR>
+                     <ZOR>
+                        <ZORSequenceNumber>1</ZORSequenceNumber>
+                     </ZOR>
+                     <NTE>
+                        <NTESequenceNumber>1</NTESequenceNumber>
+                        <ReportComment>ST^PND^0</ReportComment>
+                        <Comment_1>PENDING</Comment_1>
+                        <Comment_2 xsi:nil="true"/>
+                        <Comment_3 xsi:nil="true"/>
+                        <Comment_4 xsi:nil="true"/>
+                        <Comment_5 xsi:nil="true"/>
+                        <Comment_6 xsi:nil="true"/>
+                        <Comment_7 xsi:nil="true"/>
+                     </NTE>
+                     <ORU_OBSERVATION xsi:nil="true"/>
+                  </ORU_ORDER_OBSERVATION>
+                  <ORU_ORDER_OBSERVATION>
+                     <ORC xsi:nil="true"/>
+                     <OBR>
+                        <SequenceNumber>4</SequenceNumber>
+                        <PlacerOrderNumber/>
+                        <AccessionNumber>RB999998A</AccessionNumber>
+                        <UnitAndOrderCodes_1>7600SB=</UnitAndOrderCodes_1>
+                        <UnitAndOrderCodes_2>2600000896</UnitAndOrderCodes_2>
+                        <UnitAndOrderCodes_3>TRIGLYCERIDES</UnitAndOrderCodes_3>
+                        <UnitAndOrderCodes_4 xsi:nil="true"/>
+                        <UnitAndOrderCodes_5 xsi:nil="true"/>
+                        <UnitAndOrderCodes_6 xsi:nil="true"/>
+                        <UnitAndOrderCodes_7 xsi:nil="true"/>
+                        <UnitAndOrderCodes_8 xsi:nil="true"/>
+                        <UnitAndOrderCodes_9 xsi:nil="true"/>
+                        <UnitAndOrderCodes_10 xsi:nil="true"/>
+                        <UnitAndOrderCodes_11 xsi:nil="true"/>
+                        <UnitAndOrderCodes_12 xsi:nil="true"/>
+                        <UnitAndOrderCodes_13 xsi:nil="true"/>
+                     </OBR>
+                     <ZOR>
+                        <ZORSequenceNumber>1</ZORSequenceNumber>
+                     </ZOR>
+                     <NTE>
+                        <NTESequenceNumber>1</NTESequenceNumber>
+                        <ReportComment>ST^PND^0</ReportComment>
+                        <Comment_1>PENDING</Comment_1>
+                        <Comment_2 xsi:nil="true"/>
+                        <Comment_3 xsi:nil="true"/>
+                        <Comment_4 xsi:nil="true"/>
+                        <Comment_5 xsi:nil="true"/>
+                        <Comment_6 xsi:nil="true"/>
+                        <Comment_7 xsi:nil="true"/>
+                     </NTE>
+                     <ORU_OBSERVATION xsi:nil="true"/>
+                  </ORU_ORDER_OBSERVATION>
+                  <ORU_ORDER_OBSERVATION>
+                     <ORC xsi:nil="true"/>
+                     <OBR>
+                        <SequenceNumber>5</SequenceNumber>
+                        <PlacerOrderNumber/>
+                        <AccessionNumber>RB999998A</AccessionNumber>
+                        <UnitAndOrderCodes_1>7600SB=</UnitAndOrderCodes_1>
+                        <UnitAndOrderCodes_2>2600008841</UnitAndOrderCodes_2>
+                        <UnitAndOrderCodes_3>LDL-CHOLESTEROL</UnitAndOrderCodes_3>
+                        <UnitAndOrderCodes_4 xsi:nil="true"/>
+                        <UnitAndOrderCodes_5 xsi:nil="true"/>
+                        <UnitAndOrderCodes_6 xsi:nil="true"/>
+                        <UnitAndOrderCodes_7 xsi:nil="true"/>
+                        <UnitAndOrderCodes_8 xsi:nil="true"/>
+                        <UnitAndOrderCodes_9 xsi:nil="true"/>
+                        <UnitAndOrderCodes_10 xsi:nil="true"/>
+                        <UnitAndOrderCodes_11 xsi:nil="true"/>
+                        <UnitAndOrderCodes_12 xsi:nil="true"/>
+                        <UnitAndOrderCodes_13 xsi:nil="true"/>
+                     </OBR>
+                     <ZOR>
+                        <ZORSequenceNumber>1</ZORSequenceNumber>
+                     </ZOR>
+                     <NTE>
+                        <NTESequenceNumber>1</NTESequenceNumber>
+                        <ReportComment>ST^PND^0</ReportComment>
+                        <Comment_1>PENDING</Comment_1>
+                        <Comment_2 xsi:nil="true"/>
+                        <Comment_3 xsi:nil="true"/>
+                        <Comment_4 xsi:nil="true"/>
+                        <Comment_5 xsi:nil="true"/>
+                        <Comment_6 xsi:nil="true"/>
+                        <Comment_7 xsi:nil="true"/>
+                     </NTE>
+                     <ORU_OBSERVATION xsi:nil="true"/>
+                  </ORU_ORDER_OBSERVATION>
+                  <ORU_ORDER_OBSERVATION>
+                     <ORC xsi:nil="true"/>
+                     <OBR>
+                        <SequenceNumber>6</SequenceNumber>
+                        <PlacerOrderNumber/>
+                        <AccessionNumber>RB999998A</AccessionNumber>
+                        <UnitAndOrderCodes_1>7600SB=</UnitAndOrderCodes_1>
+                        <UnitAndOrderCodes_2>2600008842</UnitAndOrderCodes_2>
+                        <UnitAndOrderCodes_3>CHOL/HDLC RATIO</UnitAndOrderCodes_3>
+                        <UnitAndOrderCodes_4 xsi:nil="true"/>
+                        <UnitAndOrderCodes_5 xsi:nil="true"/>
+                        <UnitAndOrderCodes_6 xsi:nil="true"/>
+                        <UnitAndOrderCodes_7 xsi:nil="true"/>
+                        <UnitAndOrderCodes_8 xsi:nil="true"/>
+                        <UnitAndOrderCodes_9 xsi:nil="true"/>
+                        <UnitAndOrderCodes_10 xsi:nil="true"/>
+                        <UnitAndOrderCodes_11 xsi:nil="true"/>
+                        <UnitAndOrderCodes_12 xsi:nil="true"/>
+                        <UnitAndOrderCodes_13 xsi:nil="true"/>
+                     </OBR>
+                     <ZOR>
+                        <ZORSequenceNumber>1</ZORSequenceNumber>
+                     </ZOR>
+                     <NTE>
+                        <NTESequenceNumber>1</NTESequenceNumber>
+                        <ReportComment>ST^PND^0</ReportComment>
+                        <Comment_1>PENDING</Comment_1>
+                        <Comment_2 xsi:nil="true"/>
+                        <Comment_3 xsi:nil="true"/>
+                        <Comment_4 xsi:nil="true"/>
+                        <Comment_5 xsi:nil="true"/>
+                        <Comment_6 xsi:nil="true"/>
+                        <Comment_7 xsi:nil="true"/>
+                     </NTE>
+                     <ORU_OBSERVATION xsi:nil="true"/>
+                  </ORU_ORDER_OBSERVATION>
+                  <ORU_ORDER_OBSERVATION>
+                     <ORC xsi:nil="true"/>
+                     <OBR>
+                        <SequenceNumber>7</SequenceNumber>
+                        <PlacerOrderNumber/>
+                        <AccessionNumber>RB999998A</AccessionNumber>
+                        <UnitAndOrderCodes_1>899SB=</UnitAndOrderCodes_1>
+                        <UnitAndOrderCodes_2>5600000899</UnitAndOrderCodes_2>
+                        <UnitAndOrderCodes_3>TSH</UnitAndOrderCodes_3>
+                        <UnitAndOrderCodes_4 xsi:nil="true"/>
+                        <UnitAndOrderCodes_5 xsi:nil="true"/>
+                        <UnitAndOrderCodes_6 xsi:nil="true"/>
+                        <UnitAndOrderCodes_7 xsi:nil="true"/>
+                        <UnitAndOrderCodes_8 xsi:nil="true"/>
+                        <UnitAndOrderCodes_9 xsi:nil="true"/>
+                        <UnitAndOrderCodes_10 xsi:nil="true"/>
+                        <UnitAndOrderCodes_11 xsi:nil="true"/>
+                        <UnitAndOrderCodes_12 xsi:nil="true"/>
+                        <UnitAndOrderCodes_13 xsi:nil="true"/>
+                     </OBR>
+                     <ZOR>
+                        <ZORSequenceNumber>1</ZORSequenceNumber>
+                     </ZOR>
+                     <NTE xsi:nil="true"/>
+                     <ORU_OBSERVATION>
+                        <OBX>
+                           <OBXSequenceNumber>1</OBXSequenceNumber>
+                           <Control>NM</Control>
+                           <AccessionNumber xsi:nil="true"/>
+                           <ObservationID>55080400</ObservationID>
+                           <ObservationName>TSH</ObservationName>
+                           <ObservationValue>3.65</ObservationValue>
+                           <ObservationUnits>mIU/L</ObservationUnits>
+                           <ObservationRange/>
+                           <AbnormalFlags/>
+                           <NatureOfAbnoralFlags/>
+                           <ObservationResultStatus>F^N</ObservationResultStatus>
+                           <ODMStatus xsi:nil="true"/>
+                        </OBX>
+                        <NTE>
+                           <NTESequenceNumber>1</NTESequenceNumber>
+                           <ReportComment>MS^TWWTSH7^0^A^^</ReportComment>
+                           <Comment_1>Reference Range</Comment_1>
+                           <Comment_2 xsi:nil="true"/>
+                           <Comment_3 xsi:nil="true"/>
+                           <Comment_4 xsi:nil="true"/>
+                           <Comment_5 xsi:nil="true"/>
+                           <Comment_6 xsi:nil="true"/>
+                           <Comment_7 xsi:nil="true"/>
+                        </NTE>
+                        <NTE>
+                           <NTESequenceNumber>2</NTESequenceNumber>
+                           <ReportComment>MS^TWWTSH7^0^A^^</ReportComment>
+                           <Comment_1/>
+                           <Comment_2 xsi:nil="true"/>
+                           <Comment_3 xsi:nil="true"/>
+                           <Comment_4 xsi:nil="true"/>
+                           <Comment_5 xsi:nil="true"/>
+                           <Comment_6 xsi:nil="true"/>
+                           <Comment_7 xsi:nil="true"/>
+                        </NTE>
+                        <NTE>
+                           <NTESequenceNumber>3</NTESequenceNumber>
+                           <ReportComment>MS^TWWTSH7^0^A^^</ReportComment>
+                           <Comment_1>> or = 20 Years  0.40-4.50</Comment_1>
+                           <Comment_2 xsi:nil="true"/>
+                           <Comment_3 xsi:nil="true"/>
+                           <Comment_4 xsi:nil="true"/>
+                           <Comment_5 xsi:nil="true"/>
+                           <Comment_6 xsi:nil="true"/>
+                           <Comment_7 xsi:nil="true"/>
+                        </NTE>
+                        <NTE>
+                           <NTESequenceNumber>4</NTESequenceNumber>
+                           <ReportComment>MS^TWWTSH7^0^A^^</ReportComment>
+                           <Comment_1/>
+                           <Comment_2 xsi:nil="true"/>
+                           <Comment_3 xsi:nil="true"/>
+                           <Comment_4 xsi:nil="true"/>
+                           <Comment_5 xsi:nil="true"/>
+                           <Comment_6 xsi:nil="true"/>
+                           <Comment_7 xsi:nil="true"/>
+                        </NTE>
+                        <NTE>
+                           <NTESequenceNumber>5</NTESequenceNumber>
+                           <ReportComment>MS^TWWTSH7^0^A^^</ReportComment>
+                           <Comment_1>Pregnancy Ranges</Comment_1>
+                           <Comment_2 xsi:nil="true"/>
+                           <Comment_3 xsi:nil="true"/>
+                           <Comment_4 xsi:nil="true"/>
+                           <Comment_5 xsi:nil="true"/>
+                           <Comment_6 xsi:nil="true"/>
+                           <Comment_7 xsi:nil="true"/>
+                        </NTE>
+                        <NTE>
+                           <NTESequenceNumber>6</NTESequenceNumber>
+                           <ReportComment>MS^TWWTSH7^0^A^^</ReportComment>
+                           <Comment_1>First trimester    0.26-2.66</Comment_1>
+                           <Comment_2 xsi:nil="true"/>
+                           <Comment_3 xsi:nil="true"/>
+                           <Comment_4 xsi:nil="true"/>
+                           <Comment_5 xsi:nil="true"/>
+                           <Comment_6 xsi:nil="true"/>
+                           <Comment_7 xsi:nil="true"/>
+                        </NTE>
+                        <NTE>
+                           <NTESequenceNumber>7</NTESequenceNumber>
+                           <ReportComment>MS^TWWTSH7^0^A^^</ReportComment>
+                           <Comment_1>Second trimester   0.55-2.73</Comment_1>
+                           <Comment_2 xsi:nil="true"/>
+                           <Comment_3 xsi:nil="true"/>
+                           <Comment_4 xsi:nil="true"/>
+                           <Comment_5 xsi:nil="true"/>
+                           <Comment_6 xsi:nil="true"/>
+                           <Comment_7 xsi:nil="true"/>
+                        </NTE>
+                        <NTE>
+                           <NTESequenceNumber>8</NTESequenceNumber>
+                           <ReportComment>MS^TWWTSH7^0^A^^</ReportComment>
+                           <Comment_1>Third trimester    0.43-2.91</Comment_1>
+                           <Comment_2 xsi:nil="true"/>
+                           <Comment_3 xsi:nil="true"/>
+                           <Comment_4 xsi:nil="true"/>
+                           <Comment_5 xsi:nil="true"/>
+                           <Comment_6 xsi:nil="true"/>
+                           <Comment_7 xsi:nil="true"/>
+                        </NTE>
+                     </ORU_OBSERVATION>
+                  </ORU_ORDER_OBSERVATION>
+                  <ORU_ORDER_OBSERVATION>
+                     <ORC xsi:nil="true"/>
+                     <OBR>
+                        <SequenceNumber>8</SequenceNumber>
+                        <PlacerOrderNumber/>
+                        <AccessionNumber>RB999998A</AccessionNumber>
+                        <UnitAndOrderCodes_1>6399SB=</UnitAndOrderCodes_1>
+                        <UnitAndOrderCodes_2>3100006399</UnitAndOrderCodes_2>
+                        <UnitAndOrderCodes_3>CBC (INCLUDES DIFF/PLT)</UnitAndOrderCodes_3>
+                        <UnitAndOrderCodes_4 xsi:nil="true"/>
+                        <UnitAndOrderCodes_5 xsi:nil="true"/>
+                        <UnitAndOrderCodes_6 xsi:nil="true"/>
+                        <UnitAndOrderCodes_7 xsi:nil="true"/>
+                        <UnitAndOrderCodes_8 xsi:nil="true"/>
+                        <UnitAndOrderCodes_9 xsi:nil="true"/>
+                        <UnitAndOrderCodes_10 xsi:nil="true"/>
+                        <UnitAndOrderCodes_11 xsi:nil="true"/>
+                        <UnitAndOrderCodes_12 xsi:nil="true"/>
+                        <UnitAndOrderCodes_13 xsi:nil="true"/>
+                     </OBR>
+                     <ZOR>
+                        <ZORSequenceNumber>1</ZORSequenceNumber>
+                     </ZOR>
+                     <NTE>
+                        <NTESequenceNumber>1</NTESequenceNumber>
+                        <ReportComment>ST^PND^0</ReportComment>
+                        <Comment_1>PENDING</Comment_1>
+                        <Comment_2 xsi:nil="true"/>
+                        <Comment_3 xsi:nil="true"/>
+                        <Comment_4 xsi:nil="true"/>
+                        <Comment_5 xsi:nil="true"/>
+                        <Comment_6 xsi:nil="true"/>
+                        <Comment_7 xsi:nil="true"/>
+                     </NTE>
+                     <ORU_OBSERVATION xsi:nil="true"/>
+                  </ORU_ORDER_OBSERVATION>
+                  <ORU_ORDER_OBSERVATION>
+                     <ORC xsi:nil="true"/>
+                     <OBR>
+                        <SequenceNumber>9</SequenceNumber>
+                        <PlacerOrderNumber/>
+                        <AccessionNumber>RB999998A</AccessionNumber>
+                        <UnitAndOrderCodes_1>402SB=</UnitAndOrderCodes_1>
+                        <UnitAndOrderCodes_2>5600000402</UnitAndOrderCodes_2>
+                        <UnitAndOrderCodes_3>DHEA SULFATE</UnitAndOrderCodes_3>
+                        <UnitAndOrderCodes_4 xsi:nil="true"/>
+                        <UnitAndOrderCodes_5 xsi:nil="true"/>
+                        <UnitAndOrderCodes_6 xsi:nil="true"/>
+                        <UnitAndOrderCodes_7 xsi:nil="true"/>
+                        <UnitAndOrderCodes_8 xsi:nil="true"/>
+                        <UnitAndOrderCodes_9 xsi:nil="true"/>
+                        <UnitAndOrderCodes_10 xsi:nil="true"/>
+                        <UnitAndOrderCodes_11 xsi:nil="true"/>
+                        <UnitAndOrderCodes_12 xsi:nil="true"/>
+                        <UnitAndOrderCodes_13 xsi:nil="true"/>
+                     </OBR>
+                     <ZOR>
+                        <ZORSequenceNumber>1</ZORSequenceNumber>
+                     </ZOR>
+                     <NTE>
+                        <NTESequenceNumber>1</NTESequenceNumber>
+                        <ReportComment>ST^PND^0</ReportComment>
+                        <Comment_1>PENDING</Comment_1>
+                        <Comment_2 xsi:nil="true"/>
+                        <Comment_3 xsi:nil="true"/>
+                        <Comment_4 xsi:nil="true"/>
+                        <Comment_5 xsi:nil="true"/>
+                        <Comment_6 xsi:nil="true"/>
+                        <Comment_7 xsi:nil="true"/>
+                     </NTE>
+                     <ORU_OBSERVATION xsi:nil="true"/>
+                  </ORU_ORDER_OBSERVATION>
+                  <ORU_ORDER_OBSERVATION>
+                     <ORC xsi:nil="true"/>
+                     <OBR>
+                        <SequenceNumber>10</SequenceNumber>
+                        <PlacerOrderNumber/>
+                        <AccessionNumber>RB999998A</AccessionNumber>
+                        <UnitAndOrderCodes_1>873SB=</UnitAndOrderCodes_1>
+                        <UnitAndOrderCodes_2>5600000873</UnitAndOrderCodes_2>
+                        <UnitAndOrderCodes_3>TESTOSTERONE, TOTAL,&amp;MALES (ADULT), IA</UnitAndOrderCodes_3>
+                        <UnitAndOrderCodes_4 xsi:nil="true"/>
+                        <UnitAndOrderCodes_5 xsi:nil="true"/>
+                        <UnitAndOrderCodes_6 xsi:nil="true"/>
+                        <UnitAndOrderCodes_7 xsi:nil="true"/>
+                        <UnitAndOrderCodes_8 xsi:nil="true"/>
+                        <UnitAndOrderCodes_9 xsi:nil="true"/>
+                        <UnitAndOrderCodes_10 xsi:nil="true"/>
+                        <UnitAndOrderCodes_11 xsi:nil="true"/>
+                        <UnitAndOrderCodes_12 xsi:nil="true"/>
+                        <UnitAndOrderCodes_13 xsi:nil="true"/>
+                     </OBR>
+                     <ZOR>
+                        <ZORSequenceNumber>1</ZORSequenceNumber>
+                     </ZOR>
+                     <NTE>
+                        <NTESequenceNumber>1</NTESequenceNumber>
+                        <ReportComment>ST^PND^0</ReportComment>
+                        <Comment_1>PENDING</Comment_1>
+                        <Comment_2 xsi:nil="true"/>
+                        <Comment_3 xsi:nil="true"/>
+                        <Comment_4 xsi:nil="true"/>
+                        <Comment_5 xsi:nil="true"/>
+                        <Comment_6 xsi:nil="true"/>
+                        <Comment_7 xsi:nil="true"/>
+                     </NTE>
+                     <ORU_OBSERVATION xsi:nil="true"/>
+                  </ORU_ORDER_OBSERVATION>
+                  <ORU_ORDER_OBSERVATION>
+                     <ORC xsi:nil="true"/>
+                     <OBR>
+                        <SequenceNumber>11</SequenceNumber>
+                        <PlacerOrderNumber/>
+                        <AccessionNumber>RB999998A</AccessionNumber>
+                        <UnitAndOrderCodes_1>10108X=</UnitAndOrderCodes_1>
+                        <UnitAndOrderCodes_2>7500030264</UnitAndOrderCodes_2>
+                        <UnitAndOrderCodes_3>SHIGA TOXINS, EIA W/RFL&amp;TO E.COLI O157 CULTURE</UnitAndOrderCodes_3>
+                        <UnitAndOrderCodes_4 xsi:nil="true"/>
+                        <UnitAndOrderCodes_5 xsi:nil="true"/>
+                        <UnitAndOrderCodes_6 xsi:nil="true"/>
+                        <UnitAndOrderCodes_7 xsi:nil="true"/>
+                        <UnitAndOrderCodes_8 xsi:nil="true"/>
+                        <UnitAndOrderCodes_9 xsi:nil="true"/>
+                        <UnitAndOrderCodes_10 xsi:nil="true"/>
+                        <UnitAndOrderCodes_11 xsi:nil="true"/>
+                        <UnitAndOrderCodes_12 xsi:nil="true"/>
+                        <UnitAndOrderCodes_13 xsi:nil="true"/>
+                     </OBR>
+                     <ZOR>
+                        <ZORSequenceNumber>1</ZORSequenceNumber>
+                     </ZOR>
+                     <NTE>
+                        <NTESequenceNumber>1</NTESequenceNumber>
+                        <ReportComment>ST^PND^0</ReportComment>
+                        <Comment_1>PENDING</Comment_1>
+                        <Comment_2 xsi:nil="true"/>
+                        <Comment_3 xsi:nil="true"/>
+                        <Comment_4 xsi:nil="true"/>
+                        <Comment_5 xsi:nil="true"/>
+                        <Comment_6 xsi:nil="true"/>
+                        <Comment_7 xsi:nil="true"/>
+                     </NTE>
+                     <ORU_OBSERVATION xsi:nil="true"/>
+                  </ORU_ORDER_OBSERVATION>
+                  <ORU_ORDER_OBSERVATION>
+                     <ORC xsi:nil="true"/>
+                     <OBR>
+                        <SequenceNumber>12</SequenceNumber>
+                        <PlacerOrderNumber/>
+                        <AccessionNumber>RB999998A</AccessionNumber>
+                        <UnitAndOrderCodes_1>10108X=</UnitAndOrderCodes_1>
+                        <UnitAndOrderCodes_2>7500004475</UnitAndOrderCodes_2>
+                        <UnitAndOrderCodes_3>CAMPYLOBACTER, CULTURE</UnitAndOrderCodes_3>
+                        <UnitAndOrderCodes_4 xsi:nil="true"/>
+                        <UnitAndOrderCodes_5 xsi:nil="true"/>
+                        <UnitAndOrderCodes_6 xsi:nil="true"/>
+                        <UnitAndOrderCodes_7 xsi:nil="true"/>
+                        <UnitAndOrderCodes_8 xsi:nil="true"/>
+                        <UnitAndOrderCodes_9 xsi:nil="true"/>
+                        <UnitAndOrderCodes_10 xsi:nil="true"/>
+                        <UnitAndOrderCodes_11 xsi:nil="true"/>
+                        <UnitAndOrderCodes_12 xsi:nil="true"/>
+                        <UnitAndOrderCodes_13 xsi:nil="true"/>
+                     </OBR>
+                     <ZOR>
+                        <ZORSequenceNumber>1</ZORSequenceNumber>
+                     </ZOR>
+                     <NTE>
+                        <NTESequenceNumber>1</NTESequenceNumber>
+                        <ReportComment>ST^PND^0</ReportComment>
+                        <Comment_1>PENDING</Comment_1>
+                        <Comment_2 xsi:nil="true"/>
+                        <Comment_3 xsi:nil="true"/>
+                        <Comment_4 xsi:nil="true"/>
+                        <Comment_5 xsi:nil="true"/>
+                        <Comment_6 xsi:nil="true"/>
+                        <Comment_7 xsi:nil="true"/>
+                     </NTE>
+                     <ORU_OBSERVATION xsi:nil="true"/>
+                  </ORU_ORDER_OBSERVATION>
+                  <ORU_ORDER_OBSERVATION>
+                     <ORC xsi:nil="true"/>
+                     <OBR>
+                        <SequenceNumber>13</SequenceNumber>
+                        <PlacerOrderNumber/>
+                        <AccessionNumber>RB999998A</AccessionNumber>
+                        <UnitAndOrderCodes_1>10108X=</UnitAndOrderCodes_1>
+                        <UnitAndOrderCodes_2>7500010019</UnitAndOrderCodes_2>
+                        <UnitAndOrderCodes_3>SALMONELLA AND SHIGELLA,&amp;CULTURE</UnitAndOrderCodes_3>
+                        <UnitAndOrderCodes_4 xsi:nil="true"/>
+                        <UnitAndOrderCodes_5 xsi:nil="true"/>
+                        <UnitAndOrderCodes_6 xsi:nil="true"/>
+                        <UnitAndOrderCodes_7 xsi:nil="true"/>
+                        <UnitAndOrderCodes_8 xsi:nil="true"/>
+                        <UnitAndOrderCodes_9 xsi:nil="true"/>
+                        <UnitAndOrderCodes_10 xsi:nil="true"/>
+                        <UnitAndOrderCodes_11 xsi:nil="true"/>
+                        <UnitAndOrderCodes_12 xsi:nil="true"/>
+                        <UnitAndOrderCodes_13 xsi:nil="true"/>
+                     </OBR>
+                     <ZOR>
+                        <ZORSequenceNumber>1</ZORSequenceNumber>
+                     </ZOR>
+                     <NTE>
+                        <NTESequenceNumber>1</NTESequenceNumber>
+                        <ReportComment>ST^PND^0</ReportComment>
+                        <Comment_1>PENDING</Comment_1>
+                        <Comment_2 xsi:nil="true"/>
+                        <Comment_3 xsi:nil="true"/>
+                        <Comment_4 xsi:nil="true"/>
+                        <Comment_5 xsi:nil="true"/>
+                        <Comment_6 xsi:nil="true"/>
+                        <Comment_7 xsi:nil="true"/>
+                     </NTE>
+                     <ORU_OBSERVATION xsi:nil="true"/>
+                  </ORU_ORDER_OBSERVATION>
+                  <ORU_ORDER_OBSERVATION>
+                     <ORC xsi:nil="true"/>
+                     <OBR>
+                        <SequenceNumber>14</SequenceNumber>
+                        <PlacerOrderNumber/>
+                        <AccessionNumber>RB999998A</AccessionNumber>
+                        <UnitAndOrderCodes_1>10108X=</UnitAndOrderCodes_1>
+                        <UnitAndOrderCodes_2>7500010045</UnitAndOrderCodes_2>
+                        <UnitAndOrderCodes_3>SALMONELLA AND SHIGELLA,&amp;CULTURE</UnitAndOrderCodes_3>
+                        <UnitAndOrderCodes_4 xsi:nil="true"/>
+                        <UnitAndOrderCodes_5 xsi:nil="true"/>
+                        <UnitAndOrderCodes_6 xsi:nil="true"/>
+                        <UnitAndOrderCodes_7 xsi:nil="true"/>
+                        <UnitAndOrderCodes_8 xsi:nil="true"/>
+                        <UnitAndOrderCodes_9 xsi:nil="true"/>
+                        <UnitAndOrderCodes_10 xsi:nil="true"/>
+                        <UnitAndOrderCodes_11 xsi:nil="true"/>
+                        <UnitAndOrderCodes_12 xsi:nil="true"/>
+                        <UnitAndOrderCodes_13 xsi:nil="true"/>
+                     </OBR>
+                     <ZOR>
+                        <ZORSequenceNumber>1</ZORSequenceNumber>
+                     </ZOR>
+                     <NTE>
+                        <NTESequenceNumber>1</NTESequenceNumber>
+                        <ReportComment>ST^PND^0</ReportComment>
+                        <Comment_1>PENDING</Comment_1>
+                        <Comment_2 xsi:nil="true"/>
+                        <Comment_3 xsi:nil="true"/>
+                        <Comment_4 xsi:nil="true"/>
+                        <Comment_5 xsi:nil="true"/>
+                        <Comment_6 xsi:nil="true"/>
+                        <Comment_7 xsi:nil="true"/>
+                     </NTE>
+                     <ORU_OBSERVATION xsi:nil="true"/>
+                  </ORU_ORDER_OBSERVATION>
+               </ORU_PATIENT_RESULT>
+            </ns1:ORU>
+         </ns0:ORU>
+         <ns0:client xmlns:ns0="http://www.ibm.com/rules/decisionservice/Hl7/Op1/param">
+            <ns1:Client xmlns:ns1="http://QDP">
+               <ns1:name>TEST CLIENT (HQ) ATL</ns1:name>
+               <ns1:alphaName>TEST CLIENT (HQ) ATL</ns1:alphaName>
+               <ns1:defaultChargeTo>C</ns1:defaultChargeTo>
+               <ns1:areaRouteStop>00ATL20</ns1:areaRouteStop>
+               <ns1:autodialGroup>ATWEBCL</ns1:autodialGroup>
+               <ns1:flagAbnormals>1</ns1:flagAbnormals>
+               <ns1:flagPartialAccepted>1</ns1:flagPartialAccepted>
+               <ns1:flagRereportPartials>1</ns1:flagRereportPartials>
+               <ns1:flagNumberOfCopies>1</ns1:flagNumberOfCopies>
+               <ns1:flagPapReminders>1</ns1:flagPapReminders>
+               <ns1:flagCumulative>0</ns1:flagCumulative>
+               <ns1:flagStatus>0</ns1:flagStatus>
+               <ns1:flagPapSummary>1</ns1:flagPapSummary>
+               <ns1:flagReportOnlyClient>0</ns1:flagReportOnlyClient>
+               <ns1:flagAlert>0</ns1:flagAlert>
+               <ns1:flagReportDid>0</ns1:flagReportDid>
+               <ns1:flagImageReq>1</ns1:flagImageReq>
+               <ns1:flagCallPriority3>0</ns1:flagCallPriority3>
+               <ns1:flagCallTnpsToClient>0</ns1:flagCallTnpsToClient>
+               <ns1:flagAddFaxCoverPage>0</ns1:flagAddFaxCoverPage>
+               <ns1:flagFaxMiTrailers>0</ns1:flagFaxMiTrailers>
+               <ns1:flagAddTestReports>1</ns1:flagAddTestReports>
+               <ns1:flag18>0</ns1:flag18>
+               <ns1:flag19>0</ns1:flag19>
+               <ns1:flag20>0</ns1:flag20>
+               <ns1:flagRestrictClientAccess>0</ns1:flagRestrictClientAccess>
+               <ns1:flagStandardResultCodes>0</ns1:flagStandardResultCodes>
+               <ns1:flagPatientAddressOnReport>0</ns1:flagPatientAddressOnReport>
+               <ns1:flagPatientLetterOnReport>0</ns1:flagPatientLetterOnReport>
+               <ns1:flagCallTiqToClient>1</ns1:flagCallTiqToClient>
+               <ns1:flagSendCustomPanelId>1</ns1:flagSendCustomPanelId>
+               <ns1:flagTissueSummary>0</ns1:flagTissueSummary>
+               <ns1:flagCopyToFinalOnly>1</ns1:flagCopyToFinalOnly>
+               <ns1:reportRoutine>SKBBRFS7</ns1:reportRoutine>
+               <ns1:clientNumber>97502840</ns1:clientNumber>
+               <ns1:masterClientNumber/>
+            </ns1:Client>
+         </ns0:client>
+         <ns5:decisionType/>
+      </ns5:Op1Request>
+   </soapenv:Body>
+</soapenv:Envelope>

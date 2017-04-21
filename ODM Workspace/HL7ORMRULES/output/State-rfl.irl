@@ -1,0 +1,47 @@
+use Java$_$ORU;
+
+flowtask State {
+  property mainflowtask = false;
+  property ilog.rules.business_name = "State";
+  property ilog.rules.package_name = "";
+  body {
+    State#State;
+  }
+};
+
+ruletask State#State {
+  property ilog.rules.business_name = "State>State";
+  property ilog.rules.package_name = "";
+  algorithm = sequential;
+  property ilog.rules.engine.sequential.fastpath = true;
+  ordering = sorted;
+  scope {
+    State.*,
+    State.CA.*,
+    State.CO.*,
+    State.CT.*,
+    State.FL.*,
+    State.GA.*,
+    State.IL.*,
+    State.KS.*,
+    State.MA.*,
+    State.MD.*,
+    State.MI.*,
+    State.MO.*,
+    State.NE.*,
+    State.NJ.*,
+    State.NV.*,
+    State.NY.*,
+    State.OH.*,
+    State.OR.*,
+    State.PA.*,
+    State.PR.*,
+    State.TX.*,
+    State.WA.*
+
+  }
+  body = select (?rule) {
+    return (?rule.name.startsWith(Java_ORU.locationState));
+  }
+};
+

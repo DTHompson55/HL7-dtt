@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:RulePackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>Miramar</name>
+  <uuid>7272374d-154c-470c-a7af-9b3c06f767db</uuid>
+</ilog.rules.studio.model.base:RulePackage>

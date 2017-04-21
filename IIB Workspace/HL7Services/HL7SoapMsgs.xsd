@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/HL7SoapMsgs/" xmlns:sns="http:///HL7Services/HL7SoapSchemas.xsd" xmlns:tns="http://www.example.org/HL7SoapMsgs/">
+  <xsd:import namespace="http:///HL7Services/HL7SoapSchemas.xsd" schemaLocation="HL7SoapSchemas.xsd"/>
+
+<!-- BEGIN Global group petaining to all wsdl:message definitions -->
+<!-- END Global group -->
+
+
+<!-- BEGIN Message Definitions for the wsdl:operations  -->
+<!-- END Message Definitions -->
+
+
+</xsd:schema>

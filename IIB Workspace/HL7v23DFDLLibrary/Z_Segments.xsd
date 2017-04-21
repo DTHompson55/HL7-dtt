@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema 
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+  elementFormDefault="qualified" 
+  targetNamespace="urn:hl7-org:v2xml" 
+  xmlns="urn:hl7-org:v2xml" 
+  xmlns:dfdl="http://www.ogf.org/dfdl/dfdl-1.0/" 
+  xmlns:fn="http://www.w3.org/2005/xpath-functions" 
+  xmlns:ibmSchExtn="http://www.ibm.com/schema/extensions" 
+  xmlns:ibmhl7="http://www.ibm.com/dfdl/HL7Format" 
+  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  
+   <xsd:include schemaLocation="fields.xsd"/>
+   <xsd:import namespace="http://www.ibm.com/dfdl/HL7Format" schemaLocation="IBMdefined/HL7Format.xsd"/>
+    <xsd:annotation>
+    <xsd:appinfo source="http://www.ogf.org/dfdl/">
+      <dfdl:format ref="ibmhl7:HL7Format"/>
+    </xsd:appinfo>
+  </xsd:annotation>
+
+  <xsd:group name="Z_Group">
+    <xsd:choice>
+      <!-- Add user-defined segments in front of catch-all segment Zxx --> 
+      <xsd:element maxOccurs="1" minOccurs="1" ref="Zxx"/>
+    </xsd:choice>
+  </xsd:group>
+  
+  <xsd:complexType name="Zxx.CONTENT">
+    <xsd:sequence dfdl:ref="ibmhl7:HL7Segment" dfdl:separatorPosition="infix">
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="Remainder" type="xs:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element dfdl:initiator="" dfdl:ref="ibmhl7:HL7SegmentTerminator" name="Zxx" type="Zxx.CONTENT"/>
+
+             
+       <xsd:complexType name="ZSI.2.UnitCodes.Type">
+        <xsd:sequence dfdl:ref="ibmhl7:HL7Component">
+            <xsd:element maxOccurs="1" minOccurs="0" name="ZSI.2.UnitCodes.1" type="xs:string"/>
+            <xsd:element maxOccurs="1" minOccurs="0" name="ZSI.2.UnitCodes.2" type="xs:string"/>
+            <xsd:element maxOccurs="1" minOccurs="0" name="ZSI.2.UnitCodes.3" type="xs:string"/>
+            <xsd:element maxOccurs="1" minOccurs="0" name="ZSI.2.UnitCodes.4" type="xs:string"/>    
+        </xsd:sequence>
+    </xsd:complexType>
+    
+    <xsd:element name="ZSI.2.UnitCodes" type="ZSI.2.UnitCodes.Type"/>
+
+  <xsd:complexType name="ZSI.CONTENT">
+    <xsd:sequence dfdl:ref="ibmhl7:HL7Segment" dfdl:separatorPosition="infix">
+      <xsd:element maxOccurs="1" minOccurs="0" type="xs:string" name="ZSI.0"/>
+      <xsd:element maxOccurs="1" minOccurs="0" type="xs:string" name="ZSI.1.SampleID"/>
+      <xsd:element maxOccurs="1" minOccurs="0" ref="ZSI.2.UnitCodes"/>
+           
+      <xsd:element maxOccurs="1" minOccurs="0" type="xs:string" name="ZSI.3.LableDeviceX"/>
+      <xsd:element maxOccurs="1" minOccurs="0" type="xs:string" name="ZSI.4.LabelFormat"/>
+      <xsd:element maxOccurs="1" minOccurs="0" type="xs:string" name="ZSI.5.ContainerType"/>
+      <xsd:element maxOccurs="1" minOccurs="0" type="xs:string" name="ZSI.6.DepartmentIDs"/>
+      <xsd:element maxOccurs="1" minOccurs="0" type="xs:string" name="ZSI.7.SentoutIDs"/>
+      <xsd:element maxOccurs="1" minOccurs="0" type="xs:string" name="ZSI.8"/>
+      <xsd:element maxOccurs="1" minOccurs="0" type="xs:string" name="ZSI.9"/>
+      <xsd:element maxOccurs="1" minOccurs="0" type="xs:string" name="ZSI.10"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element dfdl:initiator="ZSI" dfdl:ref="ibmhl7:HL7SegmentTerminator" name="ZSI" type="ZSI.CONTENT"/>
+
+       <xsd:complexType name="ZRQ.04.Type">
+        <xsd:sequence dfdl:ref="ibmhl7:HL7Component">
+            <xsd:element maxOccurs="1" minOccurs="0" name="ZRQ.04.1" type="xs:string"/>
+            <xsd:element maxOccurs="1" minOccurs="0" name="ZRQ.04.2" type="xs:string"/>
+            <xsd:element maxOccurs="1" minOccurs="0" name="ZRQ.04.3" type="xs:string"/>
+            <xsd:element maxOccurs="1" minOccurs="0" name="ZRQ.04.4" type="xs:string"/>
+            <xsd:element maxOccurs="1" minOccurs="0" name="ZRQ.04.5" type="xs:string"/>
+            <xsd:element maxOccurs="1" minOccurs="0" name="ZRQ.04.6" type="xs:string"/>
+            <xsd:element maxOccurs="1" minOccurs="0" name="ZRQ.04.7" type="xs:string"/>
+            <xsd:element maxOccurs="1" minOccurs="0" name="ZRQ.04.8" type="xs:string"/>
+            <xsd:element maxOccurs="1" minOccurs="0" name="ZRQ.04.9" type="xs:string"/>
+            <xsd:element maxOccurs="1" minOccurs="0" name="ZRQ.04.10" type="xs:string"/>
+            
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="ZRQ.04" type="ZRQ.04.Type"/>
+    
+       <xsd:complexType name="ZRQ.14.Type">
+        <xsd:sequence dfdl:ref="ibmhl7:HL7Component">
+            <xsd:element maxOccurs="1" minOccurs="0" name="ZRQ.14.1" type="xs:string"/>
+            <xsd:element maxOccurs="1" minOccurs="0" name="ZRQ.14.2" type="xs:string"/>
+            <xsd:element maxOccurs="1" minOccurs="0" name="ZRQ.14.3" type="xs:string"/>
+            <xsd:element maxOccurs="1" minOccurs="0" name="ZRQ.14.4" type="xs:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    <xsd:element name="ZRQ.14" type="ZRQ.14.Type"/>
+
+ 
+  <xsd:complexType name="ZRQ.CONTENT">
+    <xsd:sequence dfdl:ref="ibmhl7:HL7Segment" dfdl:separatorPosition="infix">
+           <xsd:element maxOccurs="1" minOccurs="0" type="xs:string" name="ZRQ.00" />
+      <xsd:element maxOccurs="1" minOccurs="0" type="xs:string" name="ZRQ.01.Sequence" />
+      <xsd:element maxOccurs="1" minOccurs="0" type="xs:string" name="ZRQ.02.PlacerOrderNumber" />
+      <xsd:element maxOccurs="1" minOccurs="0" type="xs:string" name="ZRQ.03" />
+      <xsd:element maxOccurs="1" minOccurs="0" ref="ZRQ.04" />
+      <xsd:element maxOccurs="1" minOccurs="0" type="xs:string" name="ZRQ.05" />
+      <xsd:element maxOccurs="1" minOccurs="0" type="xs:string" name="ZRQ.06" />
+      <xsd:element maxOccurs="1" minOccurs="0" type="xs:string" name="ZRQ.07" />
+      <xsd:element maxOccurs="1" minOccurs="0" type="xs:string" name="ZRQ.08" />
+      <xsd:element maxOccurs="1" minOccurs="0" type="xs:string" name="ZRQ.09" />
+      <xsd:element maxOccurs="1" minOccurs="0" type="xs:string" name="ZRQ.10" />
+      <xsd:element maxOccurs="1" minOccurs="0" type="xs:string" name="ZRQ.11" />
+      <xsd:element maxOccurs="1" minOccurs="0" type="xs:string" name="ZRQ.12" />
+      <xsd:element maxOccurs="1" minOccurs="0" type="xs:string" name="ZRQ.13" />
+      <xsd:element maxOccurs="1" minOccurs="0" ref="ZRQ.14" />
+      <xsd:element maxOccurs="1" minOccurs="0" type="xs:string" name="ZRQ.15" />
+      <xsd:element maxOccurs="1" minOccurs="0" type="xs:string" name="ZRQ.16" />
+      <xsd:element maxOccurs="1" minOccurs="0" type="xs:string" name="ZRQ.17" />
+      <xsd:element maxOccurs="1" minOccurs="0" type="xs:string" name="ZRQ.18" />
+      <xsd:element maxOccurs="1" minOccurs="0" type="xs:string" name="ZRQ.19" />
+      <xsd:element maxOccurs="1" minOccurs="0" type="xs:string" name="ZRQ.20" />
+      <xsd:element maxOccurs="1" minOccurs="0" type="xs:string" name="ZRQ.21" />
+      <xsd:element maxOccurs="1" minOccurs="0" type="xs:string" name="ZRQ.22" />
+      <xsd:element maxOccurs="1" minOccurs="0" type="xs:string" name="ZRQ.23" />
+      <xsd:element maxOccurs="1" minOccurs="0" type="xs:string" name="ZRQ.24" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element dfdl:initiator="ZRQ" dfdl:ref="ibmhl7:HL7SegmentTerminator" name="ZRQ" type="ZRQ.CONTENT"/>
+
+  <xsd:complexType name="ZOR.CONTENT">
+    <xsd:sequence dfdl:ref="ibmhl7:HL7Segment" dfdl:separatorPosition="infix">
+      <xsd:element maxOccurs="1" minOccurs="0" type="xs:string" name="ZOR.00" />
+      <xsd:element maxOccurs="1" minOccurs="0" type="xs:string" name="ZOR.01" />
+      <xsd:element maxOccurs="1" minOccurs="0" type="xs:string" name="ZOR.02" />
+      <xsd:element maxOccurs="1" minOccurs="0" type="xs:string" name="ZOR.03" />
+      <xsd:element maxOccurs="1" minOccurs="0" type="xs:string" name="ZOR.04" />
+      <xsd:element maxOccurs="1" minOccurs="0" type="xs:string" name="ZOR.05" />
+      <xsd:element maxOccurs="1" minOccurs="0" type="xs:string" name="ZOR.06" />
+      <xsd:element maxOccurs="1" minOccurs="0" type="xs:string" name="ZOR.07" />
+      <xsd:element maxOccurs="1" minOccurs="0" type="xs:string" name="ZOR.08" />
+      <xsd:element maxOccurs="1" minOccurs="0" type="xs:string" name="ZOR.09" />
+      <xsd:element maxOccurs="1" minOccurs="0" type="xs:string" name="ZOR.10" />
+      <xsd:element maxOccurs="1" minOccurs="0" type="xs:string" name="ZOR.11" />
+      <xsd:element maxOccurs="1" minOccurs="0" type="xs:string" name="ZOR.12" />
+      <xsd:element maxOccurs="1" minOccurs="0" type="xs:string" name="ZOR.13" />
+      <xsd:element maxOccurs="1" minOccurs="0" type="xs:string" name="ZOR.14" />
+      <xsd:element maxOccurs="1" minOccurs="0" type="xs:string" name="ZOR.15" />
+      <xsd:element maxOccurs="1" minOccurs="0" type="xs:string" name="ZOR.16" />
+      <xsd:element maxOccurs="1" minOccurs="0" type="xs:string" name="ZOR.17" />
+      <xsd:element maxOccurs="1" minOccurs="0" type="xs:string" name="ZOR.18" />
+      <xsd:element maxOccurs="1" minOccurs="0" type="xs:string" name="ZOR.19" />
+      <xsd:element maxOccurs="1" minOccurs="0" type="xs:string" name="ZOR.20" />
+      <xsd:element maxOccurs="1" minOccurs="0" type="xs:string" name="ZOR.21" />
+      <xsd:element maxOccurs="1" minOccurs="0" type="xs:string" name="ZOR.22" />
+      <xsd:element maxOccurs="1" minOccurs="0" type="xs:string" name="ZOR.23" />
+      <xsd:element maxOccurs="1" minOccurs="0" type="xs:string" name="ZOR.24" />        
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element dfdl:initiator="ZOR" dfdl:ref="ibmhl7:HL7SegmentTerminator" name="ZOR" type="ZOR.CONTENT"/>
+
+
+
+</xsd:schema>
